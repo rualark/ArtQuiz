@@ -1,0 +1,32 @@
+Hello!
+
+Предлагаю вашему вниманию написанную мной игру "Угадай композитора" под названием CQuiz:
+http://alch.strangled.net/cquiz
+
+Сначала нужно зарегистрироваться (большая ссылка на первой странице).
+
+Играть можно в разных режимах, Простом (15 самых известных композиторов), Нормальном (35), Сложном (100), Сумашедшем (150). Можно также выбирать любых композиторов, чтобы система проигрывала вам только их произведения.
+
+В системе много статистики и рейтингов.
+
+Если вы обнаружили баг или проблему, можете сообщить мне здесь или по почте, указанной на сайте в разделе контактов.
+
+С уважением, Alch.
+
+---
+
+Let me introduce you a "Guess the composer" game CQuiz, created by me:
+http://alch.strangled.net/cquiz
+
+You need to register first (large blue link on the first page).
+
+You can play in one of the common modes (Easy, Normal, Hard, Insane) or choose any composers that you want for the quiz. For example, you can choose only Bach and Handel and try to guess. After each of your questions system will show you correct answer and information about the piece, that was played.
+
+Easy mode includes 15 greatest composers, Normal mode adds 35 known composers and so on. You can change your mode from the Preferences tab.
+
+Ratings makes competition interesting.
+
+Please let me know if you find any bugs or problems!
+
+Best regards, 
+Alch.

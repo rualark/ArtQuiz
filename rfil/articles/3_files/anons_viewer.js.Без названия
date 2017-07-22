@@ -1,0 +1,147 @@
+var brauser_type_for_anonce="any";
+version=navigator.appVersion;
+supporting1=document.getElementById?1:0;
+
+if(navigator.userAgent.indexOf("Firefox")>0)
+{
+brauser_type_for_anonce="opacity";
+}
+else
+if((version.indexOf("MSIE ")>-1 && supporting1) )
+{ //alert(version);
+if(version.indexOf("MSIE 10")>0 || version.indexOf("MSIE 11")>0  || version.indexOf("MSIE 12")>0)
+brauser_type_for_anonce="opacity";
+else
+brauser_type_for_anonce="ie";
+
+//alert(brauser_type_for_anonce);
+}
+else
+if(window.opera)
+brauser_type_for_anonce="opacity";
+else
+if(navigator.userAgent.indexOf("Gecko")>0)
+brauser_type_for_anonce="opacity";
+else
+if(navigator.userAgent.indexOf("AppleWebKit")>0)
+brauser_type_for_anonce="KhtmlOpacity";
+//////////////////////////////////////////////////
+//alert(navigator.userAgent+" | "+brauser_type_for_anonce);
+
+var fontcolorArr=new Array(
+"#DD0000",
+"#007200",
+"#0000D1",
+"#00335F",
+"#36005F",
+"#363100",
+"#623100",
+"#620000",
+"#A60026",
+"#51007A"
+);
+//////////////////////////////////////////////////
+var anonce_block1=document.getElementById('anonce_block1');
+//alert(anonce_block1.style.color);
+var cur_num_block=0;
+
+//alert(block_str_Arr[1]);
+
+set_anons_str();
+//var starting_process=0;
+function set_anons_str()
+{
+//alert(old_block_id);
+id='anonce_block1';
+
+opac_regress(id);
+//opac_progress(cur_block_id);
+setTimeout("opac_progress('"+id+"')",500);
+
+starting_process=1;
+
+setTimeout("set_anons_str()",speed_chanding);
+if(cur_num_block>=str_count)
+	cur_num_block=0;
+cur_num_block++;
+}
+/////////////////////////////////////////////////
+
+function opac_progress(id)
+{
+color=get_rand_color(0, fontcolorArr.length);
+anonce_block1.style.color=fontcolorArr[color];
+str=block_str_Arr[cur_num_block];
+anonce_block1.style.fontSize="12pt";
+anonce_block1.innerHTML=str;
+height=anonce_block1.offsetHeight; //alert(height);
+font_size=12;
+if(height>100)
+font_size=10;
+if(height<70)
+font_size=14;
+if(height<50)
+font_size=18;
+
+anonce_block1.style.fontSize=font_size+"pt";
+
+//change_opac_anonce(100, id);return;
+for(i = 0; i <= 100; i++) 
+{//alert("change_opac_anonce(" + i + ",'" + id + "')");
+setTimeout("change_opac_anonce(" + i + ",'" + id + "')",(i * show_speed));
+}
+}
+function opac_regress(id)
+{
+//change_opac_anonce(0, id);return;
+for(i = 100; i >= 0; i--) 
+{
+setTimeout("change_opac_anonce(" + i + ",'" + id + "')",((100-i) * show_speed/2));
+}
+//change_opac_anonce(0, id);
+}
+function change_opac_anonce(opacity, id) 
+{//alert(opacity);
+
+var id_obj =document.getElementById(id);
+if(!id_obj)
+	return;
+if(typeof(id_obj)=='undefined')
+	return;
+
+if(brauser_type_for_anonce=="apple2")
+{
+id_obj.style.opacity=opacity/100;
+id_obj.style.KhtmlOpacity=opacity/100;//Для Konqueror/Safari:
+id_obj.style.MozOpacity=opacity/100;
+return;
+}
+
+//opacity:0.0; -khtml-opacity: 0.0; -moz-opacity:0.0; filter:alpha(opacity=0);
+if(brauser_type_for_anonce=="opacity")
+{id_obj.style.opacity=opacity/100;return;}// для оперы
+
+if(brauser_type_for_anonce=="MozOpacity")
+{id_obj.style.MozOpacity=opacity/100;return;}//Для FireFox, Mozilla (Gecko): 
+
+if(brauser_type_for_anonce=="KhtmlOpacity")
+{id_obj.style.KhtmlOpacity=opacity/100;return;}//Для Konqueror/Safari:
+
+if(brauser_type_for_anonce=="ie")
+{
+//
+//alert(typeof(id_obj.filters.alpha));
+if(typeof(id_obj.filters.alpha)!='undefined')
+	{id_obj.filters.alpha.opacity=opacity;return;}
+
+}
+// по умолчанию
+id_obj.style.opacity=opacity/100;
+//id_obj.style.filter = "alpha(opacity=" + opacity + ")";
+}
+////////////////////////////////
+function get_rand_color(min_random, max_random) 
+{
+    var range = max_random - min_random + 1;
+    return Math.floor(Math.random()*range) + min_random;
+}

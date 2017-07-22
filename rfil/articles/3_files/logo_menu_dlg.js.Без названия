@@ -1,0 +1,117 @@
+if(typeof(is_mobila_adaptive)!='number' || !is_mobila_adaptive)
+{
+var logo_menu_content='<style>\
+.menu-wrap {\
+border: 1px solid rgba(0,0,0,.05);\
+}\
+.menu-wrap a:nth-child(odd) {\
+border-bottom: 1px solid rgba(0,0,0,.05);\
+}\
+.menu-wrap a:nth-child(even) {\
+border-bottom: 1px solid rgba(0,0,0,.05);\
+}\
+.menu-wrap {\
+overflow: hidden;\
+width: 431px;\
+}\
+.menu-wrap a {\
+transition: .1s;\
+float: left;\
+background: 5px 50% no-repeat;\
+width: 135px;\
+height: 55px;\
+padding-left: 80px;\
+font: 15px/50px Arial;\
+}\
+.menu-wrap a:hover {\
+overflow: hidden;\
+line-height: 55px;\
+color:#FF8700;\
+}\
+</style>\
+<center><br><span style="padding:8px;font-size:12pt;font-family:arial;"><b>Мировоззренческий сайт Fornit:</b></span></center>\
+<a href="/sys/gid.php" style="background-image: url(/sys/logo_menu_img/gid.jpg)">Путеводитель</a>\
+<a href="/subject_index/subject_index.php" style="background-image: url(/sys/logo_menu_img/si.jpg)">Указатель</a>\
+<a href="/forum/index.php" style="background-image: url(/sys/logo_menu_img/forum.jpg)">Форум</a>\
+<a href="/forum/activity.php" aiotitle="Активность" style="background-image: url(/sys/logo_menu_img/interactiv.jpg)">Активность</a>\
+<a href="/diary/diary.php" style="background-image: url(/sys/logo_menu_img/dnevnik.jpg)">Дневник</a>\
+<a href="/answer/diary.php" style="background-image: url(/sys/logo_menu_img/FAQ.jpg)">Вопрос-ответ</a>\
+<a href="/sys/visits.php" style="background-image: url(/sys/logo_menu_img/gost.jpg)">Гостевая</a>\
+<a href="/about/about.php" style="background-image: url(/sys/logo_menu_img/comments.jpg)">Отзывы</a>\
+<a href="/publisher/index.php" style="background-image: url(/sys/logo_menu_img/articles.jpg)">Статьи</a>\
+<a href="/reviews/index.php" style="background-image: url(/sys/logo_menu_img/reviews.jpg)">Рецензии</a>\
+<a href="/journal/index.php" style="background-image: url(/sys/logo_menu_img/journal.jpg)">Журнал</a>\
+<a href="/journal/show_news_archive.php?id=1" style="background-image: url(/sys/logo_menu_img/news.jpg)">Новости</a>\
+<a href="/theory_publisher/index.php" style="background-image: url(/sys/logo_menu_img/teori.jpg)">Статьи-теории</a>\
+<a href="/autor_publisher/index.php" style="background-image: url(/sys/logo_menu_img/art.jpg)">Арт-статьи</a>\
+<a href="/photo/gallery.php" style="background-image: url(/sys/logo_menu_img/photo.jpg)">Фото-галереи</a>\
+<a href="/testing/Testy-sayta-Fornit.html" style="background-image: url(/sys/logo_menu_img/test.jpg)">Тестирование</a>\
+<a href="/collection/science.php" style="background-image: url(/sys/logo_menu_img/atom.jpg)">О науке</a>\
+<a href="/collection/mist.php" style="background-image: url(/sys/logo_menu_img/mist.jpg)">О мистике</a>\
+<a href="/art/cognition/cognition.php" style="background-image: url(/sys/logo_menu_img/kogn.jpg)">Познание жизни</a>\
+<a href="/collection/world.php" style="background-image: url(/sys/logo_menu_img/mir.jpg)">Про наш мир</a>\
+<a href="/adaptologiya/adaptologiya_basic.php" style="background-image: url(/sys/logo_menu_img/psi.jpg)">Психика</a>\
+<a href="/publisher/index.php?theme=30" style="background-image: url(/sys/logo_menu_img/brain.jpg)">Просто - о мозге</a>\
+<a href="/sys/map.php" style="background-image: url(/sys/logo_menu_img/about.jpg)">Важное о сайте</a>\
+<a href="/sys/map.php" style="background-image: url(/sys/logo_menu_img/map.jpg)">Карта сайта</a>';
+
+
+document.write("<div  class=\"menu-wrap\" id='logo_menu_div' style='Z-INDEX:110;POSITION:absolute;left:0px;tpo:0px;background-color:#ffffff;\
+width:431px;height:710px;\
+opacity:0.0; -khtml-opacity: 0.0; -moz-opacity:0.0; filter:alpha(opacity=0);\
+box-shadow: 8px 8px 8px 0px rgba(122,122,122,0.3);display:none;'\
+onMouseOver='set_over(1);' onMouseOut='set_over(0);'></div>");
+
+var waiting_logo_id=0;
+var logo_menu_div=document.getElementById('logo_menu_div');
+logo_menu_div.innerHTML=logo_menu_content;
+var show_dlg_munu=0;
+
+function set_logo_meu_dlg(logo)
+{
+//var logo_img_object_top=logo.offsetTop+logo.offsetHeight;
+//var logo_img_object_left=logo.offsetLeft;
+logo_menu_div.style.top=(logo.offsetTop+logo.offsetHeight)+"px";;
+logo_menu_div.style.left=(logo.offsetLeft)+"px";
+//alert(logo_img_object_top);
+waiting_logo_id=setTimeout("show_logo_menu_dlg()",500);
+}
+
+function show_logo_menu_dlg()
+{
+show_dlg_munu=1;
+logo_menu_div.style.display="block";
+opac_progress("logo_menu_div");
+}
+
+function set_over(n)
+{ //alert("set_over("+n+")");
+if(n)
+	{
+show_dlg_munu=1;
+	}
+else
+	{
+show_dlg_munu=0; //alert("set_over(0)");
+setTimeout("set_def_param_dlg()",200);
+	}
+}
+
+function close_logo_meu_dlg()
+{
+show_dlg_munu=0;
+setTimeout("set_def_param_dlg()",200);
+}
+
+function set_def_param_dlg()
+{
+
+if(show_dlg_munu)
+	return;
+
+clearTimeout(waiting_logo_id);
+logo_menu_div.style.display="none";
+change_opac_menu(0, "logo_menu_div");
+show_dlg_munu=0;
+}
+}

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?><playlist version='1' xmlns='http://xspf.org/ns/0/'><title>Cello concerto</title><info>Cello concerto</info><trackList>
+<track>
+<location>../music/Cello concerto/Dvorak/01-I Allegro.mp3</location>
+<title>Dvorak - 01-I Allegro</title>
+</track>
+<track>
+<location>../music/Cello concerto/Vivaldi/02_II - Largo.mp3</location>
+<title>Vivaldi - 02_II - Largo</title>
+</track></trackList></playlist>

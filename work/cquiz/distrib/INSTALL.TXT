@@ -1,0 +1,5 @@
+How to install cquiz:
+
+1. Download latest apache+php+mysql package, for example OpenServer.
+2. Create mysql database, import cquiz.sql into mysql database (preferably throught phpmyadmin).
+3. Edit mysql.php and enter correct hostname, username, password, db name.

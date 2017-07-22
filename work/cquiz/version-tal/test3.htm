@@ -1,0 +1,303 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+
+<!-- Website Design By: www.happyworm.com -->
+<title>Demo : jPlayer as an audio playlist player</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="description" content="The CSS styleable jQuery media player plugin with HTML5 support!" />
+<meta name="keywords" content="jPlayer, jQuery, jQuery plugin, media, video, audio, media player, video player, audio player, mp3, mp4, m4a, m4v, aac, h264, ogg, oga, ogv, wav, webm" />
+<meta name="company" content="Happyworm" />
+<link href="jplayer/css/jPlayer.css" rel="stylesheet" type="text/css" />
+<!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<link href="jplayer/skin/pink.flag/jplayer.pink.flag.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="jplayer/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="jplayer/js/jplayer.playlist.min.js"></script>
+<script type="text/javascript" src="jplayer/js/jquery.jplayer.inspector.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function(){
+
+	new jPlayerPlaylist({
+		jPlayer: "#jquery_jplayer_1",
+		cssSelectorAncestor: "#jp_container_1"
+	}, [
+		{
+			title:"Cro Magnon Man",
+			mp3:"http://www.jplayer.org/audio/mp3/TSP-01-Cro_magnon_man.mp3",
+			oga:"http://www.jplayer.org/audio/ogg/TSP-01-Cro_magnon_man.ogg"
+		},
+		{
+			title:"Your Face",
+			mp3:"http://www.jplayer.org/audio/mp3/TSP-05-Your_face.mp3",
+			oga:"http://www.jplayer.org/audio/ogg/TSP-05-Your_face.ogg"
+		},
+		{
+			title:"Cyber Sonnet",
+			mp3:"http://www.jplayer.org/audio/mp3/TSP-07-Cybersonnet.mp3",
+			oga:"http://www.jplayer.org/audio/ogg/TSP-07-Cybersonnet.ogg"
+		},
+		{
+			title:"Tempered Song",
+			mp3:"http://www.jplayer.org/audio/mp3/Miaow-01-Tempered-song.mp3",
+			oga:"http://www.jplayer.org/audio/ogg/Miaow-01-Tempered-song.ogg"
+		},
+		{
+			title:"Hidden",
+			mp3:"http://www.jplayer.org/audio/mp3/Miaow-02-Hidden.mp3",
+			oga:"http://www.jplayer.org/audio/ogg/Miaow-02-Hidden.ogg"
+		},
+		{
+			title:"Lentement",
+			free:true,
+			mp3:"http://www.jplayer.org/audio/mp3/Miaow-03-Lentement.mp3",
+			oga:"http://www.jplayer.org/audio/ogg/Miaow-03-Lentement.ogg"
+		},
+		{
+			title:"Lismore",
+			mp3:"http://www.jplayer.org/audio/mp3/Miaow-04-Lismore.mp3",
+			oga:"http://www.jplayer.org/audio/ogg/Miaow-04-Lismore.ogg"
+		},
+		{
+			title:"The Separation",
+			mp3:"http://www.jplayer.org/audio/mp3/Miaow-05-The-separation.mp3",
+			oga:"http://www.jplayer.org/audio/ogg/Miaow-05-The-separation.ogg"
+		},
+		{
+			title:"Beside Me",
+			mp3:"http://www.jplayer.org/audio/mp3/Miaow-06-Beside-me.mp3",
+			oga:"http://www.jplayer.org/audio/ogg/Miaow-06-Beside-me.ogg"
+		},
+		{
+			title:"Bubble",
+			free:true,
+			mp3:"http://www.jplayer.org/audio/mp3/Miaow-07-Bubble.mp3",
+			oga:"http://www.jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
+		},
+		{
+			title:"Stirring of a Fool",
+			mp3:"http://www.jplayer.org/audio/mp3/Miaow-08-Stirring-of-a-fool.mp3",
+			oga:"http://www.jplayer.org/audio/ogg/Miaow-08-Stirring-of-a-fool.ogg"
+		},
+		{
+			title:"Partir",
+			free: true,
+			mp3:"http://www.jplayer.org/audio/mp3/Miaow-09-Partir.mp3",
+			oga:"http://www.jplayer.org/audio/ogg/Miaow-09-Partir.ogg"
+		},
+		{
+			title:"Thin Ice",
+			mp3:"http://www.jplayer.org/audio/mp3/Miaow-10-Thin-ice.mp3",
+			oga:"http://www.jplayer.org/audio/ogg/Miaow-10-Thin-ice.ogg"
+		}
+	], {
+		swfPath: "../js",
+		supplied: "oga, mp3",
+		wmode: "window",
+		smoothPlayBar: true,
+		keyEnabled: true
+	});
+
+	$("#jplayer_inspector_1").jPlayerInspector({jPlayer:$("#jquery_jplayer_1")});
+});
+//]]>
+</script>
+<script type="text/javascript">
+(function() {
+	var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
+	s.type = 'text/javascript';
+	s.async = true;
+	s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
+	t.parentNode.insertBefore(s, t);
+})();
+</script>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-3557377-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+</head>
+<body class="demo" onload="prettyPrint();">
+<div id="container">
+
+	<header>
+	<a href="/"><img src="/graphics/jplayer_logo.gif" alt="jPlayer" /><h1>HTML5 Audio & Video for jQuery</h1></a>
+
+		<p><a href="http://www.happyworm.com" title="a project by happyworm">a project by happyworm</a></p>
+		<nav class="main">
+			<ul>
+				<li id="home"><a href="/">home</a></li>
+				<li id="demos"><a href="/latest/demos/">demos</a></li>
+				<li id="download"><a href="/download/">download</a></li>
+				<li id="dev_guide"><a href="/latest/developer-guide/">dev guide</a></li>
+				<li id="support"><a href="/support/">support</a></li>
+				<li id="sites"><a href="/sites/">sites</a></li>
+				<li id="about"><a href="/about/">about</a></li>
+				<!-- <li id="skins"><a href="/skins/">skins</a></li> -->
+			</ul>
+		</nav>
+
+	</header>
+	
+	<div id="content_main">
+
+		<nav>
+			<ul id="breadcrumbs">
+				<li><a href="../demos/">demos (jPlayer 2.3.0)</a></li>
+				<li>> jPlayer as an audio playlist player</li>
+			</ul>
+
+		</nav>
+		<section>
+			<h2>jPlayer as a audio playlist player</h2>
+
+			<p>In this demo jPlayer is combined with HTML and CSS, along with javascript code to add playlist functionality to an audio player.</p>
+			<p>You can easily customise the way they look and make it fit your pages colours and style.</p>
+			<p>This demo will use the HTML solution if it can, otherwise the Flash fallback solution will be used. The supplied media formats are MP3 and OGA.</p>
+			<p>The playlist item object can include an optional <code>{free:true}</code> property to make the media easily available via a right-click. (Ctrl+click on Mac.)
+				Note that all media is freely available since it is distrubuted over the internet, it just makes it easier for a novice to obtain the media.
+				Direct clicks are disabled, otherwise the browser attempts to play the media directly in the browser and leaves the current page.
+				(A server/backend Guru could make it very hard to get the media directly if they wanted, but that is for them to figure out.)
+			</p>
+			<p class="note">Note that the <code>{<a href="../developer-guide/#jPlayer-option-wmode">wmode</a>:"window"}</code> option is set to ensure playback in Firefox 3.6 with the Flash solution. However, the OGA format would be used in this case with the HTML solution.</p>
+			<p>Press play to start the media.</p>
+
+
+		<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+
+		<div id="jp_container_1" class="jp-audio">
+			<div class="jp-type-playlist">
+				<div class="jp-gui jp-interface">
+					<ul class="jp-controls">
+						<li><a href="javascript:;" class="jp-previous" tabindex="1">previous</a></li>
+						<li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+						<li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+						<li><a href="javascript:;" class="jp-next" tabindex="1">next</a></li>
+						<li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li>
+						<li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
+						<li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
+						<li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
+					</ul>
+					<div class="jp-progress">
+						<div class="jp-seek-bar">
+							<div class="jp-play-bar"></div>
+
+						</div>
+					</div>
+					<div class="jp-volume-bar">
+						<div class="jp-volume-bar-value"></div>
+					</div>
+					<div class="jp-current-time"></div>
+					<div class="jp-duration"></div>
+					<ul class="jp-toggles">
+						<li><a href="javascript:;" class="jp-shuffle" tabindex="1" title="shuffle">shuffle</a></li>
+						<li><a href="javascript:;" class="jp-shuffle-off" tabindex="1" title="shuffle off">shuffle off</a></li>
+						<li><a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat">repeat</a></li>
+						<li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off">repeat off</a></li>
+					</ul>
+				</div>
+				<div class="jp-playlist">
+					<ul>
+						<li></li>
+					</ul>
+				</div>
+				<div class="jp-no-solution">
+					<span>Update Required</span>
+					To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+				</div>
+			</div>
+		</div>
+
+			<div id="jplayer_inspector_1"></div>
+			<p class="media-copyright">
+				Media used in demo:<br />
+				&copy; 2009 The Stark Palace - <a href="http://www.sharkbatter.com/" target="_blank">sharkbatter.com</a><br />
+				&copy; 2003 Miaow / Arnaud Laflaquiere - <a href="http://www.miaowmusic.com" target="_blank">MiaowMusic.com</a>
+			</p>
+		</section>
+	</div>
+	<aside>
+
+		<div class="section highlight">
+			<h2>Theme Switcher</h2>
+			<p>Try another theme.</p>
+			<select id="themeswitcher">
+				<option value="0">Blue Monday</option>
+				<option value="1" selected="selected">Pink Flag</option>
+			</select>
+		</div>
+			<div class="section highlight">
+			<h2><a href="https://groups.google.com/forum/#!forum/jplayer">jPlayer Community</a></h2>
+				<p>4867 members and counting!</p>
+				<form action="http://groups.google.com/group/jplayer/boxsubscribe">
+					<input type="text" name="email" value="your email" class="placeholder" onfocus="javascript:if(this.value==='your email'){this.value='';this.style.color='#333';}" onblur="javascript:if(this.value===''){this.value='your email';this.style.color='#999';}"/>
+					<input type="submit" value="join" class="btn" />
+				</form>
+		</div>
+
+		<div class="section highlight">
+			<h2>Hire Us!</h2>
+			<p>Need a media based solution realized or just need some help. Hire <a href="http://www.happyworm.com">Happyworm</a>!<br />
+			Contact: <a href="mailto:hire.us@happyworm.com" alt="Hire Happyworm" title="Hire Happyworm">hire.us@happyworm.com</a>.</p>
+		</div>
+
+				<div class="section highlight">
+			<h2>Help us improve jPlayer</h2>
+			<p>Developing and supporting jPlayer is almost a full-time job and we are really just beginning. Help us continue to help you.</p>
+				<form action="https://www.paypal.com/cgi-bin/webscr" method="post"><input type="hidden" name="cmd" value="_s-xclick" /><input type="hidden" name="hosted_button_id" value="5356703" /><input type="image" src="http://www.paypal.com/en_US/i/btn/btn_donate_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online." /><img alt="" border="0" src="https://www.paypal.com/en_GB/i/scr/pixel.gif" width="1" height="1" /><a class="FlattrButton" style="display:none;" rev="flattr;button:compact;" href="http://www.jplayer.org"></a></form>
+		</div>
+
+		<!--<div class="section highlight">
+			<h2><a href="http://jplayer.it">jPlayer.it</a></h2>
+			<p>Customize your player!</p>
+		</div>-->
+
+		<div class="section  highlight">
+			<h2>Plugin corner</h2>
+			<ul>
+				<li><a href="http://wordpress.org/extend/plugins/mp3-jplayer/">Wordpress</a></li>
+				<li><a href="http://drupal.org/project/jplayer">Drupal</a></li>
+				<li><a href="/sites/#jPlayer-plugin-sites">more...</a></li>
+			</ul>
+		</div>
+		<div class="section ralign">
+		<a href='https://developer.mozilla.org/en/JavaScript/' title='JavaScript Reference and Guide'><img src='/graphics/betterJS.gif' alt='JavaScript Reference and Guide'/></a>
+		</div>
+		<div class="section transbgr">
+			<h3>Also by <a href="http://www.happyworm.com">Happyworm</a>:</h3>
+			<h2><a href="http://www.happyworm.com/projects/Qwiiz/qwiiz-massively-multiplayer-quiz-game.htm">Qwiiz</a></h2>
+			<p>Massively multiplayer real-time quiz game. Cross platform and tuned for the iPad. <a href="http://www.happyworm.com/projects/Qwiiz/qwiiz-massively-multiplayer-quiz-game.htm">Try it!</a></p>
+			
+			<!--<h2><a href="http://openmediaweb.eu/2011/09/27/html5-audio-video-course/">W3C HTML5 Audio and Video Training</a></h2>
+			<p>Want to learn more about HTML5 Audio and Video? Find out what's going on under the hood and learn about the issues and full potential of web based media?</p>
+			<p>Learn tips, tricks and how to create stunning HTML5 media based applications, from the guys that made jPlayer.</p> 
+			<p>You'll find out about browser differences, server configuration, media encoding and how to push the limits of this new and exciting technology.</p>
+			<p>Limited places available.</p>
+			<p><strong><a href="http://openmediaweb.eu/2011/09/27/html5-audio-video-course/">Sign up now!</a></strong></p>-->
+		</div>
+
+	</aside>
+	<footer>
+		<p>
+			<a href="http://www.happyworm.com"><img src="/graphics/worm.jpg" />&copy; 2009 - 2013 Happyworm Ltd</a> - Last update: 20th April 2013		</p>
+		<a href="http://www.w3.org/html/logo/"><img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="165" height="64" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics"></a>
+		<a id="twitter" href="http://twitter.com/jPlayerOrg"><img alt="twitter" src="/graphics/twitter_small.png"/> follow us on twitter </a>
+	</footer>
+</div>
+</body>
+<script type="text/javascript" src="/js/prettify/prettify-jPlayer.js"></script>
+
+</html>
+	

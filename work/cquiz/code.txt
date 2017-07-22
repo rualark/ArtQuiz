@@ -1,0 +1,21 @@
+    playing: function(){
+      $("#jquery_jplayer_1").animate( {volume: 0.5}, {
+          duration: 1000, 
+          complete: function(){},
+          step: function(now, fx){
+              $("#jquery_jplayer_1").jPlayer("volume", now );
+          }
+      });
+    },
+    timeupdate: function(event){
+      var x =  event.jPlayer.status.currentTime;
+      var d = event.jPlayer.status.duration;
+      var v = event.jPlayer.status.volume;
+      if (x<5) {
+          $("#jquery_jplayer_1").jPlayer("volume", x)
+      } else if (d-x<6) {
+          $("#jquery_jplayer_1").jPlayer("volume", (d-x))
+      } else {
+          $("#jquery_jplayer_1").jPlayer("volume", 1);
+      }
+    },

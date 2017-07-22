@@ -1,0 +1,624 @@
+UPDATE cc_ctracks SET tg_id='19' WHERE t_id=6320 OR t_id=6321 OR t_id=6322 OR t_id=6323 OR t_id=6324 OR t_id=6325 OR t_id=6327; /* 2014-02-28 12:20 by Rualark */
+UPDATE cc_ctracks SET tg_id='19' WHERE t_id=6304 OR t_id=6305 OR t_id=6306 OR t_id=6307 OR t_id=6308 OR t_id=6309 OR t_id=6310 OR t_id=6311 OR t_id=6312 OR t_id=6313 OR t_id=6315 OR t_id=6316 OR t_id=6317 OR t_id=6318 OR t_id=6319; /* 2014-02-28 12:21 by Rualark */
+UPDATE cc_ctracks SET tg_id='7' WHERE t_id=85 OR t_id=772 OR t_id=773 OR t_id=774 OR t_id=775 OR t_id=1013; /* 2014-02-28 15:26; by Rualark */
+UPDATE cc_ctracks SET tg_id='7' WHERE t_id=776 OR t_id=777 OR t_id=778 OR t_id=779 /* 2014-02-28 15:27; by Rualark */
+UPDATE cc_ctracks SET tg_id='7' WHERE t_id=3094 OR t_id=3095 OR t_id=3096 OR t_id=3097 OR t_id=3098 OR t_id=3099 OR t_id=4411 OR t_id=4412 OR t_id=4413 OR t_id=4787 OR t_id=4792; /* 2014-02-28 15:43; by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=5657 OR t_id=5660; /* 2014-02-28 16:10 by Rualark */
+UPDATE cc_ctracks SET tg_id='23' WHERE t_id=5654 OR t_id=5655 OR t_id=5656; /* 2014-02-28 16:11 by Rualark */
+UPDATE cc_ctracks SET tg_id='18' WHERE t_id=6572; /* 2014-02-28 16:13 by Rualark */
+UPDATE cc_ctracks SET tg_id='17' WHERE t_id=5122; /* 2014-02-28 16:25 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=2 OR t_id=3 OR t_id=4 OR t_id=5; /* 2014-02-28 16:27 by Rualark */
+UPDATE cc_ctracks SET tg_id='18' WHERE t_id=1469 OR t_id=1470 OR t_id=1471 OR t_id=1472; /* 2014-02-28 16:28 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=3352 OR t_id=3364; /* 2014-02-28 16:28 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=1042 OR t_id=1048 OR t_id=1054; /* 2014-02-28 16:28 by Rualark */
+UPDATE cc_ctracks SET tg_id='16' WHERE t_id=1327 OR t_id=1328 OR t_id=1329 OR t_id=1330 OR t_id=2702 OR t_id=2703 OR t_id=2704 OR t_id=2705 OR t_id=4527; /* 2014-02-28 16:29 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=1731; /* 2014-02-28 16:30 by Rualark */
+UPDATE cc_ctracks SET tg_id='16' WHERE t_id=1703 OR t_id=1705 OR t_id=1706 OR t_id=1709 OR t_id=1712 OR t_id=2799 OR t_id=4140 OR t_id=4141 OR t_id=4142 OR t_id=4143 OR t_id=4144; /* 2014-02-28 16:33 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=1032 OR t_id=1033 OR t_id=1034 OR t_id=1035 OR t_id=1036 OR t_id=1037 OR t_id=1038 OR t_id=1039 OR t_id=1040; /* 2014-02-28 16:34 by Rualark */
+UPDATE cc_ctracks SET tg_id='17' WHERE t_id=3499; /* 2014-02-28 16:35 by Rualark */
+UPDATE cc_ctracks SET tg_id='16' WHERE t_id=1629; /* 2014-02-28 16:35 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=1623; /* 2014-02-28 16:35 by Rualark */
+UPDATE cc_ctracks SET tg_id='23' WHERE t_id=1642 OR t_id=1643 OR t_id=1644 OR t_id=1645 OR t_id=1646 OR t_id=1647 OR t_id=1648; /* 2014-02-28 16:37 by Rualark */
+UPDATE cc_ctracks SET tg_id='17' WHERE t_id=3553 OR t_id=3554 OR t_id=3557 OR t_id=3561 OR t_id=3562 OR t_id=3563 OR t_id=3564 OR t_id=3565 OR t_id=3566 OR t_id=3567 OR t_id=3569 OR t_id=3570 OR t_id=3571 OR t_id=3572 OR t_id=3574 OR t_id=3576 OR t_id=3578; /* 2014-02-28 16:38 by Rualark */
+UPDATE cc_ctracks SET tg_id='24' WHERE t_id=1087 OR t_id=1088 OR t_id=1089 OR t_id=1090 OR t_id=1091 OR t_id=1092 OR t_id=1093 OR t_id=1094; /* 2014-02-28 16:43 by Rualark */
+UPDATE cc_ctracks SET tg_id='24' WHERE t_id=1630 OR t_id=1631 OR t_id=1632 OR t_id=1633 OR t_id=1634 OR t_id=1635 OR t_id=1636 OR t_id=1637 OR t_id=1638 OR t_id=1639 OR t_id=1640 OR t_id=1641 OR t_id=4746; /* 2014-02-28 16:44 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=1716 OR t_id=1720 OR t_id=1723 OR t_id=1727; /* 2014-02-28 16:45 by Rualark */
+UPDATE cc_ctracks SET tg_id='24' WHERE t_id=1714 OR t_id=1715 OR t_id=1718 OR t_id=1722 OR t_id=1724 OR t_id=1728 OR t_id=1732 OR t_id=1733 OR t_id=1734 OR t_id=1735; /* 2014-02-28 16:45 by Rualark */
+UPDATE cc_ctracks SET tg_id='18' WHERE t_id=1062 OR t_id=1063 OR t_id=1064 OR t_id=1065 OR t_id=1473; /* 2014-02-28 16:46 by Rualark */
+UPDATE cc_ctracks SET tg_id='24' WHERE t_id=1704 OR t_id=1710 OR t_id=1711 OR t_id=3383 OR t_id=3401 OR t_id=3405; /* 2014-02-28 16:46 by Rualark */
+UPDATE cc_ctracks SET tg_id='13' WHERE t_id=4145; /* 2014-02-28 16:47 by Rualark */
+UPDATE cc_ctracks SET tg_id='16' WHERE t_id=1702; /* 2014-02-28 16:47 by Rualark */
+UPDATE cc_ctracks SET tg_id='18' WHERE t_id=2798; /* 2014-02-28 16:47 by Rualark */
+UPDATE cc_ctracks SET tg_id='24' WHERE t_id=3320; /* 2014-02-28 16:47 by Rualark */
+UPDATE cc_ctracks SET tg_id='13' WHERE t_id=3552; /* 2014-02-28 16:48 by Rualark */
+UPDATE cc_ctracks SET tg_id='16' WHERE t_id=3652; /* 2014-02-28 16:48 by Rualark */
+UPDATE cc_ctracks SET tg_id='24' WHERE t_id=136 OR t_id=2458 OR t_id=2459 OR t_id=2460 OR t_id=2462 OR t_id=2463 OR t_id=2464 OR t_id=2465 OR t_id=2466; /* 2014-02-28 16:49 by Rualark */
+UPDATE cc_ctracks SET tg_id='17' WHERE t_id=161 OR t_id=4750; /* 2014-02-28 16:49 by Rualark */
+UPDATE cc_ctracks SET tg_id='24' WHERE t_id=3350; /* 2014-02-28 16:49 by Rualark */
+UPDATE cc_ctracks SET tg_id='17' WHERE t_id=2305 OR t_id=2306 OR t_id=2307 OR t_id=2308 OR t_id=2309 OR t_id=2310 OR t_id=2311 OR t_id=2312 OR t_id=2313 OR t_id=2317 OR t_id=2318 OR t_id=2319 OR t_id=2320 OR t_id=2321 OR t_id=2322; /* 2014-02-28 16:50 by Rualark */
+UPDATE cc_ctracks SET tg_id='18' WHERE t_id=2383; /* 2014-02-28 16:51 by Rualark */
+UPDATE cc_ctracks SET tg_id='16' WHERE t_id=3351; /* 2014-02-28 16:51 by Rualark */
+UPDATE cc_ctracks SET tg_id='9' WHERE t_id=2382; /* 2014-02-28 16:51 by Rualark */
+UPDATE cc_ctracks SET tg_id='10' WHERE t_id=4414 OR t_id=4415 OR t_id=4417; /* 2014-02-28 16:51 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=3080 OR t_id=3081 OR t_id=3082 OR t_id=3083 OR t_id=3085 OR t_id=3086 OR t_id=3087 OR t_id=3088 OR t_id=3089 OR t_id=3090 OR t_id=3091 OR t_id=3092 OR t_id=3112; /* 2014-02-28 16:53 by Rualark */
+UPDATE cc_ctracks SET tg_id='8' WHERE t_id=3060; /* 2014-02-28 16:54 by Rualark */
+UPDATE cc_ctracks SET tg_id='6' WHERE t_id=1605; /* 2014-02-28 16:54 by Rualark */
+UPDATE cc_ctracks SET tg_id='8' WHERE t_id=3321 OR t_id=3336 OR t_id=3339 OR t_id=3341; /* 2014-02-28 16:55 by Rualark */
+UPDATE cc_ctracks SET tg_id='18' WHERE t_id=2982; /* 2014-02-28 16:56 by Rualark */
+UPDATE cc_ctracks SET tg_id='17' WHERE t_id=1411 OR t_id=1412 OR t_id=1450; /* 2014-02-28 16:56 by Rualark */
+UPDATE cc_ctracks SET tg_id='6' WHERE t_id=4041; /* 2014-02-28 16:57 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=4058; /* 2014-02-28 16:57 by Rualark */
+UPDATE cc_ctracks SET tg_id='10' WHERE t_id=531 OR t_id=532 OR t_id=534 OR t_id=535 OR t_id=536 OR t_id=537 OR t_id=538 OR t_id=539 OR t_id=540 OR t_id=542 OR t_id=543 OR t_id=544; /* 2014-02-28 16:58 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=1918 OR t_id=1919; /* 2014-02-28 16:59 by Rualark */
+UPDATE cc_ctracks SET tg_id='21' WHERE t_id=1922 OR t_id=1923 OR t_id=1924 OR t_id=1925; /* 2014-02-28 17:00 by Rualark */
+UPDATE cc_ctracks SET tg_id='13' WHERE t_id=1927 OR t_id=1933; /* 2014-02-28 17:01 by Rualark */
+UPDATE cc_ctracks SET tg_id='17' WHERE t_id=1942; /* 2014-02-28 17:02 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=1943; /* 2014-02-28 17:02 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=2938 OR t_id=2939; /* 2014-02-28 17:02 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=2941; /* 2014-02-28 17:03 by Rualark */
+UPDATE cc_ctracks SET tg_id='14' WHERE t_id=2946; /* 2014-02-28 17:03 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=2964; /* 2014-02-28 17:03 by Rualark */
+UPDATE cc_ctracks SET tg_id='17' WHERE t_id=2965; /* 2014-02-28 17:03 by Rualark */
+UPDATE cc_ctracks SET tg_id='6' WHERE t_id=1119 OR t_id=1120 OR t_id=1121 OR t_id=1122 OR t_id=1123 OR t_id=1124 OR t_id=2724 OR t_id=2725 OR t_id=2726; /* 2014-02-28 17:04 by Rualark */
+UPDATE cc_ctracks SET tg_id='10' WHERE t_id=2736; /* 2014-02-28 17:04 by Rualark */
+UPDATE cc_ctracks SET tg_id='6' WHERE t_id=2737; /* 2014-02-28 17:05 by Rualark */
+UPDATE cc_ctracks SET tg_id='13' WHERE t_id=1956 OR t_id=1957 OR t_id=1958 OR t_id=1959 OR t_id=1960 OR t_id=1961; /* 2014-02-28 17:06 by Rualark */
+UPDATE cc_ctracks SET tg_id='16' WHERE t_id=1964; /* 2014-02-28 17:06 by Rualark */
+UPDATE cc_ctracks SET tg_id='16' WHERE t_id=1962 OR t_id=1963; /* 2014-02-28 17:07 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=4495; /* 2014-02-28 17:08 by Rualark */
+UPDATE cc_ctracks SET tg_id='10' WHERE t_id=1028 OR t_id=1029 OR t_id=1031 OR t_id=1619 OR t_id=1620 OR t_id=1621 OR t_id=1622; /* 2014-02-28 17:09 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=4400 OR t_id=4402 OR t_id=4403; /* 2014-02-28 17:09 by Rualark */
+UPDATE cc_ctracks SET tg_id='10' WHERE t_id=4404; /* 2014-02-28 17:09 by Rualark */
+UPDATE cc_ctracks SET tg_id='13' WHERE t_id=2605 OR t_id=2610; /* 2014-02-28 17:11 by Rualark */
+UPDATE cc_ctracks SET tg_id='17' WHERE t_id=2611; /* 2014-02-28 17:11 by Rualark */
+UPDATE cc_ctracks SET tg_id='13' WHERE t_id=2612 OR t_id=2614 OR t_id=2615 OR t_id=2616 OR t_id=2617 OR t_id=2619 OR t_id=2620; /* 2014-02-28 17:13 by Rualark */
+UPDATE cc_ctracks SET tg_id='6' WHERE t_id=1948 OR t_id=3908 OR t_id=3909 OR t_id=3910 OR t_id=3911 OR t_id=3914; /* 2014-02-28 17:24 by Rualark */
+UPDATE cc_ctracks SET tg_id='17' WHERE t_id=3904 OR t_id=3905 OR t_id=3907; /* 2014-02-28 17:24 by Rualark */
+UPDATE cc_ctracks SET tg_id='18' WHERE t_id=3915; /* 2014-02-28 17:24 by Rualark */
+UPDATE cc_ctracks SET tg_id='18' WHERE t_id=685; /* 2014-02-28 17:24 by Rualark */
+UPDATE cc_ctracks SET tg_id='10' WHERE t_id=684; /* 2014-02-28 17:25 by Rualark */
+UPDATE cc_ctracks SET tg_id='10' WHERE t_id=3917; /* 2014-02-28 17:25 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=3919 OR t_id=3920 OR t_id=3921 OR t_id=3922 OR t_id=3923 OR t_id=3924 OR t_id=3925 OR t_id=3926 OR t_id=3927 OR t_id=3928 OR t_id=3929 OR t_id=3930 OR t_id=3931; /* 2014-02-28 17:26 by Rualark */
+UPDATE cc_ctracks SET tg_id='10' WHERE t_id=3932 OR t_id=3933 OR t_id=3934; /* 2014-02-28 17:26 by Rualark */
+UPDATE cc_ctracks SET tg_id='12' WHERE t_id=6593; /* 2014-02-28 17:27 by Rualark */
+UPDATE cc_ctracks SET tg_id='13' WHERE t_id=1308; /* 2014-02-28 17:27 by Rualark */
+UPDATE cc_ctracks SET tg_id='18' WHERE t_id=1311 OR t_id=1312; /* 2014-02-28 17:28 by Rualark */
+UPDATE cc_ctracks SET tg_id='12' WHERE t_id=1000 OR t_id=1014 OR t_id=1015 OR t_id=1016; /* 2014-02-28 17:29 by Rualark */
+UPDATE cc_ctracks SET tg_id='10' WHERE t_id=3182 OR t_id=3183 OR t_id=3184 OR t_id=3185 OR t_id=3186 OR t_id=3187; /* 2014-02-28 17:30 by Rualark */
+UPDATE cc_ctracks SET tg_id='18' WHERE t_id=3196 OR t_id=3197 OR t_id=3198 OR t_id=3199 OR t_id=3200 OR t_id=3201 OR t_id=3202 OR t_id=3203; /* 2014-02-28 17:33 by Rualark */
+UPDATE cc_ctracks SET tg_id='17' WHERE t_id=3193 OR t_id=3194; /* 2014-02-28 17:33 by Rualark */
+UPDATE cc_ctracks SET tg_id='7' WHERE t_id=4608 OR t_id=4609 OR t_id=4610; /* 2014-02-28 17:33 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=4611; /* 2014-02-28 17:34 by Rualark */
+UPDATE cc_ctracks SET tg_id='17' WHERE t_id=2934 OR t_id=2935; /* 2014-02-28 17:38 by Rualark */
+UPDATE cc_ctracks SET tg_id='17' WHERE t_id=2936; /* 2014-02-28 17:39 by Rualark */
+UPDATE cc_ctracks SET tg_id='6' WHERE t_id=2008; /* 2014-02-28 17:39 by Rualark */
+UPDATE cc_ctracks SET tg_id='18' WHERE t_id=2009; /* 2014-02-28 17:39 by Rualark */
+UPDATE cc_ctracks SET tg_id='10' WHERE t_id=3776 OR t_id=3777; /* 2014-02-28 17:40 by Rualark */
+UPDATE cc_ctracks SET tg_id='18' WHERE t_id=3778; /* 2014-02-28 17:40 by Rualark */
+UPDATE cc_ctracks SET tg_id='7' WHERE t_id=3959 OR t_id=3960; /* 2014-02-28 17:42 by Rualark */
+UPDATE cc_ctracks SET tg_id='7' WHERE t_id=1578 OR t_id=1580; /* 2014-02-28 17:44 by Rualark */
+UPDATE cc_ctracks SET tg_id='13' WHERE t_id=1581; /* 2014-02-28 17:44 by Rualark */
+UPDATE cc_ctracks SET tg_id='6' WHERE t_id=1583 OR t_id=1584; /* 2014-02-28 17:45 by Rualark */
+UPDATE cc_ctracks SET tg_id='7' WHERE t_id=1589 OR t_id=1598 OR t_id=1601; /* 2014-02-28 17:46 by Rualark */
+UPDATE cc_ctracks SET tg_id='6' WHERE t_id=1597; /* 2014-02-28 17:46 by Rualark */
+UPDATE cc_ctracks SET tg_id='18' WHERE t_id=1585; /* 2014-02-28 17:46 by Rualark */
+UPDATE cc_ctracks SET tg_id='13' WHERE t_id=1586 OR t_id=1587; /* 2014-02-28 17:47 by Rualark */
+UPDATE cc_ctracks SET tg_id='6' WHERE t_id=1588; /* 2014-02-28 17:47 by Rualark */
+UPDATE cc_ctracks SET tg_id='13' WHERE t_id=1595 OR t_id=1596; /* 2014-02-28 17:48 by Rualark */
+UPDATE cc_ctracks SET tg_id='21' WHERE t_id=1600; /* 2014-02-28 17:49 by Rualark */
+UPDATE cc_ctracks SET tg_id='18' WHERE t_id=1602 OR t_id=1604; /* 2014-02-28 17:49 by Rualark */
+UPDATE cc_ctracks SET tg_id='17' WHERE t_id=2415; /* 2014-02-28 17:53 by Rualark */
+UPDATE cc_ctracks SET tg_id='12' WHERE t_id=1537; /* 2014-02-28 17:54 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=1542 OR t_id=1543 OR t_id=1544; /* 2014-02-28 17:55 by Rualark */
+UPDATE cc_ctracks SET tg_id='18' WHERE t_id=1567; /* 2014-02-28 17:55 by Rualark */
+UPDATE cc_ctracks SET tg_id='8' WHERE t_id=2830; /* 2014-02-28 17:57 by Rualark */
+UPDATE cc_ctracks SET tg_id='17' WHERE t_id=2839 OR t_id=2840 OR t_id=2841 OR t_id=2842 OR t_id=2843 OR t_id=2844; /* 2014-02-28 17:58 by Rualark */
+UPDATE cc_ctracks SET tg_id='10' WHERE t_id=2846 OR t_id=2847 OR t_id=2848 OR t_id=2850 OR t_id=2851 OR t_id=2852 OR t_id=2853 OR t_id=2854 OR t_id=2855; /* 2014-02-28 18:02 by Rualark */
+UPDATE cc_ctracks SET tg_id='10' WHERE t_id=1231 OR t_id=1232; /* 2014-02-28 18:02 by Rualark */
+UPDATE cc_ctracks SET tg_id='8' WHERE t_id=1236; /* 2014-02-28 18:03 by Rualark */
+UPDATE cc_ctracks SET tg_id='13' WHERE t_id=1234; /* 2014-02-28 18:04 by Rualark */
+UPDATE cc_ctracks SET tg_id='6' WHERE t_id=1237 OR t_id=1238; /* 2014-02-28 18:04 by Rualark */
+UPDATE cc_ctracks SET tg_id='6' WHERE t_id=1261 OR t_id=1263 OR t_id=1265 OR t_id=1267 OR t_id=1269; /* 2014-02-28 18:07 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=1260 OR t_id=1262 OR t_id=1264 OR t_id=1270; /* 2014-02-28 18:08 by Rualark */
+UPDATE cc_ctracks SET tg_id='17' WHERE t_id=1313; /* 2014-02-28 18:29 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=1314 OR t_id=1316 OR t_id=1317 OR t_id=1319 OR t_id=1320 OR t_id=1322 OR t_id=1323 OR t_id=1324 OR t_id=1325; /* 2014-02-28 18:32 by Rualark */
+UPDATE cc_ctracks SET tg_id='10' WHERE t_id=3713 OR t_id=3714 OR t_id=3715 OR t_id=3716; /* 2014-02-28 18:33 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=3739; /* 2014-02-28 18:34 by Rualark */
+UPDATE cc_ctracks SET tg_id='18' WHERE t_id=3720; /* 2014-02-28 18:34 by Rualark */
+UPDATE cc_ctracks SET tg_id='10' WHERE t_id=3767; /* 2014-02-28 18:36 by Rualark */
+UPDATE cc_ctracks SET tg_id='7' WHERE t_id=3773 OR t_id=3774 OR t_id=3775; /* 2014-02-28 18:36 by Rualark */
+UPDATE cc_ctracks SET tg_id='10' WHERE t_id=1478; /* 2014-02-28 18:39 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=1858 OR t_id=1859; /* 2014-02-28 18:40 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=1860; /* 2014-02-28 18:40 by Rualark */
+UPDATE cc_ctracks SET tg_id='13' WHERE t_id=1861 OR t_id=1862 OR t_id=1863 OR t_id=1864; /* 2014-02-28 18:40 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=1865 OR t_id=1866 OR t_id=1867 OR t_id=1868 OR t_id=1874; /* 2014-02-28 18:42 by Rualark */
+UPDATE cc_ctracks SET tg_id='13' WHERE t_id=1877; /* 2014-02-28 18:42 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=1878; /* 2014-02-28 18:43 by Rualark */
+UPDATE cc_ctracks SET tg_id='13' WHERE t_id=1879 OR t_id=1880 OR t_id=1881 OR t_id=1882; /* 2014-02-28 18:46 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=1883 OR t_id=1884; /* 2014-02-28 18:46 by Rualark */
+UPDATE cc_ctracks SET tg_id='10' WHERE t_id=1900 OR t_id=1901 OR t_id=1902; /* 2014-02-28 18:47 by Rualark */
+UPDATE cc_ctracks SET tg_id='13' WHERE t_id=1907 OR t_id=1908 OR t_id=1910; /* 2014-02-28 18:47 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=1911 OR t_id=1913 OR t_id=1914 OR t_id=1915; /* 2014-02-28 18:48 by Rualark */
+UPDATE cc_ctracks SET tg_id='6' WHERE t_id=3219 OR t_id=3220 OR t_id=3234 OR t_id=3235 OR t_id=3237 OR t_id=3239 OR t_id=3241; /* 2014-02-28 18:49 by Rualark */
+UPDATE cc_ctracks SET tg_id='10' WHERE t_id=4313 OR t_id=4314 OR t_id=4399; /* 2014-02-28 18:49 by Rualark */
+UPDATE cc_ctracks SET tg_id='13' WHERE t_id=3961; /* 2014-02-28 18:51 by Rualark */
+UPDATE cc_ctracks SET tg_id='6' WHERE t_id=1968; /* 2014-02-28 18:51 by Rualark */
+UPDATE cc_ctracks SET tg_id='13' WHERE t_id=1969; /* 2014-02-28 18:51 by Rualark */
+UPDATE cc_ctracks SET tg_id='13' WHERE t_id=2706; /* 2014-02-28 18:52 by Rualark */
+UPDATE cc_ctracks SET tg_id='17' WHERE t_id=2707 OR t_id=2708 OR t_id=2709 OR t_id=2710; /* 2014-02-28 18:52 by Rualark */
+UPDATE cc_ctracks SET tg_id='6' WHERE t_id=4146 OR t_id=4178 OR t_id=4179 OR t_id=4180; /* 2014-02-28 18:53 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=6070; /* 2014-02-28 18:54 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=3548 OR t_id=3549; /* 2014-02-28 18:55 by Rualark */
+UPDATE cc_ctracks SET tg_id='6' WHERE t_id=3519 OR t_id=3520 OR t_id=3521 OR t_id=3522 OR t_id=3530; /* 2014-02-28 18:56 by Rualark */
+UPDATE cc_ctracks SET tg_id='18' WHERE t_id=3523 OR t_id=3524 OR t_id=3525; /* 2014-02-28 18:56 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=3529; /* 2014-02-28 18:56 by Rualark */
+UPDATE cc_ctracks SET tg_id='18' WHERE t_id=3541; /* 2014-02-28 18:57 by Rualark */
+UPDATE cc_ctracks SET tg_id='7' WHERE t_id=3545 OR t_id=3546 OR t_id=3547; /* 2014-02-28 18:57 by Rualark */
+UPDATE cc_ctracks SET tg_id='13' WHERE t_id=2393 OR t_id=2394 OR t_id=2395 OR t_id=2396; /* 2014-02-28 18:58 by Rualark */
+UPDATE cc_ctracks SET tg_id='16' WHERE t_id=3542; /* 2014-02-28 18:59 by Rualark */
+UPDATE cc_ctracks SET tg_id='16' WHERE ; /* 2014-02-28 18:59 by Rualark */
+UPDATE cc_ctracks SET tg_id='16' WHERE t_id=3543; /* 2014-02-28 18:59 by Rualark */
+UPDATE cc_ctracks SET tg_id='7' WHERE t_id=1114; /* 2014-02-28 19:00 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=6562; /* 2014-02-28 19:00 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=6559 OR t_id=6560 OR t_id=6561; /* 2014-02-28 19:01 by Rualark */
+UPDATE cc_ctracks SET tg_id='10' WHERE t_id=4028; /* 2014-02-28 19:01 by Rualark */
+UPDATE cc_ctracks SET tg_id='8' WHERE t_id=4029; /* 2014-02-28 19:01 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=4030; /* 2014-02-28 19:02 by Rualark */
+UPDATE cc_ctracks SET tg_id='13' WHERE t_id=6624; /* 2014-02-28 19:02 by Rualark */
+UPDATE cc_ctracks SET tg_id='7' WHERE t_id=2662; /* 2014-02-28 19:03 by Rualark */
+UPDATE cc_ctracks SET tg_id='12' WHERE t_id=2663 OR t_id=2665 OR t_id=2666 OR t_id=2667 OR t_id=2668 OR t_id=2669 OR t_id=2670 OR t_id=2671 OR t_id=2673 OR t_id=2674 OR t_id=2675 OR t_id=2676 OR t_id=2677 OR t_id=2678; /* 2014-02-28 19:05 by Rualark */
+UPDATE cc_ctracks SET tg_id='13' WHERE t_id=3683; /* 2014-02-28 19:06 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=3687 OR t_id=3688 OR t_id=3689 OR t_id=3690; /* 2014-02-28 19:06 by Rualark */
+UPDATE cc_ctracks SET tg_id='6' WHERE t_id=3692 OR t_id=3693 OR t_id=3694 OR t_id=3695 OR t_id=3696 OR t_id=3697 OR t_id=3698 OR t_id=3699 OR t_id=3700; /* 2014-02-28 19:07 by Rualark */
+UPDATE cc_ctracks SET tg_id='17' WHERE t_id=6565; /* 2014-02-28 19:07 by Rualark */
+UPDATE cc_ctracks SET tg_id='6' WHERE t_id=6566; /* 2014-02-28 19:07 by Rualark */
+UPDATE cc_ctracks SET tg_id='12' WHERE t_id=6570; /* 2014-02-28 19:08 by Rualark */
+UPDATE cc_ctracks SET tg_id='7' WHERE t_id=1574 OR t_id=1576; /* 2014-02-28 19:08 by Rualark */
+UPDATE cc_ctracks SET tg_id='13' WHERE t_id=1577; /* 2014-02-28 19:09 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=5956; /* 2014-02-28 19:09 by Rualark */
+UPDATE cc_ctracks SET tg_id='7' WHERE t_id=6062 OR t_id=6063 OR t_id=6064 OR t_id=6065 OR t_id=6066 OR t_id=6067 OR t_id=6068 OR t_id=6069; /* 2014-02-28 19:12 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=6050 OR t_id=6051 OR t_id=6052 OR t_id=6053 OR t_id=6054 OR t_id=6055 OR t_id=6056 OR t_id=6058 OR t_id=6059 OR t_id=6060 OR t_id=6061; /* 2014-02-28 19:17 by Rualark */
+UPDATE cc_ctracks SET tg_id='13' WHERE t_id=833 OR t_id=834 OR t_id=3708; /* 2014-02-28 19:19 by Rualark */
+UPDATE cc_ctracks SET tg_id='17' WHERE t_id=3710 OR t_id=3711; /* 2014-02-28 19:19 by Rualark */
+UPDATE cc_ctracks SET tg_id='7' WHERE t_id=1965 OR t_id=1966; /* 2014-02-28 19:19 by Rualark */
+UPDATE cc_ctracks SET tg_id='13' WHERE t_id=4453 OR t_id=4454 OR t_id=4455 OR t_id=4456 OR t_id=4457 OR t_id=4458 OR t_id=4459 OR t_id=4460; /* 2014-02-28 19:21 by Rualark */
+UPDATE cc_ctracks SET tg_id='10' WHERE t_id=4461 OR t_id=4462 OR t_id=4463 OR t_id=4464; /* 2014-02-28 19:21 by Rualark */
+UPDATE cc_ctracks SET tg_id='10' WHERE t_id=4465 OR t_id=4466 OR t_id=4467; /* 2014-02-28 19:22 by Rualark */
+UPDATE cc_ctracks SET tg_id='12' WHERE t_id=4468 OR t_id=4469 OR t_id=4470; /* 2014-02-28 19:23 by Rualark */
+UPDATE cc_ctracks SET tg_id='12' WHERE t_id=4472 OR t_id=4473 OR t_id=4474 OR t_id=4475 OR t_id=4476; /* 2014-02-28 19:24 by Rualark */
+UPDATE cc_ctracks SET tg_id='6' WHERE t_id=4477 OR t_id=4478 OR t_id=4479 OR t_id=4480; /* 2014-02-28 19:24 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=4471; /* 2014-02-28 19:25 by Rualark */
+UPDATE cc_ctracks SET tg_id='17' WHERE t_id=4481 OR t_id=4482 OR t_id=4483 OR t_id=4484 OR t_id=4485 OR t_id=4486 OR t_id=4487 OR t_id=4488 OR t_id=4489 OR t_id=4490; /* 2014-02-28 19:25 by Rualark */
+UPDATE cc_ctracks SET tg_id='17' WHERE t_id=6329 OR t_id=6330 OR t_id=6331 OR t_id=6332 OR t_id=6333 OR t_id=6334 OR t_id=6335 OR t_id=6337 OR t_id=6338 OR t_id=6339 OR t_id=6340 OR t_id=6341 OR t_id=6342 OR t_id=6344 OR t_id=6345 OR t_id=6346 OR t_id=6347; /* 2014-02-28 19:26 by Rualark */
+UPDATE cc_ctracks SET tg_id='17' WHERE t_id=2633 OR t_id=2634 OR t_id=2635 OR t_id=2636 OR t_id=2637 OR t_id=2638 OR t_id=2639 OR t_id=2640 OR t_id=2641 OR t_id=2642 OR t_id=2643 OR t_id=2651; /* 2014-02-28 19:29 by Rualark */
+UPDATE cc_ctracks SET tg_id='10' WHERE t_id=258 OR t_id=267; /* 2014-02-28 19:29 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=6370 OR t_id=6371; /* 2014-02-28 19:30 by Rualark */
+UPDATE cc_ctracks SET tg_id='19' WHERE t_id=6372; /* 2014-02-28 19:30 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=6373 OR t_id=6374; /* 2014-02-28 19:31 by Rualark */
+UPDATE cc_ctracks SET tg_id='18' WHERE t_id=6376; /* 2014-02-28 19:31 by Rualark */
+UPDATE cc_ctracks SET tg_id='17' WHERE t_id=6377 OR t_id=6378; /* 2014-02-28 19:32 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=6379; /* 2014-02-28 19:33 by Rualark */
+UPDATE cc_ctracks SET tg_id='8' WHERE t_id=6380; /* 2014-02-28 19:33 by Rualark */
+UPDATE cc_ctracks SET tg_id='8' WHERE t_id=6381 OR t_id=6382; /* 2014-02-28 19:33 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=6383 OR t_id=6384; /* 2014-02-28 19:35 by Rualark */
+UPDATE cc_ctracks SET tg_id='25' WHERE t_id=6385; /* 2014-02-28 19:36 by Rualark */
+UPDATE cc_ctracks SET tg_id='8' WHERE t_id=6386; /* 2014-02-28 19:37 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=6387 OR t_id=6388 OR t_id=6389 OR t_id=6390 OR t_id=6391 OR t_id=6392 OR t_id=6393; /* 2014-02-28 19:37 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=4956; /* 2014-02-28 19:39 by Rualark */
+UPDATE cc_ctracks SET tg_id='9' WHERE t_id=4957 OR t_id=4958 OR t_id=4959 OR t_id=4960 OR t_id=4961; /* 2014-02-28 19:39 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=4962 OR t_id=4963 OR t_id=4964 OR t_id=4965 OR t_id=4966 OR t_id=4967; /* 2014-02-28 19:41 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=4968 OR t_id=4971 OR t_id=4972 OR t_id=4973 OR t_id=4974 OR t_id=4975 OR t_id=4976; /* 2014-02-28 19:42 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=4982; /* 2014-02-28 19:42 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=4994 OR t_id=4997 OR t_id=4998 OR t_id=4999 OR t_id=5000 OR t_id=5001; /* 2014-02-28 19:43 by Rualark */
+UPDATE cc_ctracks SET tg_id='18' WHERE t_id=5017 OR t_id=5018 OR t_id=5019 OR t_id=5020 OR t_id=5021; /* 2014-02-28 19:43 by Rualark */
+UPDATE cc_ctracks SET tg_id='18' WHERE t_id=5022 OR t_id=5023 OR t_id=5024; /* 2014-02-28 19:44 by Rualark */
+UPDATE cc_ctracks SET tg_id='18' WHERE t_id=5026 OR t_id=5027; /* 2014-02-28 19:44 by Rualark */
+UPDATE cc_ctracks SET tg_id='18' WHERE t_id=5035 OR t_id=5036 OR t_id=5037 OR t_id=5055 OR t_id=5056 OR t_id=5057 OR t_id=5058 OR t_id=5060 OR t_id=5061 OR t_id=5062 OR t_id=5063 OR t_id=5065 OR t_id=5066 OR t_id=5067 OR t_id=5073 OR t_id=5074 OR t_id=5076 OR t_id=5077; /* 2014-02-28 19:46 by Rualark */
+UPDATE cc_ctracks SET tg_id='6' WHERE t_id=5103; /* 2014-02-28 19:46 by Rualark */
+UPDATE cc_ctracks SET tg_id='6' WHERE t_id=5113 OR t_id=5114 OR t_id=5115 OR t_id=5116 OR t_id=5117; /* 2014-02-28 19:46 by Rualark */
+UPDATE cc_ctracks SET tg_id='9' WHERE t_id=5118; /* 2014-02-28 19:47 by Rualark */
+UPDATE cc_ctracks SET tg_id='18' WHERE t_id=5465; /* 2014-02-28 19:47 by Rualark */
+UPDATE cc_ctracks SET tg_id='8' WHERE t_id=4763; /* 2014-02-28 19:48 by Rualark */
+UPDATE cc_ctracks SET tg_id='17' WHERE ; /* 2014-02-28 19:48 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=4764 OR t_id=4765; /* 2014-02-28 19:49 by Rualark */
+UPDATE cc_ctracks SET tg_id='8' WHERE t_id=4767; /* 2014-02-28 19:49 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=4768 OR t_id=4769 OR t_id=4770 OR t_id=4771 OR t_id=4772 OR t_id=4773; /* 2014-02-28 19:50 by Rualark */
+UPDATE cc_ctracks SET tg_id='8' WHERE t_id=4774 OR t_id=4775 OR t_id=4776 OR t_id=4777; /* 2014-02-28 19:50 by Rualark */
+UPDATE cc_ctracks SET tg_id='17' WHERE t_id=5703; /* 2014-02-28 19:50 by Rualark */
+UPDATE cc_ctracks SET tg_id='17' WHERE t_id=3409 OR t_id=3410; /* 2014-02-28 19:51 by Rualark */
+UPDATE cc_ctracks SET tg_id='6' WHERE t_id=3412 OR t_id=3413 OR t_id=3414 OR t_id=3415 OR t_id=3416 OR t_id=3417; /* 2014-02-28 19:51 by Rualark */
+UPDATE cc_ctracks SET tg_id='13' WHERE t_id=3420; /* 2014-02-28 19:51 by Rualark */
+UPDATE cc_ctracks SET tg_id='13' WHERE t_id=3452 OR t_id=3453 OR t_id=3454 OR t_id=3455; /* 2014-02-28 19:52 by Rualark */
+UPDATE cc_ctracks SET tg_id='12' WHERE t_id=3460; /* 2014-02-28 19:52 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=5425 OR t_id=5426; /* 2014-02-28 19:53 by Rualark */
+UPDATE cc_ctracks SET tg_id='17' WHERE t_id=5424; /* 2014-02-28 19:54 by Rualark */
+UPDATE cc_ctracks SET tg_id='13' WHERE t_id=2984; /* 2014-02-28 19:54 by Rualark */
+UPDATE cc_ctracks SET tg_id='13' WHERE t_id=2985 OR t_id=2986 OR t_id=2987 OR t_id=2988 OR t_id=3010; /* 2014-02-28 19:55 by Rualark */
+UPDATE cc_ctracks SET tg_id='6' WHERE t_id=2389 OR t_id=2390; /* 2014-02-28 19:55 by Rualark */
+UPDATE cc_ctracks SET tg_id='8' WHERE t_id=2392; /* 2014-02-28 19:56 by Rualark */
+UPDATE cc_ctracks SET tg_id='13' WHERE t_id=6397 OR t_id=6398; /* 2014-02-28 19:58 by Rualark */
+UPDATE cc_ctracks SET tg_id='8' WHERE t_id=5307 OR t_id=5313 OR t_id=5318 OR t_id=5319 OR t_id=5325; /* 2014-02-28 20:00 by Rualark */
+UPDATE cc_ctracks SET tg_id='10' WHERE t_id=1650; /* 2014-02-28 20:01 by Rualark */
+UPDATE cc_ctracks SET tg_id='7' WHERE t_id=1657; /* 2014-02-28 20:01 by Rualark */
+UPDATE cc_ctracks SET tg_id='7' WHERE t_id=3370; /* 2014-02-28 20:02 by Rualark */
+UPDATE cc_ctracks SET tg_id='16' WHERE t_id=5908; /* 2014-02-28 20:02 by Rualark */
+UPDATE cc_ctracks SET tg_id='8' WHERE t_id=5142; /* 2014-02-28 20:03 by Rualark */
+UPDATE cc_ctracks SET tg_id='9' WHERE t_id=5134 OR t_id=5135; /* 2014-02-28 20:03 by Rualark */
+UPDATE cc_ctracks SET tg_id='21' WHERE t_id=5132; /* 2014-02-28 20:04 by Rualark */
+UPDATE cc_ctracks SET tg_id='8' WHERE t_id=5130; /* 2014-02-28 20:04 by Rualark */
+UPDATE cc_ctracks SET tg_id='13' WHERE t_id=1199 OR t_id=1200 OR t_id=1201; /* 2014-02-28 20:05 by Rualark */
+UPDATE cc_ctracks SET tg_id='21' WHERE t_id=1202; /* 2014-02-28 20:05 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=5273; /* 2014-02-28 20:06 by Rualark */
+UPDATE cc_ctracks SET tg_id='8' WHERE t_id=3879 OR t_id=3880; /* 2014-02-28 20:07 by Rualark */
+UPDATE cc_ctracks SET tg_id='8' WHERE t_id=5859 OR t_id=5860 OR t_id=5863; /* 2014-02-28 20:08 by Rualark */
+UPDATE cc_ctracks SET tg_id='18' WHERE t_id=5858 OR t_id=5861; /* 2014-02-28 20:09 by Rualark */
+UPDATE cc_ctracks SET tg_id='16' WHERE t_id=6592; /* 2014-02-28 20:09 by Rualark */
+UPDATE cc_ctracks SET tg_id='22' WHERE t_id=4942; /* 2014-02-28 20:10 by Rualark */
+UPDATE cc_ctracks SET tg_id='12' WHERE t_id=4944 OR t_id=4945; /* 2014-02-28 20:15 by Rualark */
+UPDATE cc_ctracks SET tg_id='10' WHERE t_id=4946 OR t_id=4947 OR t_id=4948 OR t_id=4949; /* 2014-02-28 20:16 by Rualark */
+UPDATE cc_ctracks SET tg_id='17' WHERE t_id=4950 OR t_id=4951 OR t_id=4952 OR t_id=4953 OR t_id=4954 OR t_id=4955; /* 2014-02-28 20:16 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=6421; /* 2014-02-28 20:17 by Rualark */
+UPDATE cc_ctracks SET tg_id='17' WHERE t_id=6424; /* 2014-02-28 20:18 by Rualark */
+UPDATE cc_ctracks SET tg_id='13' WHERE t_id=2656 OR t_id=2658 OR t_id=2660; /* 2014-02-28 20:18 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=5959 OR t_id=5960 OR t_id=5961 OR t_id=5962 OR t_id=5963 OR t_id=5964 OR t_id=5965; /* 2014-02-28 20:19 by Rualark */
+UPDATE cc_ctracks SET tg_id='10' WHERE t_id=4209 OR t_id=4210 OR t_id=4211 OR t_id=4212 OR t_id=4213 OR t_id=4214 OR t_id=4215 OR t_id=4216 OR t_id=4217 OR t_id=4218 OR t_id=4219 OR t_id=4220 OR t_id=4221 OR t_id=4222 OR t_id=4223 OR t_id=4224 OR t_id=4225 OR t_id=4226; /* 2014-02-28 20:20 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=2974; /* 2014-02-28 20:22 by Rualark */
+UPDATE cc_ctracks SET tg_id='6' WHERE t_id=2975; /* 2014-02-28 20:22 by Rualark */
+UPDATE cc_ctracks SET tg_id='18' WHERE t_id=2976 OR t_id=2977 OR t_id=2978 OR t_id=2979 OR t_id=2980; /* 2014-02-28 20:23 by Rualark */
+UPDATE cc_ctracks SET tg_id='6' WHERE t_id=2981; /* 2014-02-28 20:23 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=5778 OR t_id=5779 OR t_id=5780 OR t_id=5781 OR t_id=5782 OR t_id=5783 OR t_id=5784 OR t_id=5785 OR t_id=5786 OR t_id=5787 OR t_id=5788 OR t_id=5789 OR t_id=5790 OR t_id=5791 OR t_id=5792 OR t_id=5793 OR t_id=5794 OR t_id=5795 OR t_id=5796; /* 2014-02-28 20:24 by Rualark */
+UPDATE cc_ctracks SET tg_id='26' WHERE t_id=5775 OR t_id=5776 OR t_id=5777; /* 2014-02-28 20:26 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=5766 OR t_id=5767 OR t_id=5768 OR t_id=5769 OR t_id=5770 OR t_id=5771 OR t_id=5772 OR t_id=5773 OR t_id=5774; /* 2014-02-28 20:26 by Rualark */
+UPDATE cc_ctracks SET tg_id='6' WHERE t_id=5763 OR t_id=5764 OR t_id=5765; /* 2014-02-28 20:27 by Rualark */
+UPDATE cc_ctracks SET tg_id='18' WHERE t_id=5741 OR t_id=5742 OR t_id=5743 OR t_id=5744 OR t_id=5745 OR t_id=5746 OR t_id=5747 OR t_id=5748 OR t_id=5749 OR t_id=5750 OR t_id=5751 OR t_id=5752; /* 2014-02-28 20:27 by Rualark */
+UPDATE cc_ctracks SET tg_id='6' WHERE t_id=5721 OR t_id=5722 OR t_id=5723 OR t_id=5724 OR t_id=5725 OR t_id=5726 OR t_id=5727 OR t_id=5728 OR t_id=5729 OR t_id=5730 OR t_id=5731 OR t_id=5732 OR t_id=5733 OR t_id=5734 OR t_id=5735 OR t_id=5736 OR t_id=5737 OR t_id=5738 OR t_id=5739 OR t_id=5740; /* 2014-02-28 20:28 by Rualark */
+UPDATE cc_ctracks SET tg_id='6' WHERE t_id=5714 OR t_id=5715 OR t_id=5716 OR t_id=5717 OR t_id=5718 OR t_id=5719 OR t_id=5720; /* 2014-02-28 20:28 by Rualark */
+UPDATE cc_ctracks SET tg_id='7' WHERE t_id=5706 OR t_id=5707 OR t_id=5708 OR t_id=5709 OR t_id=5710 OR t_id=5711 OR t_id=5712 OR t_id=5713; /* 2014-02-28 20:29 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=5705; /* 2014-02-28 20:29 by Rualark */
+UPDATE cc_ctracks SET tg_id='6' WHERE t_id=180 OR t_id=181 OR t_id=2622 OR t_id=2624 OR t_id=5704; /* 2014-02-28 20:30 by Rualark */
+UPDATE cc_ctracks SET tg_id='18' WHERE t_id=2625; /* 2014-02-28 20:31 by Rualark */
+UPDATE cc_ctracks SET tg_id='6' WHERE t_id=2627 OR t_id=2631 OR t_id=2632; /* 2014-02-28 20:31 by Rualark */
+UPDATE cc_ctracks SET tg_id='19' WHERE t_id=2628; /* 2014-02-28 20:32 by Rualark */
+UPDATE cc_ctracks SET tg_id='18' WHERE t_id=2630; /* 2014-02-28 20:32 by Rualark */
+UPDATE cc_ctracks SET tg_id='17' WHERE t_id=835 OR t_id=836 OR t_id=837 OR t_id=838 OR t_id=839; /* 2014-02-28 20:38 by Rualark */
+UPDATE cc_ctracks SET tg_id='18' WHERE t_id=856 OR t_id=857 OR t_id=858 OR t_id=859 OR t_id=860 OR t_id=861 OR t_id=862 OR t_id=863 OR t_id=864 OR t_id=865 OR t_id=866 OR t_id=867 OR t_id=868 OR t_id=869 OR t_id=870 OR t_id=871; /* 2014-02-28 20:40 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=872 OR t_id=873 OR t_id=875 OR t_id=876 OR t_id=877 OR t_id=879 OR t_id=881 OR t_id=882 OR t_id=883 OR t_id=884 OR t_id=885; /* 2014-02-28 20:40 by Rualark */
+UPDATE cc_ctracks SET tg_id='10' WHERE t_id=5701; /* 2014-02-28 20:41 by Rualark */
+UPDATE cc_ctracks SET tg_id='26' WHERE t_id=5698; /* 2014-02-28 20:42 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=5699; /* 2014-02-28 20:42 by Rualark */
+UPDATE cc_ctracks SET tg_id='26' WHERE t_id=4496 OR t_id=4498 OR t_id=4499 OR t_id=4500 OR t_id=4502 OR t_id=4504; /* 2014-02-28 20:43 by Rualark */
+UPDATE cc_ctracks SET tg_id='13' WHERE t_id=4514 OR t_id=4515 OR t_id=4516; /* 2014-02-28 20:45 by Rualark */
+UPDATE cc_ctracks SET tg_id='26' WHERE t_id=641; /* 2014-02-28 20:45 by Rualark */
+UPDATE cc_ctracks SET tg_id='17' WHERE t_id=6441; /* 2014-02-28 20:46 by Rualark */
+UPDATE cc_ctracks SET tg_id='8' WHERE t_id=2896 OR t_id=3365 OR t_id=3366 OR t_id=3367; /* 2014-02-28 20:47 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=5430 OR t_id=5431 OR t_id=6468 OR t_id=6471 OR t_id=6472; /* 2014-02-28 20:49 by Rualark */
+UPDATE cc_ctracks SET tg_id='25' WHERE t_id=6469 OR t_id=6470; /* 2014-02-28 20:49 by Rualark */
+UPDATE cc_ctracks SET tg_id='17' WHERE t_id=6475; /* 2014-02-28 20:50 by Rualark */
+UPDATE cc_ctracks SET tg_id='8' WHERE t_id=5814 OR t_id=5815 OR t_id=5816; /* 2014-02-28 20:51 by Rualark */
+UPDATE cc_ctracks SET tg_id='26' WHERE t_id=5812; /* 2014-02-28 20:53 by Rualark */
+UPDATE cc_ctracks SET tg_id='19' WHERE t_id=6476; /* 2014-02-28 20:53 by Rualark */
+UPDATE cc_ctracks SET tg_id='26' WHERE t_id=6605 OR t_id=6606 OR t_id=6607 OR t_id=6608 OR t_id=6609 OR t_id=6610 OR t_id=6611 OR t_id=6612 OR t_id=6613; /* 2014-02-28 20:54 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=6603; /* 2014-02-28 20:56 by Rualark */
+UPDATE cc_ctracks SET tg_id='19' WHERE t_id=6620; /* 2014-02-28 20:56 by Rualark */
+UPDATE cc_ctracks SET tg_id='8' WHERE t_id=6621; /* 2014-02-28 20:57 by Rualark */
+UPDATE cc_ctracks SET tg_id='8' WHERE t_id=720 OR t_id=5188; /* 2014-02-28 20:58 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=5185; /* 2014-02-28 20:58 by Rualark */
+UPDATE cc_ctracks SET tg_id='26' WHERE t_id=5186; /* 2014-02-28 20:58 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=5184; /* 2014-02-28 20:58 by Rualark */
+UPDATE cc_ctracks SET tg_id='6' WHERE t_id=5329 OR t_id=5352 OR t_id=6301; /* 2014-02-28 20:59 by Rualark */
+UPDATE cc_ctracks SET tg_id='12' WHERE t_id=5328; /* 2014-02-28 21:00 by Rualark */
+UPDATE cc_ctracks SET tg_id='8' WHERE t_id=6303; /* 2014-02-28 21:01 by Rualark */
+UPDATE cc_ctracks SET tg_id='19' WHERE t_id=5687 OR t_id=5688 OR t_id=5689 OR t_id=5690 OR t_id=5692 OR t_id=5694 OR t_id=5954 OR t_id=6430 OR t_id=6431; /* 2014-02-28 21:03 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=6295 OR t_id=6296 OR t_id=6297 OR t_id=6298 OR t_id=6299 OR t_id=6300; /* 2014-02-28 21:05 by Rualark */
+UPDATE cc_ctracks SET tg_id='26' WHERE t_id=6145; /* 2014-02-28 21:10 by Rualark */
+UPDATE cc_ctracks SET tg_id='19' WHERE t_id=6142 OR t_id=6144 OR t_id=6146; /* 2014-02-28 21:12 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=6143; /* 2014-02-28 21:17 by Rualark */
+UPDATE cc_ctracks SET tg_id='12' WHERE t_id=5415; /* 2014-02-28 21:17 by Rualark */
+UPDATE cc_ctracks SET tg_id='8' WHERE t_id=5398 OR t_id=5399 OR t_id=5400 OR t_id=5401 OR t_id=5402 OR t_id=5403 OR t_id=5405 OR t_id=5406 OR t_id=5407 OR t_id=5409 OR t_id=5410 OR t_id=5411 OR t_id=5412 OR t_id=5413 OR t_id=5414; /* 2014-02-28 21:20 by Rualark */
+UPDATE cc_ctracks SET tg_id='26' WHERE t_id=5464; /* 2014-02-28 21:21 by Rualark */
+UPDATE cc_ctracks SET tg_id='22' WHERE t_id=5463; /* 2014-02-28 21:21 by Rualark */
+UPDATE cc_ctracks SET tg_id='6' WHERE t_id=4194 OR t_id=4195; /* 2014-02-28 21:21 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=5867; /* 2014-02-28 21:22 by Rualark */
+UPDATE cc_ctracks SET tg_id='16' WHERE t_id=5865 OR t_id=5866; /* 2014-02-28 21:23 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=6652; /* 2014-02-28 21:23 by Rualark */
+UPDATE cc_ctracks SET tg_id='19' WHERE t_id=5948 OR t_id=5949 OR t_id=5950 OR t_id=5951 OR t_id=5952; /* 2014-02-28 21:26 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=5917 OR t_id=5918 OR t_id=5919 OR t_id=5920 OR t_id=5921 OR t_id=5922 OR t_id=5923 OR t_id=5924 OR t_id=5925 OR t_id=5926 OR t_id=5927 OR t_id=5928 OR t_id=5929 OR t_id=5930; /* 2014-02-28 21:27 by Rualark */
+UPDATE cc_ctracks SET tg_id='25' WHERE t_id=5913 OR t_id=5914 OR t_id=5915 OR t_id=5916; /* 2014-02-28 21:28 by Rualark */
+UPDATE cc_ctracks SET tg_id='19' WHERE t_id=5909 OR t_id=5911; /* 2014-02-28 21:28 by Rualark */
+UPDATE cc_ctracks SET tg_id='12' WHERE t_id=6558; /* 2014-02-28 21:29 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=5181; /* 2014-02-28 21:30 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=6578 OR t_id=6579 OR t_id=6580; /* 2014-02-28 21:33 by Rualark */
+UPDATE cc_ctracks SET tg_id='6' WHERE t_id=162 OR t_id=163; /* 2014-02-28 21:34 by Rualark */
+UPDATE cc_ctracks SET tg_id='16' WHERE t_id=164 OR t_id=175 OR t_id=176; /* 2014-02-28 21:35 by Rualark */
+UPDATE cc_ctracks SET tg_id='7' WHERE t_id=172 OR t_id=174; /* 2014-02-28 21:35 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=173 OR t_id=177 OR t_id=178 OR t_id=179; /* 2014-02-28 21:36 by Rualark */
+UPDATE cc_ctracks SET tg_id='19' WHERE t_id=6428; /* 2014-02-28 21:44 by Rualark */
+UPDATE cc_ctracks SET tg_id='19' WHERE t_id=6432 OR t_id=6433; /* 2014-02-28 21:45 by Rualark */
+UPDATE cc_ctracks SET tg_id='26' WHERE t_id=5481; /* 2014-02-28 21:46 by Rualark */
+UPDATE cc_ctracks SET tg_id='18' WHERE t_id=6627; /* 2014-02-28 21:47 by Rualark */
+UPDATE cc_ctracks SET tg_id='9' WHERE t_id=6628; /* 2014-02-28 21:49 by Rualark */
+UPDATE cc_ctracks SET tg_id='26' WHERE t_id=6633; /* 2014-02-28 21:49 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=6629; /* 2014-02-28 21:51 by Rualark */
+UPDATE cc_ctracks SET tg_id='12' WHERE t_id=6634; /* 2014-02-28 21:51 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=5955; /* 2014-02-28 21:53 by Rualark */
+UPDATE cc_ctracks SET tg_id='19' WHERE t_id=5953 OR t_id=6484 OR t_id=6485; /* 2014-02-28 21:54 by Rualark */
+UPDATE cc_ctracks SET tg_id='6' WHERE t_id=3267 OR t_id=3268 OR t_id=3269 OR t_id=3270 OR t_id=3271 OR t_id=3272 OR t_id=3273 OR t_id=3274 OR t_id=3275 OR t_id=3276 OR t_id=3277 OR t_id=3278 OR t_id=3279 OR t_id=3280 OR t_id=3281 OR t_id=6571 OR t_id=6574; /* 2014-02-28 21:56 by Rualark */
+UPDATE cc_ctracks SET tg_id='21' WHERE t_id=5357 OR t_id=5358 OR t_id=5359 OR t_id=5360 OR t_id=5361 OR t_id=5363 OR t_id=5364 OR t_id=5365 OR t_id=5366 OR t_id=5367 OR t_id=5368 OR t_id=5369 OR t_id=5371 OR t_id=5372 OR t_id=5373 OR t_id=5374 OR t_id=5375 OR t_id=5376 OR t_id=5377 OR t_id=5378 OR t_id=5379 OR t_id=5380 OR t_id=5381 OR t_id=5382 OR t_id=5383 OR t_id=5384 OR t_id=5385 OR t_id=5386 OR t_id=5387 OR t_id=5388; /* 2014-02-28 21:59 by Rualark */
+UPDATE cc_ctracks SET tg_id='21' WHERE t_id=5356 OR t_id=5362 OR t_id=5370; /* 2014-02-28 21:59 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=6594; /* 2014-02-28 22:04 by Rualark */
+UPDATE cc_ctracks SET tg_id='16' WHERE t_id=6595; /* 2014-02-28 22:04 by Rualark */
+UPDATE cc_ctracks SET tg_id='26' WHERE t_id=6596; /* 2014-02-28 22:05 by Rualark */
+UPDATE cc_ctracks SET tg_id='9' WHERE t_id=6598; /* 2014-02-28 22:05 by Rualark */
+UPDATE cc_ctracks SET tg_id='6' WHERE t_id=6597; /* 2014-02-28 22:06 by Rualark */
+UPDATE cc_ctracks SET tg_id='19' WHERE t_id=5797 OR t_id=5798 OR t_id=5799; /* 2014-02-28 22:07 by Rualark */
+UPDATE cc_ctracks SET tg_id='6' WHERE t_id=1; /* 2014-02-28 22:07 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=6467; /* 2014-02-28 22:14 by Rualark */
+UPDATE cc_ctracks SET tg_id='19' WHERE t_id=6466; /* 2014-02-28 22:14 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=5389 OR t_id=5390 OR t_id=5391 OR t_id=5392 OR t_id=5393 OR t_id=5394; /* 2014-02-28 22:17 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=5395 OR t_id=5396; /* 2014-02-28 22:18 by Rualark */
+UPDATE cc_ctracks SET tg_id='26' WHERE t_id=2839 OR t_id=2840 OR t_id=2841 OR t_id=2842 OR t_id=2843 OR t_id=2844; /* 2014-02-28 23:25 by Rualark */
+UPDATE cc_ctracks SET tg_id='13' WHERE t_id=3460; /* 2014-03-01 09:56 by Rualark */
+UPDATE cc_ctracks SET tg_id='6' WHERE t_id=1651 OR t_id=1652 OR t_id=1653; /* 2014-03-01 09:58 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=3374 OR t_id=3375 OR t_id=3376 OR t_id=3377 OR t_id=3378 OR t_id=3379; /* 2014-03-01 09:58 by Rualark */
+UPDATE cc_ctracks SET tg_id='12' WHERE t_id=141 OR t_id=142 OR t_id=143 OR t_id=144 OR t_id=145 OR t_id=150 OR t_id=151 OR t_id=152 OR t_id=2061 OR t_id=2062 OR t_id=2063 OR t_id=2064 OR t_id=3374 OR t_id=3375 OR t_id=3376 OR t_id=3377 OR t_id=3378 OR t_id=3379; /* 2014-03-01 10:00 by Rualark */
+UPDATE cc_ctracks SET tg_id='12' WHERE t_id=5275; /* 2014-03-01 10:00 by Rualark */
+UPDATE cc_ctracks SET tg_id='12' WHERE t_id=5912; /* 2014-03-01 10:01 by Rualark */
+UPDATE cc_ctracks SET tg_id='17' WHERE t_id=2801 OR t_id=2802 OR t_id=2803 OR t_id=2804 OR t_id=2805 OR t_id=2806 OR t_id=2808 OR t_id=2809 OR t_id=2810 OR t_id=2811 OR t_id=2812 OR t_id=2813 OR t_id=2814 OR t_id=2815 OR t_id=2816 OR t_id=2817 OR t_id=2818 OR t_id=2819 OR t_id=2820 OR t_id=2821 OR t_id=2822 OR t_id=2823; /* 2014-03-01 10:04 by Rualark */
+UPDATE cc_ctracks SET tg_id='17' WHERE t_id=3883; /* 2014-03-01 10:05 by Rualark */
+UPDATE cc_ctracks SET tg_id='13' WHERE t_id=4058; /* 2014-03-01 10:06 by Rualark */
+UPDATE cc_ctracks SET tg_id='26' WHERE t_id=1264; /* 2014-03-01 10:08 by Rualark */
+UPDATE cc_ctracks SET tg_id='17' WHERE t_id=6336; /* 2014-03-01 10:10 by Rualark */
+UPDATE cc_ctracks SET tg_id='17' WHERE t_id=3424 OR t_id=3425 OR t_id=3426 OR t_id=3427 OR t_id=3428 OR t_id=3429 OR t_id=3430 OR t_id=3431 OR t_id=3432 OR t_id=3433 OR t_id=3434 OR t_id=3435 OR t_id=3436 OR t_id=3437 OR t_id=3438 OR t_id=3439 OR t_id=3440 OR t_id=3441 OR t_id=3442 OR t_id=3443 OR t_id=3444 OR t_id=3445 OR t_id=3446 OR t_id=3447 OR t_id=3448 OR t_id=3449 OR t_id=3450; /* 2014-03-01 10:12 by Rualark */
+UPDATE cc_ctracks SET tg_id='26' WHERE t_id=3470 OR t_id=3471; /* 2014-03-01 10:13 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=1713 OR t_id=1717 OR t_id=1719 OR t_id=1725 OR t_id=1726; /* 2014-03-01 10:25 by Rualark */
+UPDATE cc_ctracks SET tg_id='18' WHERE t_id=3660 OR t_id=3662 OR t_id=3665; /* 2014-03-01 10:25 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=2461; /* 2014-03-01 10:25 by Rualark */
+UPDATE cc_ctracks SET tg_id='17' WHERE t_id=2529 OR t_id=2530; /* 2014-03-01 10:26 by Rualark */
+UPDATE cc_ctracks SET tg_id='9' WHERE t_id=677; /* 2014-03-01 10:27 by Rualark */
+UPDATE cc_ctracks SET tg_id='12' WHERE t_id=4416; /* 2014-03-01 10:28 by Rualark */
+UPDATE cc_ctracks SET tg_id='9' WHERE t_id=3116 OR t_id=3117 OR t_id=3118 OR t_id=3119 OR t_id=3121 OR t_id=3122 OR t_id=3123; /* 2014-03-01 10:29 by Rualark */
+UPDATE cc_ctracks SET tg_id='6' WHERE t_id=1615; /* 2014-03-01 10:30 by Rualark */
+UPDATE cc_ctracks SET tg_id='9' WHERE t_id=210 OR t_id=211 OR t_id=212 OR t_id=213 OR t_id=214 OR t_id=215 OR t_id=216 OR t_id=217 OR t_id=218 OR t_id=219 OR t_id=220 OR t_id=221 OR t_id=222 OR t_id=223 OR t_id=224 OR t_id=225 OR t_id=226 OR t_id=227 OR t_id=228 OR t_id=229 OR t_id=230 OR t_id=4047 OR t_id=4048 OR t_id=4049 OR t_id=4050 OR t_id=5078 OR t_id=5079 OR t_id=5080 OR t_id=5081 OR t_id=5082 OR t_id=5083 OR t_id=5084 OR t_id=5085 OR t_id=5086 OR t_id=5087 OR t_id=5088 OR t_id=5089 OR t_id=5090 OR t_id=5093 OR t_id=5094 OR t_id=5095 OR t_id=5098 OR t_id=5099 OR t_id=5100 OR t_id=6482; /* 2014-03-01 10:36 by Rualark */
+UPDATE cc_ctracks SET tg_id='7' WHERE t_id=4993 OR t_id=5101 OR t_id=5102 OR t_id=5105 OR t_id=5106 OR t_id=5107 OR t_id=5108 OR t_id=5109 OR t_id=5110 OR t_id=5111; /* 2014-03-01 10:38 by Rualark */
+UPDATE cc_ctracks SET tg_id='6' WHERE t_id=5295; /* 2014-03-01 10:38 by Rualark */
+UPDATE cc_ctracks SET tg_id='6' WHERE t_id=1196 OR t_id=1197 OR t_id=1198; /* 2014-03-01 10:39 by Rualark */
+UPDATE cc_ctracks SET tg_id='17' WHERE t_id=1778; /* 2014-03-01 10:39 by Rualark */
+UPDATE cc_ctracks SET tg_id='12' WHERE t_id=1002 OR t_id=1003 OR t_id=1004 OR t_id=1005 OR t_id=1006 OR t_id=1007 OR t_id=1008 OR t_id=1009 OR t_id=1010 OR t_id=1011; /* 2014-03-01 10:40 by Rualark */
+UPDATE cc_ctracks SET tg_id='17' WHERE t_id=4984; /* 2014-03-01 10:41 by Rualark */
+UPDATE cc_ctracks SET tg_id='4' WHERE t_id=3120; /* 2014-03-01 21:22 by Rualark */
+UPDATE cc_ctracks SET tg_id='5' WHERE t_id=2738 OR t_id=2739 OR t_id=2740 OR t_id=2741; /* 2014-03-10 17:30 by Rualark */
+UPDATE cc_ctracks SET tg_id='7' WHERE t_id=888 OR t_id=889 OR t_id=1233 OR t_id=1545 OR t_id=3721 OR t_id=3935 OR t_id=5482 OR t_id=6622; /* 2014-03-12 20:19 by Rualark */
+UPDATE cc_ctracks SET tg_id='2' WHERE t_id=2447; /* 2014-03-13 20:46 by Rualark */
+UPDATE cc_ctracks SET tg_id='1' WHERE t_id=2448; /* 2014-03-13 20:47 by Rualark */
+UPDATE cc_ctracks SET tg_id='5' WHERE t_id=8671; /* 2014-03-17 19:37 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=8691; /* 2014-03-17 19:37 by Rualark */
+UPDATE cc_ctracks SET tg_id='3' WHERE t_id=6774 OR t_id=6775 OR t_id=6776 OR t_id=6777 OR t_id=6778 OR t_id=6779 OR t_id=6780 OR t_id=6781 OR t_id=6782 OR t_id=6783 OR t_id=6784 OR t_id=6785 OR t_id=6786 OR t_id=6787 OR t_id=6788 OR t_id=6789 OR t_id=6790 OR t_id=6791 OR t_id=6792 OR t_id=6793 OR t_id=6794 OR t_id=6795 OR t_id=6796 OR t_id=6797 OR t_id=6798 OR t_id=6799 OR t_id=6800 OR t_id=6801; /* 2014-03-17 19:43 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=8690; /* 2014-03-17 19:45 by Rualark */
+UPDATE cc_ctracks SET tg_id='14' WHERE t_id=8499; /* 2014-03-17 19:45 by Rualark */
+UPDATE cc_ctracks SET tg_id='12' WHERE t_id=8498; /* 2014-03-17 19:46 by Rualark */
+UPDATE cc_ctracks SET tg_id='3' WHERE t_id=8488 OR t_id=8490; /* 2014-03-17 19:48 by Rualark */
+UPDATE cc_ctracks SET tg_id='16' WHERE t_id=8489; /* 2014-03-17 19:48 by Rualark */
+UPDATE cc_ctracks SET tg_id='13' WHERE t_id=8491 OR t_id=8493; /* 2014-03-17 19:49 by Rualark */
+UPDATE cc_ctracks SET tg_id='1' WHERE t_id=8492; /* 2014-03-17 19:49 by Rualark */
+UPDATE cc_ctracks SET tg_id='14' WHERE t_id=8494; /* 2014-03-17 19:50 by Rualark */
+UPDATE cc_ctracks SET tg_id='3' WHERE t_id=8495 OR t_id=8496; /* 2014-03-17 19:50 by Rualark */
+UPDATE cc_ctracks SET tg_id='20' WHERE t_id=8497; /* 2014-03-17 19:51 by Rualark */
+UPDATE cc_ctracks SET tg_id='13' WHERE t_id=8490 OR t_id=8496; /* 2014-03-17 19:55 by Rualark */
+UPDATE cc_ctracks SET tg_id='17' WHERE t_id=9570; /* 2014-03-18 08:48 by Rualark */
+UPDATE cc_ctracks SET tg_id='21' WHERE t_id=357 OR t_id=358 OR t_id=359 OR t_id=360 OR t_id=361 OR t_id=362 OR t_id=363 OR t_id=364 OR t_id=365 OR t_id=366 OR t_id=367 OR t_id=368 OR t_id=2355 OR t_id=2356 OR t_id=2357 OR t_id=2358 OR t_id=2359 OR t_id=2360 OR t_id=2361 OR t_id=2362 OR t_id=2363 OR t_id=2364 OR t_id=2365 OR t_id=2366 OR t_id=2367 OR t_id=2368 OR t_id=2369 OR t_id=2370 OR t_id=2371 OR t_id=2372 OR t_id=2373 OR t_id=2374 OR t_id=2375 OR t_id=2376 OR t_id=2377 OR t_id=2378 OR t_id=3131 OR t_id=3132 OR t_id=3133 OR t_id=3134 OR t_id=3135 OR t_id=3136 OR t_id=3152 OR t_id=3153 OR t_id=3154 OR t_id=3155 OR t_id=3156 OR t_id=3157 OR t_id=3158 OR t_id=3159 OR t_id=3160 OR t_id=3161 OR t_id=3162 OR t_id=3163 OR t_id=3164 OR t_id=3165 OR t_id=3166 OR t_id=3167 OR t_id=3168 OR t_id=3169 OR t_id=3170 OR t_id=3171 OR t_id=3172 OR t_id=3173 OR t_id=3174 OR t_id=3175 OR t_id=3176 OR t_id=3177 OR t_id=3178 OR t_id=3179 OR t_id=3180 OR t_id=3181 OR t_id=3887; /* 2015-01-03 18:43 by Rualark */
+UPDATE cc_ctracks SET tg_id='13' WHERE t_id=4141 OR t_id=4142 OR t_id=4143 OR t_id=4144; /* 2015-01-03 18:47 by Rualark */
+UPDATE cc_ctracks SET tg_id='21' WHERE t_id=4816 OR t_id=4817 OR t_id=4818 OR t_id=4819 OR t_id=4820 OR t_id=4821 OR t_id=4822 OR t_id=4823 OR t_id=4824 OR t_id=4825 OR t_id=4826 OR t_id=4827; /* 2015-01-03 18:49 by Rualark */
+UPDATE cc_ctracks SET tg_id='21' WHERE t_id=2554 OR t_id=2555 OR t_id=2556 OR t_id=2557 OR t_id=2558 OR t_id=2559 OR t_id=2560 OR t_id=2561 OR t_id=2562 OR t_id=2563 OR t_id=2564 OR t_id=2565 OR t_id=2566 OR t_id=2567 OR t_id=2568 OR t_id=2569 OR t_id=2570 OR t_id=2571 OR t_id=2572 OR t_id=2573 OR t_id=2574 OR t_id=2575 OR t_id=2576 OR t_id=2577 OR t_id=2578 OR t_id=2579 OR t_id=2580 OR t_id=2581 OR t_id=2583 OR t_id=2584 OR t_id=2585 OR t_id=2586 OR t_id=2587 OR t_id=2588 OR t_id=2589 OR t_id=2590 OR t_id=2591 OR t_id=2592 OR t_id=2593 OR t_id=2594 OR t_id=2595 OR t_id=2596 OR t_id=2597 OR t_id=2598 OR t_id=2599 OR t_id=2600 OR t_id=3628 OR t_id=3629 OR t_id=3630 OR t_id=3631 OR t_id=3632 OR t_id=3633 OR t_id=3634 OR t_id=3636 OR t_id=3637 OR t_id=3638 OR t_id=3639 OR t_id=3640 OR t_id=3641 OR t_id=3642 OR t_id=3643 OR t_id=3644 OR t_id=3645 OR t_id=3646 OR t_id=3647 OR t_id=3648 OR t_id=3649 OR t_id=3650 OR t_id=3651; /* 2015-01-03 18:51 by Rualark */
+UPDATE cc_ctracks SET tg_id='21' WHERE t_id=1359 OR t_id=2582; /* 2015-01-03 18:52 by Rualark */
+UPDATE cc_ctracks SET tg_id='5' WHERE t_id=467 OR t_id=526; /* 2015-01-03 18:53 by Rualark */
+UPDATE cc_ctracks SET tg_id='21' WHERE t_id=1017 OR t_id=1787 OR t_id=1788 OR t_id=1789 OR t_id=1790 OR t_id=1791 OR t_id=1792 OR t_id=1793 OR t_id=1794 OR t_id=1795 OR t_id=1796 OR t_id=1797 OR t_id=1798 OR t_id=1799 OR t_id=1800 OR t_id=1801 OR t_id=1802 OR t_id=1962 OR t_id=1963 OR t_id=1964 OR t_id=3800; /* 2015-01-03 18:55 by Rualark */
+UPDATE cc_ctracks SET tg_id='5' WHERE t_id=750; /* 2015-01-03 18:55 by Rualark */
+UPDATE cc_ctracks SET tg_id='21' WHERE t_id=826 OR t_id=827 OR t_id=828 OR t_id=829 OR t_id=830 OR t_id=831 OR t_id=832; /* 2015-01-03 18:55 by Rualark */
+UPDATE cc_ctracks SET tg_id='21' WHERE t_id=1582 OR t_id=1591 OR t_id=1599; /* 2015-01-03 18:57 by Rualark */
+UPDATE cc_ctracks SET tg_id='12' WHERE t_id=5895 OR t_id=5896 OR t_id=5897 OR t_id=5898 OR t_id=5899 OR t_id=5900 OR t_id=5901 OR t_id=5902 OR t_id=5903 OR t_id=5904 OR t_id=5905 OR t_id=5906; /* 2015-01-03 18:57 by Rualark */
+UPDATE cc_ctracks SET tg_id='1' WHERE t_id=5848; /* 2015-01-03 18:58 by Rualark */
+UPDATE cc_ctracks SET tg_id='21' WHERE t_id=3292 OR t_id=3293 OR t_id=3294 OR t_id=3295 OR t_id=3296 OR t_id=3297 OR t_id=3298 OR t_id=3299 OR t_id=3300 OR t_id=3301 OR t_id=3302 OR t_id=3303 OR t_id=3304 OR t_id=3305 OR t_id=3306 OR t_id=3307 OR t_id=3308 OR t_id=3309 OR t_id=3310 OR t_id=3311 OR t_id=3312 OR t_id=3313 OR t_id=3314 OR t_id=3315 OR t_id=3316 OR t_id=3317 OR t_id=3318 OR t_id=3319; /* 2015-01-03 18:59 by Rualark */
+UPDATE cc_ctracks SET tg_id='21' WHERE t_id=901 OR t_id=5907 OR t_id=5908 OR t_id=6435 OR t_id=6436 OR t_id=6437 OR t_id=6438 OR t_id=6439 OR t_id=6440; /* 2015-01-03 19:01 by Rualark */
+UPDATE cc_ctracks SET tg_id='13' WHERE t_id=5592 OR t_id=5593 OR t_id=5594 OR t_id=5595 OR t_id=5596 OR t_id=5597 OR t_id=5598 OR t_id=5599 OR t_id=5600 OR t_id=5601 OR t_id=5602 OR t_id=5603 OR t_id=5604 OR t_id=5605 OR t_id=5606 OR t_id=5607 OR t_id=5608 OR t_id=5609 OR t_id=5610 OR t_id=5611 OR t_id=5612 OR t_id=5613 OR t_id=5614; /* 2015-01-03 19:01 by Rualark */
+UPDATE cc_ctracks SET tg_id='21' WHERE t_id=5865 OR t_id=5866 OR t_id=5868 OR t_id=5869 OR t_id=5870 OR t_id=5871 OR t_id=5872 OR t_id=5873 OR t_id=5874 OR t_id=5875 OR t_id=5876 OR t_id=5877 OR t_id=5878 OR t_id=5879 OR t_id=5880 OR t_id=5881 OR t_id=5882 OR t_id=5883 OR t_id=5884 OR t_id=5885 OR t_id=5886 OR t_id=5887 OR t_id=5888 OR t_id=5889 OR t_id=5890 OR t_id=5891 OR t_id=5892 OR t_id=5893 OR t_id=5894 OR t_id=6636 OR t_id=6637 OR t_id=6638 OR t_id=6639 OR t_id=6640 OR t_id=6641 OR t_id=6642 OR t_id=6643 OR t_id=6644 OR t_id=6645 OR t_id=6646 OR t_id=6647 OR t_id=6648 OR t_id=6649 OR t_id=6650 OR t_id=6651; /* 2015-01-03 19:03 by Rualark */
+UPDATE cc_ctracks SET tg_id='21' WHERE t_id=536 OR t_id=537 OR t_id=538 OR t_id=539 OR t_id=540 OR t_id=542 OR t_id=543 OR t_id=544; /* 2015-01-25 13:48 by Rualark */
+UPDATE cc_ctracks SET tg_id='2' WHERE t_id=3498; /* 2015-01-29 20:47 by Rualark */
+UPDATE cc_ctracks SET tg_id='9' WHERE t_id=3498; /* 2015-01-29 20:47 by Rualark */
+UPDATE cc_ctracks SET tg_id='5' WHERE t_id=1030; /* 2015-02-08 18:38 by Rualark */
+UPDATE cc_ctracks SET tg_id='5' WHERE t_id=1540; /* 2015-02-13 18:59 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=1545; /* 2015-02-13 19:08 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=1550; /* 2015-02-13 19:09 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=195 OR t_id=281 OR t_id=310 OR t_id=420 OR t_id=472 OR t_id=686 OR t_id=751 OR t_id=762 OR t_id=1532 OR t_id=1658 OR t_id=1779 OR t_id=1869 OR t_id=1921 OR t_id=1928 OR t_id=1934 OR t_id=1944 OR t_id=1945 OR t_id=2133 OR t_id=2917 OR t_id=2937 OR t_id=3052 OR t_id=3053 OR t_id=3289 OR t_id=3507 OR t_id=3550 OR t_id=3786 OR t_id=3996 OR t_id=4491 OR t_id=4492 OR t_id=4493 OR t_id=4494 OR t_id=4664 OR t_id=4706 OR t_id=4898 OR t_id=4923 OR t_id=5434 OR t_id=6400 OR t_id=6500 OR t_id=6623; /* 2015-02-13 22:14 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=2397 OR t_id=2412 OR t_id=4913 OR t_id=4915 OR t_id=4917 OR t_id=4919 OR t_id=4921 OR t_id=4925 OR t_id=4927 OR t_id=4928 OR t_id=4932 OR t_id=4935 OR t_id=4938 OR t_id=5895; /* 2015-02-13 22:15 by Rualark */
+UPDATE cc_ctracks SET tg_id='14' WHERE t_id=6326; /* 2015-02-14 12:04 by Rualark */
+UPDATE cc_ctracks SET tg_id='14' WHERE t_id=6314; /* 2015-02-14 12:05 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=6377 OR t_id=6378; /* 2015-02-14 12:09 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=5182; /* 2015-02-14 12:41 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=541; /* 2015-02-14 19:47 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=394 OR t_id=415 OR t_id=473 OR t_id=1808 OR t_id=2065 OR t_id=2159 OR t_id=2801 OR t_id=2809 OR t_id=3143 OR t_id=3553 OR t_id=4908 OR t_id=4909 OR t_id=4910; /* 2015-02-14 19:49 by Rualark */
+UPDATE cc_ctracks SET tg_id='5' WHERE t_id=533; /* 2015-02-14 19:49 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=545; /* 2015-02-14 23:19 by Rualark */
+UPDATE cc_ctracks SET tg_id='21' WHERE t_id=8691; /* 2015-02-20 22:30 by Rualark */
+UPDATE cc_ctracks SET tg_id='21' WHERE t_id=4030; /* 2015-02-20 22:32 by Rualark */
+UPDATE cc_ctracks SET tg_id='17' WHERE t_id=9691 OR t_id=9692 OR t_id=9693 OR t_id=9694 OR t_id=9695 OR t_id=9696 OR t_id=9697 OR t_id=9698 OR t_id=9699 OR t_id=9700 OR t_id=9701 OR t_id=9702 OR t_id=9703 OR t_id=9704 OR t_id=9705 OR t_id=9706 OR t_id=9707 OR t_id=9708 OR t_id=9709 OR t_id=9710 OR t_id=9711 OR t_id=9712 OR t_id=9713 OR t_id=9714 OR t_id=9715 OR t_id=9724 OR t_id=9725 OR t_id=9726 OR t_id=9727 OR t_id=9728 OR t_id=9729 OR t_id=9730 OR t_id=9731 OR t_id=9732 OR t_id=9733 OR t_id=9734 OR t_id=9735 OR t_id=9736 OR t_id=9737 OR t_id=9738 OR t_id=9739 OR t_id=9740 OR t_id=9741 OR t_id=9742 OR t_id=9840 OR t_id=9841 OR t_id=9842 OR t_id=9843 OR t_id=9844 OR t_id=9845 OR t_id=9846 OR t_id=9847 OR t_id=9848 OR t_id=9849 OR t_id=9850 OR t_id=9851 OR t_id=9852 OR t_id=9853 OR t_id=9854 OR t_id=9855 OR t_id=9856 OR t_id=9857 OR t_id=9858 OR t_id=9859 OR t_id=9860 OR t_id=9861 OR t_id=9862 OR t_id=9863 OR t_id=9864 OR t_id=9865 OR t_id=9866 OR t_id=9867 OR t_id=9868 OR t_id=9869 OR t_id=9870 OR t_id=9871 OR t_id=9872 OR t_id=9873 OR t_id=9874 OR t_id=9875 OR t_id=9876 OR t_id=9877 OR t_id=9878 OR t_id=9879 OR t_id=9880 OR t_id=9881 OR t_id=9882 OR t_id=9883 OR t_id=9884 OR t_id=9885 OR t_id=9886 OR t_id=10072 OR t_id=10073 OR t_id=10074 OR t_id=10075 OR t_id=10076 OR t_id=10077 OR t_id=10078 OR t_id=10079 OR t_id=10080 OR t_id=10081 OR t_id=10082 OR t_id=10083 OR t_id=10084 OR t_id=10085 OR t_id=10086 OR t_id=10092 OR t_id=10093 OR t_id=10094 OR t_id=10095 OR t_id=10096 OR t_id=10097 OR t_id=10098; /* 2015-02-25 20:35 by Rualark */
+UPDATE cc_ctracks SET tg_id='22' WHERE t_id=3365 OR t_id=3366 OR t_id=3367; /* 2015-02-25 22:14 by Rualark */
+UPDATE cc_ctracks SET tg_id='22' WHERE t_id=10056; /* 2015-02-25 22:19 by Rualark */
+UPDATE cc_ctracks SET tg_id='22' WHERE t_id=5859 OR t_id=5860 OR t_id=5863; /* 2015-02-25 22:31 by Rualark */
+UPDATE cc_ctracks SET tg_id='22' WHERE t_id=8495; /* 2015-02-25 22:32 by Rualark */
+UPDATE cc_ctracks SET tg_id='2' WHERE t_id=2974 OR t_id=5766 OR t_id=5767 OR t_id=5768 OR t_id=5769 OR t_id=5770 OR t_id=5771 OR t_id=5772 OR t_id=5773 OR t_id=5774; /* 2015-02-28 12:43 by Rualark */
+UPDATE cc_ctracks SET tg_id='2' WHERE t_id=5778 OR t_id=5779 OR t_id=5780 OR t_id=5781 OR t_id=5782 OR t_id=5783 OR t_id=5784 OR t_id=5785 OR t_id=5786 OR t_id=5787 OR t_id=5788 OR t_id=5789 OR t_id=5790 OR t_id=5791 OR t_id=5792 OR t_id=5793 OR t_id=5794 OR t_id=5795 OR t_id=5796; /* 2015-02-28 12:50 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=1929 OR t_id=1932 OR t_id=1936 OR t_id=1937 OR t_id=1938; /* 2015-02-28 22:00 by Rualark */
+UPDATE cc_ctracks SET tg_id='13' WHERE t_id=1942; /* 2015-02-28 22:21 by Rualark */
+UPDATE cc_ctracks SET tg_id='16' WHERE t_id=1581; /* 2015-03-02 09:34 by Rualark */
+UPDATE cc_ctracks SET tg_id='16' WHERE t_id=1586 OR t_id=1587; /* 2015-03-02 09:36 by Rualark */
+UPDATE cc_ctracks SET tg_id='16' WHERE t_id=1592 OR t_id=1593; /* 2015-03-02 09:38 by Rualark */
+UPDATE cc_ctracks SET tg_id='1' WHERE t_id=1603; /* 2015-03-02 09:42 by Rualark */
+UPDATE cc_ctracks SET tg_id='1' WHERE t_id=6777; /* 2015-03-02 21:38 by Rualark */
+UPDATE cc_ctracks SET tg_id='2' WHERE t_id=6537 OR t_id=6538; /* 2015-03-02 21:39 by Rualark */
+UPDATE cc_ctracks SET tg_id='1' WHERE t_id=6357; /* 2015-03-02 21:41 by Rualark */
+UPDATE cc_ctracks SET tg_id='2' WHERE t_id=381 OR t_id=382 OR t_id=383; /* 2015-03-02 21:42 by Rualark */
+UPDATE cc_ctracks SET tg_id='7' WHERE t_id=3722; /* 2015-03-07 21:44 by Rualark */
+UPDATE cc_ctracks SET tg_id='2' WHERE t_id=240 OR t_id=241 OR t_id=242 OR t_id=243 OR t_id=244 OR t_id=245 OR t_id=246 OR t_id=247 OR t_id=248; /* 2015-03-09 16:42 by Rualark */
+UPDATE cc_ctracks SET tg_id='1' WHERE t_id=2986 OR t_id=2987 OR t_id=2988; /* 2015-03-10 22:37 by Rualark */
+UPDATE cc_ctracks SET tg_id='2' WHERE ; /* 2015-03-14 23:51 by Rualark */
+UPDATE cc_ctracks SET tg_id='2' WHERE ; /* 2015-03-14 23:52 by Rualark */
+UPDATE cc_ctracks SET tg_id='2' WHERE t_id=2391; /* 2015-03-14 23:56 by Rualark */
+UPDATE cc_ctracks SET tg_id='12' WHERE ; /* 2015-03-15 11:15 by Rualark */
+UPDATE cc_ctracks SET tg_id='12' WHERE ; /* 2015-03-15 11:15 by Rualark */
+UPDATE cc_ctracks SET tg_id='12' WHERE t_id=10102; /* 2015-03-15 11:17 by Rualark */
+UPDATE cc_ctracks SET tg_id='13' WHERE t_id=10099; /* 2015-03-15 11:17 by Rualark */
+UPDATE cc_ctracks SET tg_id='6' WHERE t_id=10100 OR t_id=10101; /* 2015-03-15 11:18 by Rualark */
+UPDATE cc_ctracks SET tg_id='6' WHERE t_id=266 OR t_id=299 OR t_id=300 OR t_id=301 OR t_id=769 OR t_id=770 OR t_id=771 OR t_id=841 OR t_id=842 OR t_id=843 OR t_id=844 OR t_id=845 OR t_id=2384 OR t_id=2385 OR t_id=2386 OR t_id=2387 OR t_id=3369; /* 2015-03-15 11:19 by Rualark */
+UPDATE cc_ctracks SET tg_id='5' WHERE t_id=10102; /* 2015-03-15 11:27 by Rualark */
+UPDATE cc_ctracks SET tg_id='6' WHERE t_id=1018; /* 2015-03-15 11:53 by Rualark */
+UPDATE cc_ctracks SET tg_id='5' WHERE t_id=1018; /* 2015-03-15 11:53 by Rualark */
+UPDATE cc_ctracks SET tg_id='11' WHERE t_id=10053 OR t_id=10054 OR t_id=10088 OR t_id=10089 OR t_id=10090 OR t_id=10091; /* 2015-03-15 12:06 by Rualark */
+UPDATE cc_ctracks SET tg_id='13' WHERE t_id=10067; /* 2015-03-15 12:06 by Rualark */
+UPDATE cc_ctracks SET tg_id='11' WHERE t_id=10068; /* 2015-03-15 12:07 by Rualark */
+UPDATE cc_ctracks SET tg_id='13' WHERE t_id=10069; /* 2015-03-15 12:08 by Rualark */
+UPDATE cc_ctracks SET tg_id='21' WHERE t_id=9722; /* 2015-03-15 12:09 by Rualark */
+UPDATE cc_ctracks SET tg_id='10' WHERE t_id=9723; /* 2015-03-15 12:10 by Rualark */
+UPDATE cc_ctracks SET tg_id='18' WHERE t_id=10050; /* 2015-03-15 12:10 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=10051; /* 2015-03-15 12:10 by Rualark */
+UPDATE cc_ctracks SET tg_id='10' WHERE t_id=10052; /* 2015-03-15 12:11 by Rualark */
+UPDATE cc_ctracks SET tg_id='21' WHERE ; /* 2015-03-15 12:11 by Rualark */
+UPDATE cc_ctracks SET tg_id='16' WHERE ; /* 2015-03-15 12:23 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE ; /* 2015-03-15 12:24 by Rualark */
+UPDATE cc_ctracks SET tg_id='17' WHERE ; /* 2015-03-15 12:25 by Rualark */
+UPDATE cc_ctracks SET tg_id='16' WHERE ; /* 2015-03-15 12:26 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE ; /* 2015-03-15 12:27 by Rualark */
+UPDATE cc_ctracks SET tg_id='13' WHERE ; /* 2015-03-15 12:29 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE ; /* 2015-03-15 12:30 by Rualark */
+UPDATE cc_ctracks SET tg_id='16' WHERE ; /* 2015-03-15 12:31 by Rualark */
+UPDATE cc_ctracks SET tg_id='17' WHERE ; /* 2015-03-15 12:32 by Rualark */
+UPDATE cc_ctracks SET tg_id='21' WHERE t_id=10055; /* 2015-03-15 12:33 by Rualark */
+UPDATE cc_ctracks SET tg_id='12' WHERE t_id=9743 OR t_id=9744 OR t_id=9745 OR t_id=9746 OR t_id=9747 OR t_id=9748 OR t_id=9749 OR t_id=9750 OR t_id=9751 OR t_id=9752 OR t_id=9753 OR t_id=9754 OR t_id=9755 OR t_id=9756 OR t_id=9757 OR t_id=9758 OR t_id=9759 OR t_id=9760 OR t_id=9761 OR t_id=9762 OR t_id=9763 OR t_id=9764 OR t_id=9765 OR t_id=9766 OR t_id=9767 OR t_id=9768 OR t_id=9769 OR t_id=9770 OR t_id=9771 OR t_id=9772 OR t_id=9773 OR t_id=9774 OR t_id=9775 OR t_id=9776 OR t_id=9777 OR t_id=9778 OR t_id=9779 OR t_id=9780 OR t_id=9781 OR t_id=9782 OR t_id=9783 OR t_id=9784 OR t_id=9785 OR t_id=9786 OR t_id=9787 OR t_id=9788 OR t_id=9789 OR t_id=9790 OR t_id=9791 OR t_id=9792 OR t_id=9793 OR t_id=9794 OR t_id=9795 OR t_id=9796 OR t_id=9797 OR t_id=9798 OR t_id=9799 OR t_id=9800 OR t_id=9801 OR t_id=9802 OR t_id=9803 OR t_id=9804 OR t_id=9805 OR t_id=9806 OR t_id=9807 OR t_id=9808 OR t_id=9809 OR t_id=9810 OR t_id=9811 OR t_id=9812 OR t_id=9813 OR t_id=9814 OR t_id=9815 OR t_id=9816 OR t_id=9817 OR t_id=9818 OR t_id=9819 OR t_id=9820 OR t_id=9821 OR t_id=9822; /* 2015-03-15 12:34 by Rualark */
+UPDATE cc_ctracks SET tg_id='3' WHERE t_id=10045; /* 2015-03-15 12:35 by Rualark */
+UPDATE cc_ctracks SET tg_id='12' WHERE t_id=10049; /* 2015-03-15 12:36 by Rualark */
+UPDATE cc_ctracks SET tg_id='12' WHERE t_id=9895 OR t_id=9896 OR t_id=9897 OR t_id=9898 OR t_id=9899 OR t_id=9900 OR t_id=9901 OR t_id=9902 OR t_id=9903 OR t_id=9904 OR t_id=9905 OR t_id=9906 OR t_id=9907 OR t_id=9908 OR t_id=9909 OR t_id=9910 OR t_id=9911 OR t_id=9912 OR t_id=9913 OR t_id=9914 OR t_id=9915 OR t_id=9916 OR t_id=9917 OR t_id=9918 OR t_id=9919 OR t_id=9920 OR t_id=9921 OR t_id=9922 OR t_id=9923 OR t_id=9924 OR t_id=9925 OR t_id=9926 OR t_id=9927 OR t_id=9928 OR t_id=9929 OR t_id=9930 OR t_id=9931 OR t_id=9932 OR t_id=9933 OR t_id=9934 OR t_id=9935 OR t_id=9936 OR t_id=9937 OR t_id=9938 OR t_id=9939 OR t_id=9940 OR t_id=9941 OR t_id=9942 OR t_id=9943 OR t_id=9944 OR t_id=9945 OR t_id=9946 OR t_id=9947 OR t_id=9948 OR t_id=9949 OR t_id=9950 OR t_id=9951 OR t_id=9952 OR t_id=9953 OR t_id=9954 OR t_id=9955 OR t_id=9956 OR t_id=9957 OR t_id=9958 OR t_id=9959 OR t_id=9960 OR t_id=9961 OR t_id=9962 OR t_id=9963 OR t_id=9964 OR t_id=9965 OR t_id=9966 OR t_id=9967 OR t_id=9968 OR t_id=9969 OR t_id=9970 OR t_id=9971 OR t_id=9972 OR t_id=9973 OR t_id=9974 OR t_id=9975 OR t_id=9976 OR t_id=9977 OR t_id=9978 OR t_id=9979 OR t_id=9980 OR t_id=9981 OR t_id=9982 OR t_id=9983 OR t_id=9984 OR t_id=9985 OR t_id=9986 OR t_id=9987 OR t_id=9988 OR t_id=9989 OR t_id=9990 OR t_id=9991 OR t_id=9992 OR t_id=9993 OR t_id=9994 OR t_id=9995 OR t_id=9996 OR t_id=9997 OR t_id=9998 OR t_id=9999 OR t_id=10000 OR t_id=10001 OR t_id=10002 OR t_id=10003 OR t_id=10004 OR t_id=10005 OR t_id=10006 OR t_id=10007 OR t_id=10008 OR t_id=10009 OR t_id=10010 OR t_id=10011 OR t_id=10012 OR t_id=10013 OR t_id=10014 OR t_id=10015 OR t_id=10016 OR t_id=10017 OR t_id=10018 OR t_id=10019 OR t_id=10020 OR t_id=10021 OR t_id=10022 OR t_id=10023 OR t_id=10024 OR t_id=10025 OR t_id=10026 OR t_id=10027 OR t_id=10028 OR t_id=10029 OR t_id=10030 OR t_id=10031 OR t_id=10032 OR t_id=10033 OR t_id=10034 OR t_id=10035 OR t_id=10036 OR t_id=10037 OR t_id=10038 OR t_id=10039 OR t_id=10040 OR t_id=10041 OR t_id=10042 OR t_id=10043 OR t_id=10044; /* 2015-03-15 12:39 by Rualark */
+UPDATE cc_ctracks SET tg_id='8' WHERE t_id=10046; /* 2015-03-15 12:39 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=10047; /* 2015-03-15 12:40 by Rualark */
+UPDATE cc_ctracks SET tg_id='3' WHERE t_id=10048; /* 2015-03-15 12:43 by Rualark */
+UPDATE cc_ctracks SET tg_id='21' WHERE t_id=9716; /* 2015-03-15 12:46 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=10070; /* 2015-03-15 12:48 by Rualark */
+UPDATE cc_ctracks SET tg_id='1' WHERE t_id=9717 OR t_id=9823 OR t_id=9824 OR t_id=9825; /* 2015-03-15 12:49 by Rualark */
+UPDATE cc_ctracks SET tg_id='2' WHERE t_id=9721; /* 2015-03-15 12:50 by Rualark */
+UPDATE cc_ctracks SET tg_id='13' WHERE t_id=10087; /* 2015-03-15 12:50 by Rualark */
+UPDATE cc_ctracks SET tg_id='7' WHERE t_id=10060 OR t_id=10061; /* 2015-03-15 12:51 by Rualark */
+UPDATE cc_ctracks SET tg_id='2' WHERE t_id=10062; /* 2015-03-15 12:52 by Rualark */
+UPDATE cc_ctracks SET tg_id='12' WHERE t_id=9838 OR t_id=9839; /* 2015-03-15 12:52 by Rualark */
+UPDATE cc_ctracks SET tg_id='22' WHERE t_id=9831 OR t_id=9832; /* 2015-03-15 12:52 by Rualark */
+UPDATE cc_ctracks SET tg_id='1' WHERE t_id=9833 OR t_id=9834; /* 2015-03-15 12:53 by Rualark */
+UPDATE cc_ctracks SET tg_id='12' WHERE t_id=9891 OR t_id=9893 OR t_id=9894; /* 2015-03-15 12:54 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=9892; /* 2015-03-15 12:55 by Rualark */
+UPDATE cc_ctracks SET tg_id='8' WHERE t_id=9835 OR t_id=9836 OR t_id=9837; /* 2015-03-15 12:55 by Rualark */
+UPDATE cc_ctracks SET tg_id='12' WHERE t_id=10063; /* 2015-03-15 12:56 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=10064; /* 2015-03-15 12:56 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=10065; /* 2015-03-15 12:56 by Rualark */
+UPDATE cc_ctracks SET tg_id='12' WHERE t_id=10066; /* 2015-03-15 12:56 by Rualark */
+UPDATE cc_ctracks SET tg_id='2' WHERE t_id=9718 OR t_id=9719 OR t_id=9720; /* 2015-03-15 12:58 by Rualark */
+UPDATE cc_ctracks SET tg_id='8' WHERE t_id=10057; /* 2015-03-15 12:59 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=10058; /* 2015-03-15 12:59 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=10059; /* 2015-03-15 12:59 by Rualark */
+UPDATE cc_ctracks SET tg_id='9' WHERE t_id=9826; /* 2015-03-15 12:59 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=9827; /* 2015-03-15 13:00 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=9828 OR t_id=9829; /* 2015-03-15 13:01 by Rualark */
+UPDATE cc_ctracks SET tg_id='8' WHERE t_id=9830; /* 2015-03-15 13:01 by Rualark */
+UPDATE cc_ctracks SET tg_id='8' WHERE t_id=9828; /* 2015-03-15 13:02 by Rualark */
+UPDATE cc_ctracks SET tg_id='22' WHERE t_id=9887; /* 2015-03-15 13:03 by Rualark */
+UPDATE cc_ctracks SET tg_id='22' WHERE t_id=1662 OR t_id=1664 OR t_id=1665 OR t_id=1666 OR t_id=1667 OR t_id=1670 OR t_id=1672 OR t_id=5183 OR t_id=5858 OR t_id=5861 OR t_id=5862 OR t_id=8493; /* 2015-03-15 13:06 by Rualark */
+UPDATE cc_ctracks SET tg_id='22' WHERE t_id=9890; /* 2015-03-15 13:07 by Rualark */
+UPDATE cc_ctracks SET tg_id='13' WHERE t_id=9888; /* 2015-03-15 13:07 by Rualark */
+UPDATE cc_ctracks SET tg_id='2' WHERE t_id=9889; /* 2015-03-15 13:07 by Rualark */
+UPDATE cc_ctracks SET tg_id='17' WHERE t_id=10071; /* 2015-03-15 13:07 by Rualark */
+UPDATE cc_ctracks SET tg_id='21' WHERE t_id=10103; /* 2015-03-16 22:21 by Rualark */
+UPDATE cc_ctracks SET tg_id='7' WHERE t_id=10104; /* 2015-03-16 22:21 by Rualark */
+UPDATE cc_ctracks SET tg_id='12' WHERE t_id=6401 OR t_id=6403 OR t_id=6405 OR t_id=6407 OR t_id=6409 OR t_id=6412 OR t_id=6417; /* 2015-03-20 21:13 by Rualark */
+UPDATE cc_ctracks SET tg_id='8' WHERE t_id=653; /* 2015-03-22 09:54 by Rualark */
+UPDATE cc_ctracks SET tg_id='21' WHERE t_id=661 OR t_id=662; /* 2015-03-22 09:57 by Rualark */
+UPDATE cc_ctracks SET tg_id='12' WHERE t_id=10105; /* 2015-03-22 22:43 by Rualark */
+UPDATE cc_ctracks SET tg_id='12' WHERE t_id=10106 OR t_id=10107 OR t_id=10108 OR t_id=10109 OR t_id=10110 OR t_id=10111 OR t_id=10112 OR t_id=10113 OR t_id=10114 OR t_id=10115 OR t_id=10116; /* 2015-03-22 22:43 by Rualark */
+UPDATE cc_ctracks SET tg_id='5' WHERE t_id=10123; /* 2015-03-22 23:04 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE ; /* 2015-03-22 23:04 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=10124; /* 2015-03-22 23:04 by Rualark */
+UPDATE cc_ctracks SET tg_id='13' WHERE t_id=10117; /* 2015-03-22 23:05 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE ; /* 2015-03-22 23:05 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=10118; /* 2015-03-22 23:05 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=10119; /* 2015-03-22 23:05 by Rualark */
+UPDATE cc_ctracks SET tg_id='13' WHERE t_id=10120; /* 2015-03-22 23:05 by Rualark */
+UPDATE cc_ctracks SET tg_id='13' WHERE t_id=10121; /* 2015-03-22 23:05 by Rualark */
+UPDATE cc_ctracks SET tg_id='21' WHERE t_id=10122; /* 2015-03-22 23:06 by Rualark */
+UPDATE cc_ctracks SET tg_id='21' WHERE t_id=10125; /* 2015-03-22 23:06 by Rualark */
+UPDATE cc_ctracks SET tg_id='7' WHERE t_id=4739 OR t_id=4740 OR t_id=4741; /* 2015-03-24 20:36 by Rualark */
+UPDATE cc_ctracks SET tg_id='1' WHERE t_id=3129; /* 2015-03-24 20:47 by Rualark */
+UPDATE cc_ctracks SET tg_id='7' WHERE t_id=3042; /* 2015-03-25 21:02 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=10128; /* 2015-03-25 23:06 by Rualark */
+UPDATE cc_ctracks SET tg_id='21' WHERE t_id=10145; /* 2015-03-25 23:06 by Rualark */
+UPDATE cc_ctracks SET tg_id='5' WHERE t_id=10156; /* 2015-03-25 23:08 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=10166; /* 2015-03-25 23:09 by Rualark */
+UPDATE cc_ctracks SET tg_id='17' WHERE t_id=10126 OR t_id=10127 OR t_id=10146 OR t_id=10147 OR t_id=10159 OR t_id=10160 OR t_id=10176 OR t_id=10178 OR t_id=10179 OR t_id=10180; /* 2015-03-26 10:09 by Rualark */
+UPDATE cc_ctracks SET tg_id='8' WHERE t_id=10172; /* 2015-03-26 10:09 by Rualark */
+UPDATE cc_ctracks SET tg_id='2' WHERE t_id=10134; /* 2015-03-26 10:09 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=10133; /* 2015-03-26 10:09 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=10132; /* 2015-03-26 10:09 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=10168; /* 2015-03-26 10:10 by Rualark */
+UPDATE cc_ctracks SET tg_id='5' WHERE t_id=10169; /* 2015-03-26 10:10 by Rualark */
+UPDATE cc_ctracks SET tg_id='8' WHERE t_id=10173; /* 2015-03-26 10:10 by Rualark */
+UPDATE cc_ctracks SET tg_id='5' WHERE t_id=10136; /* 2015-03-26 10:11 by Rualark */
+UPDATE cc_ctracks SET tg_id='9' WHERE t_id=10130 OR t_id=10140 OR t_id=10162 OR t_id=10171 OR t_id=10174 OR t_id=10175; /* 2015-03-26 10:11 by Rualark */
+UPDATE cc_ctracks SET tg_id='3' WHERE t_id=10177; /* 2015-03-26 10:12 by Rualark */
+UPDATE cc_ctracks SET tg_id='21' WHERE t_id=10148; /* 2015-03-26 10:12 by Rualark */
+UPDATE cc_ctracks SET tg_id='21' WHERE t_id=10149; /* 2015-03-26 10:13 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=10150; /* 2015-03-26 10:14 by Rualark */
+UPDATE cc_ctracks SET tg_id='8' WHERE t_id=10151; /* 2015-03-26 10:14 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=10152; /* 2015-03-26 10:14 by Rualark */
+UPDATE cc_ctracks SET tg_id='3' WHERE t_id=10153; /* 2015-03-26 10:15 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=10141; /* 2015-03-26 10:16 by Rualark */
+UPDATE cc_ctracks SET tg_id='8' WHERE t_id=10142; /* 2015-03-26 10:16 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=10143; /* 2015-03-26 10:17 by Rualark */
+UPDATE cc_ctracks SET tg_id='21' WHERE t_id=10144; /* 2015-03-26 10:17 by Rualark */
+UPDATE cc_ctracks SET tg_id='7' WHERE t_id=10161; /* 2015-03-26 10:17 by Rualark */
+UPDATE cc_ctracks SET tg_id='12' WHERE t_id=10135 OR t_id=10139 OR t_id=10163 OR t_id=10182; /* 2015-03-26 10:18 by Rualark */
+UPDATE cc_ctracks SET tg_id='1' WHERE t_id=10164; /* 2015-03-26 10:18 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=10129; /* 2015-03-26 10:18 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=10158; /* 2015-03-26 10:18 by Rualark */
+UPDATE cc_ctracks SET tg_id='1' WHERE t_id=10170; /* 2015-03-26 10:18 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=10181; /* 2015-03-26 10:19 by Rualark */
+UPDATE cc_ctracks SET tg_id='8' WHERE t_id=10155 OR t_id=10165 OR t_id=10167; /* 2015-03-26 10:19 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=10154; /* 2015-03-26 10:19 by Rualark */
+UPDATE cc_ctracks SET tg_id='8' WHERE t_id=10131; /* 2015-03-26 10:19 by Rualark */
+UPDATE cc_ctracks SET tg_id='1' WHERE t_id=10137; /* 2015-03-26 10:20 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=10138; /* 2015-03-26 10:20 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=2935; /* 2015-03-27 22:57 by Rualark */
+UPDATE cc_ctracks SET tg_id='12' WHERE t_id=10183 OR t_id=10184 OR t_id=10185 OR t_id=10186 OR t_id=10187 OR t_id=10188 OR t_id=10189 OR t_id=10190 OR t_id=10191 OR t_id=10192 OR t_id=10193 OR t_id=10194 OR t_id=10195 OR t_id=10196 OR t_id=10197 OR t_id=10198 OR t_id=10199 OR t_id=10200 OR t_id=10201 OR t_id=10202 OR t_id=10203 OR t_id=10204 OR t_id=10205 OR t_id=10206 OR t_id=10213 OR t_id=10214 OR t_id=10215 OR t_id=10216 OR t_id=10217 OR t_id=10218 OR t_id=10219 OR t_id=10220 OR t_id=10221 OR t_id=10222 OR t_id=10223 OR t_id=10224 OR t_id=10225 OR t_id=10226 OR t_id=10227 OR t_id=10228 OR t_id=10229 OR t_id=10230 OR t_id=10231 OR t_id=10232 OR t_id=10233 OR t_id=10234 OR t_id=10235 OR t_id=10236 OR t_id=10237 OR t_id=10238 OR t_id=10239 OR t_id=10240 OR t_id=10241 OR t_id=10242 OR t_id=10243 OR t_id=10244 OR t_id=10245 OR t_id=10246 OR t_id=10247 OR t_id=10248 OR t_id=10249 OR t_id=10250 OR t_id=10251 OR t_id=10252 OR t_id=10253 OR t_id=10254 OR t_id=10255 OR t_id=10256 OR t_id=10257 OR t_id=10258 OR t_id=10259 OR t_id=10260 OR t_id=10261 OR t_id=10262 OR t_id=10263 OR t_id=10264 OR t_id=10265 OR t_id=10266 OR t_id=10267 OR t_id=10268 OR t_id=10269 OR t_id=10270 OR t_id=10271 OR t_id=10272 OR t_id=10273 OR t_id=10274 OR t_id=10275 OR t_id=10276 OR t_id=10277 OR t_id=10278 OR t_id=10279 OR t_id=10280 OR t_id=10281 OR t_id=10282 OR t_id=10283 OR t_id=10284 OR t_id=10285 OR t_id=10286 OR t_id=10287 OR t_id=10288 OR t_id=10289 OR t_id=10290 OR t_id=10291 OR t_id=10292 OR t_id=10293 OR t_id=10294 OR t_id=10295 OR t_id=10296 OR t_id=10297 OR t_id=10298 OR t_id=10299 OR t_id=10300 OR t_id=10301 OR t_id=10302 OR t_id=10303 OR t_id=10304 OR t_id=10305 OR t_id=10306 OR t_id=10307 OR t_id=10308 OR t_id=10309 OR t_id=10310 OR t_id=10311 OR t_id=10312 OR t_id=10313 OR t_id=10314 OR t_id=10315 OR t_id=10316 OR t_id=10317 OR t_id=10318 OR t_id=10319 OR t_id=10320 OR t_id=10321 OR t_id=10322; /* 2015-03-27 23:12 by Rualark */
+UPDATE cc_ctracks SET tg_id='11' WHERE t_id=10207; /* 2015-03-27 23:12 by Rualark */
+UPDATE cc_ctracks SET tg_id='3' WHERE t_id=10323; /* 2015-03-27 23:12 by Rualark */
+UPDATE cc_ctracks SET tg_id='2' WHERE t_id=10324; /* 2015-03-27 23:12 by Rualark */
+UPDATE cc_ctracks SET tg_id='5' WHERE t_id=10208 OR t_id=10209 OR t_id=10210 OR t_id=10211; /* 2015-03-27 23:12 by Rualark */
+UPDATE cc_ctracks SET tg_id='1' WHERE t_id=10212; /* 2015-03-27 23:12 by Rualark */
+UPDATE cc_ctracks SET tg_id='2' WHERE t_id=1618; /* 2015-03-28 22:30 by Rualark */
+UPDATE cc_ctracks SET tg_id='22' WHERE t_id=3685; /* 2015-03-29 14:48 by Rualark */
+UPDATE cc_ctracks SET tg_id='10' WHERE t_id=3958; /* 2015-04-09 09:42 by Rualark */
+UPDATE cc_ctracks SET tg_id='1' WHERE t_id=1239 OR t_id=1240 OR t_id=1241 OR t_id=1242 OR t_id=1243 OR t_id=1244 OR t_id=1245 OR t_id=1266; /* 2015-04-19 00:00 by Rualark */
+UPDATE cc_ctracks SET tg_id='1' WHERE t_id=1235; /* 2015-04-19 00:05 by Rualark */
+UPDATE cc_ctracks SET tg_id='1' WHERE t_id=4752 OR t_id=4753 OR t_id=4754 OR t_id=4755 OR t_id=4756 OR t_id=4757 OR t_id=4758 OR t_id=4759 OR t_id=4760 OR t_id=4761 OR t_id=4762; /* 2015-04-19 12:03 by Rualark */
+UPDATE cc_ctracks SET tg_id='21' WHERE t_id=2894; /* 2015-04-28 16:42 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=1875 OR t_id=1876; /* 2015-04-28 21:26 by Rualark */
+UPDATE cc_ctracks SET tg_id='11' WHERE t_id=5529 OR t_id=5530 OR t_id=5531 OR t_id=5532 OR t_id=5533 OR t_id=5534 OR t_id=5535 OR t_id=5536 OR t_id=5537 OR t_id=5538 OR t_id=5539 OR t_id=5540 OR t_id=5541 OR t_id=5542 OR t_id=5543 OR t_id=5544 OR t_id=5545 OR t_id=5546 OR t_id=5547 OR t_id=5548 OR t_id=5549 OR t_id=5550 OR t_id=5551 OR t_id=5552 OR t_id=5553 OR t_id=5554 OR t_id=5555 OR t_id=5556 OR t_id=5557 OR t_id=5558 OR t_id=5559 OR t_id=5560 OR t_id=5561 OR t_id=5562 OR t_id=5563 OR t_id=5564 OR t_id=5565; /* 2015-05-31 22:48 by Rualark */
+UPDATE cc_ctracks SET tg_id='21' WHERE t_id=1629; /* 2015-06-04 17:07 by Rualark */
+UPDATE cc_ctracks SET tg_id='1' WHERE t_id=2948 OR t_id=2949 OR t_id=2950 OR t_id=2951 OR t_id=2952 OR t_id=2953 OR t_id=2954 OR t_id=2955 OR t_id=2957 OR t_id=2958 OR t_id=2959; /* 2015-07-09 09:10 by Rualark */
+UPDATE cc_ctracks SET tg_id='1' WHERE t_id=4132 OR t_id=4133 OR t_id=4134 OR t_id=4135; /* 2015-07-16 09:17 by Rualark */
+UPDATE cc_ctracks SET tg_id='21' WHERE t_id=6070; /* 2015-07-20 08:52 by Rualark */
+UPDATE cc_ctracks SET tg_id='1' WHERE t_id=2247 OR t_id=2249 OR t_id=2255; /* 2015-07-27 09:15 by Rualark */
+UPDATE cc_ctracks SET tg_id='2' WHERE t_id=4042 OR t_id=4043 OR t_id=4044 OR t_id=4045 OR t_id=4046; /* 2015-08-03 08:58 by Rualark */
+UPDATE cc_ctracks SET tg_id='1' WHERE t_id=1194; /* 2015-08-03 08:58 by Rualark */
+UPDATE cc_ctracks SET tg_id='1' WHERE t_id=322 OR t_id=323 OR t_id=324 OR t_id=325 OR t_id=326 OR t_id=327 OR t_id=328 OR t_id=329 OR t_id=330 OR t_id=331 OR t_id=332 OR t_id=333 OR t_id=334 OR t_id=335 OR t_id=336 OR t_id=337 OR t_id=338 OR t_id=339 OR t_id=340 OR t_id=341 OR t_id=342 OR t_id=343 OR t_id=344 OR t_id=345 OR t_id=346 OR t_id=347 OR t_id=348 OR t_id=349 OR t_id=350 OR t_id=351 OR t_id=352 OR t_id=353 OR t_id=354 OR t_id=355 OR t_id=356 OR t_id=1616 OR t_id=2757 OR t_id=2788 OR t_id=2791 OR t_id=5285 OR t_id=5841 OR t_id=6361 OR t_id=6366; /* 2015-08-08 17:46 by Rualark */
+UPDATE cc_ctracks SET tg_id='10' WHERE t_id=5615; /* 2015-08-08 17:46 by Rualark */
+UPDATE cc_ctracks SET tg_id='1' WHERE t_id=1819 OR t_id=1823; /* 2015-08-08 17:47 by Rualark */
+UPDATE cc_ctracks SET tg_id='1' WHERE t_id=3965 OR t_id=3966 OR t_id=3967 OR t_id=3968 OR t_id=3981; /* 2015-08-08 17:49 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=4040; /* 2015-08-08 20:19 by Rualark */
+UPDATE cc_ctracks SET tg_id='1' WHERE t_id=1195; /* 2015-08-08 20:32 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=3780 OR t_id=3781 OR t_id=3782 OR t_id=3783 OR t_id=3784 OR t_id=3785; /* 2015-08-10 23:27 by Rualark */
+UPDATE cc_ctracks SET tg_id='15' WHERE t_id=3525; /* 2015-08-11 08:58 by Rualark */
+UPDATE cc_ctracks SET tg_id='22' WHERE t_id=4767; /* 2015-08-24 11:13 by Rualark */
+UPDATE cc_ctracks SET tg_id='22' WHERE t_id=4763 OR t_id=4774 OR t_id=4775 OR t_id=4776 OR t_id=4777; /* 2015-08-24 11:24 by Rualark */

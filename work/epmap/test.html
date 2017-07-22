@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-git.js"></script>
+  <style type="text/css">
+    body { font:13px/1.4 Arial, sans-serif; margin:50px; background:gray; }
+#tooltip { text-align:center; background:black; color:white; padding:3px 0; width:60px; position:fixed; display:none; white-space:nowrap; }
+  </style>
+  <title></title>
+
+<script type='text/javascript'>//<![CDATA[
+$(window).on('load', function() {
+var tooltip = $( '<div id="tooltip">' ).appendTo( 'body' )[0];
+
+$( '.coords' ).
+    each(function () {
+        var pos = $( this ).position(),
+            top = pos.top,
+            left = pos.left,
+            width = $( this ).width(),
+            height = $( this ).height();
+        
+        $( this ).
+            mousemove(function ( e ) {
+                var x = ( ( e.clientX - left ) / width ).toFixed( 1 ),
+                    y = ( ( height - ( e.clientY - top ) ) / height ).toFixed( 1 );
+                
+                $( tooltip ).text( x + ', ' + y ).css({
+                    left: e.clientX - 30,
+                    top: e.clientY - 30
+                }).show();
+            }).
+            mouseleave(function () {
+                $( tooltip ).hide();
+            }); 
+    });
+    
+
+
+
+});//]]> 
+
+</script>
+
+  
+</head>
+
+<body>
+  <img class="coords" src="amap/maps/en.png">
+</body>
+
+</html>
+

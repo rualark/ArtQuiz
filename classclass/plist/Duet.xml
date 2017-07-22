@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?><playlist version='1' xmlns='http://xspf.org/ns/0/'><title>Duet</title><info>Duet</info><trackList>
+<track>
+<location>../music/Duet/Bach/11.Duet in e-moll, BWV 802.mp3</location>
+<title>Bach - 11.Duet in e-moll, BWV 802</title>
+</track>
+<track>
+<location>../music/Duet/Bach/12.Duet in F-dur, BWV 803.mp3</location>
+<title>Bach - 12.Duet in F-dur, BWV 803</title>
+</track>
+<track>
+<location>../music/Duet/Bach/13.Duet in G-dur, BWV 804.mp3</location>
+<title>Bach - 13.Duet in G-dur, BWV 804</title>
+</track>
+<track>
+<location>../music/Duet/Bach/14.Duet in a-moll, BWV 805.mp3</location>
+<title>Bach - 14.Duet in a-moll, BWV 805</title>
+</track>
+<track>
+<location>../music/Duet/Paganini/(14) [Paganini] Duetto in G Major - Larghetto.mp3</location>
+<title>Paganini - (14) [Paganini] Duetto in G Major - Larghetto</title>
+</track>
+<track>
+<location>../music/Duet/Paganini/(15) [Paganini] Duetto in G Major - Andantino.mp3</location>
+<title>Paganini - (15) [Paganini] Duetto in G Major - Andantino</title>
+</track>
+<track>
+<location>../music/Duet/Paganini/(16) [Paganini] Duetto in G Major - Larghetto de capo.mp3</location>
+<title>Paganini - (16) [Paganini] Duetto in G Major - Larghetto de capo</title>
+</track></trackList></playlist>

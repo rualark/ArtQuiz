@@ -1,0 +1,320 @@
+/*
+<SCRIPT language=JavaScript src="/menu/menu.js"></SCRIPT>
+*/
+if(typeof(is_mobila_adaptive)=='undefined')
+is_mobila_adaptive=0;// 1- показывать только усеченное меню с возможностью переноса
+
+//alert(is_mobila_adaptive);
+if(!is_mobila_adaptive)// обычное не мобильное меню
+{
+
+//var aaaaaaaaaaaaa=10; //alert(aaaaaaaaaaaaa);
+
+var brauser_type_for_menu="any";
+version=navigator.appVersion;
+supporting1=document.getElementById?1:0;
+
+if(navigator.userAgent.indexOf("Firefox")>0)
+{
+brauser_type_for_menu="opacity";
+}
+else
+if((version.indexOf("MSIE ")>-1 && supporting1) )
+{ //alert(version);
+if(version.indexOf("MSIE 10")>0 || version.indexOf("MSIE 11")>0  || version.indexOf("MSIE 12")>0)
+brauser_type_for_menu="opacity";
+else
+brauser_type_for_menu="ie";
+
+//alert(brauser_type_for_menu);
+}
+else
+if(window.opera)
+brauser_type_for_menu="opacity";
+else
+if(navigator.userAgent.indexOf("Gecko")>0)
+brauser_type_for_menu="opacity";
+else
+if(navigator.userAgent.indexOf("AppleWebKit")>0)
+brauser_type_for_menu="KhtmlOpacity";
+//////////////////////////////////////////////////
+//alert(navigator.userAgent+" | "+brauser_type_for_menu);
+var old_sub=0;
+var old_subsub=0;
+
+/////////////////////////////////  
+// когда курсор вне области меню закрывать принудительно, иногда остается.
+function menu_hide_all()
+{
+// принудительно закрыть все
+for(i=0;i<allItemsCount;i++)
+document.getElementById(allItemsIdArr[i]).style.visibility = "hidden";
+}
+function menu_hide(num,num2,ssub)
+{
+if(num2>0)
+{
+setTimeout("todo_sub_hide('"+num+"','"+num2+"',"+ssub+")",200);
+}
+
+//////////////
+old_subsub=0;
+old_sub=0;
+setTimeout("menu_hide_todo('"+num+"','"+num2+"',"+ssub+")",200);// чтобы menu_show успела
+
+}
+//////////////////////////////
+function todo_sub_hide(num,num2,ssub)
+{
+if(num2==old_subsub) return;
+
+subsub=document.getElementById("subsubmenu_"+num+"_"+num2); //alert(sub.style.visibility);
+if(subsub) 
+if(subsub.style.visibility != "hidden")
+{
+subsub.style.visibility = "hidden";
+change_opac_menu(0, "subsubmenu_"+num+"_"+num2);
+//return;
+}
+old_subsub=num2;
+
+}
+///////////////
+function menu_hide_todo(num,num2,ssub)
+{
+if(num==old_sub) 
+	return;
+sub=document.getElementById("submenu_"+num);
+if(sub) 
+if(sub.style.visibility != "hidden")
+{
+sub.style.visibility = "hidden";
+change_opac_menu(0, "submenu_"+num);
+}
+//menu_hide_all();
+}
+///////////////////////////
+//sub=document.getElementById("submenu_1");alert(sub.offsetTop+" | "+sub.offsetHeight);
+function menu_show(num,num2,ssub)
+{ 
+if(is_mobila_adaptive)// ЗАПЕРТ ПОКАЗА СУБМЕНЮ 
+return;
+if(num2<0)//главное
+{ 
+sub_id="submenu_"+num;
+sub=document.getElementById(sub_id); 
+if(sub) 
+//if(sub.style.visibility == "visible") return;// от дребезга при переходе через <a href
+if(sub.style.visibility != "visible")// от дребезга при переходе через <a href
+{
+sub.style.visibility = "visible"; 
+//if(old_sub==num) return;
+opac_progress(sub_id);
+}
+old_sub=num;
+}
+else
+{
+old_sub=num;
+//var screenX=document.getElementsByTagName( 'body' )[0].scrollWidth;
+//var leftwidth=;
+//if(left > screenX)
+subsub_id="subsubmenu_"+num+"_"+num2;
+subsub=document.getElementById(subsub_id); //alert(sub.style.visibility);
+if(subsub) 
+if(subsub.style.visibility != "visible")
+{
+subsub.style.visibility = "visible";
+//change_opac_menu(100, subsub_id);
+opac_progress(subsub_id);
+}
+old_subsub=num2;//"subsubmenu_"+num+"_"+num2;
+
+}
+
+}
+/////////////////////////////////////////////////
+var menu_cur_item_id=0;
+//var menu_work_process_speed=0;
+var menu_cur_img_opacity=0;
+function opac_progress(id)
+{
+menu_cur_item_id=id;
+//menu_work_process_speed=0;
+menu_cur_img_opacity=0;
+change_opac_menu(0, id);
+//alert(show_speed);
+/*  мелкософт эдже захлебывается очередью в 100 задержек ! поэтому таймеры - поочередно
+for(i = 1; i <= 100; i++) 
+{//alert("changeOpac_menu(" + i + ",'" + id + "')");
+setTimeout("change_opac_menu(" + i + ",'" + id + "')",(i * show_speed));
+}
+*/
+go_to_next_step();
+}
+
+function go_to_next_step() 
+{
+change_opac_menu(menu_cur_img_opacity, menu_cur_item_id);
+
+timeout = setTimeout("go_to_next_step()",show_speed);
+if (menu_cur_img_opacity==100) 
+{
+clearTimeout(timeout);
+return;
+}
+menu_cur_img_opacity++;
+}
+
+
+function change_opac_menu(opacity, id) 
+{//alert(opacity);
+
+var id_obj =document.getElementById(id);
+if(!id_obj)
+	return;
+if(typeof(id_obj)=='undefined')
+	return;
+
+if(brauser_type_for_menu=="apple2")
+{
+id_obj.style.opacity=opacity/100;
+id_obj.style.KhtmlOpacity=opacity/100;//Для Konqueror/Safari:
+id_obj.style.MozOpacity=opacity/100;
+return;
+}
+
+//opacity:0.0; -khtml-opacity: 0.0; -moz-opacity:0.0; filter:alpha(opacity=0);
+if(brauser_type_for_menu=="opacity")
+{id_obj.style.opacity=opacity/100;return;}// для оперы
+
+if(brauser_type_for_menu=="MozOpacity")
+{id_obj.style.MozOpacity=opacity/100;return;}//Для FireFox, Mozilla (Gecko): 
+
+if(brauser_type_for_menu=="KhtmlOpacity")
+{id_obj.style.KhtmlOpacity=opacity/100;return;}//Для Konqueror/Safari:
+
+if(brauser_type_for_menu=="ie")
+{
+//
+//alert(typeof(id_obj.filters.alpha));
+if(typeof(id_obj.filters.alpha)!='undefined')
+	{id_obj.filters.alpha.opacity=opacity;return;}
+
+}
+// по умолчанию
+id_obj.style.opacity=opacity/100;
+//id_obj.style.filter = "alpha(opacity=" + opacity + ")";
+}
+////////////////////////
+document.onclick= menu_hide_all;
+///////////////////////
+
+// адаптивное перемещение невлазящего в экран мобилы на следующую строку
+// // ЗАПЕРТ ПОКАЗА СУБМЕНЮ в function menu_show(num,num2,ssub)
+var was_call_set_mine_menu_cols=0;// против двойного вызова
+function set_mine_menu_cols()// можно сдвигать допол-но shift_mine_menu=NS
+{  
+if(typeof(is_mobila_adaptive)!='number')
+	return;
+
+if(was_call_set_mine_menu_cols)
+	return;
+was_call_set_mine_menu_cols=1;
+
+//alert(is_mobila_adaptive);
+
+if(!is_mobila_adaptive)
+	return;
+
+n_column=2;
+if(screen.width>600)
+	n_column=3;
+
+//alert(document.getElementById('main_item_id_0'));
+isML=0;// 1 - используется margin-left
+if(document.getElementById('main_item_id_0').style.marginLeft!='')
+isML=1;
+/* // в моболе все пофиг полный
+for(i=0;i<main_count;i++)
+{
+document.getElementById('main_item_id_'+i).style.fontSize="2rem";
+//document.getElementById('main_item_id_0').style.fontSize="16pt";
+}
+*/
+
+//alert(isML);
+if(isML)
+div_ml=parseInt(document.getElementById('main_item_id_0').style.marginLeft);
+else
+div_ml=document.getElementById('main_item_id_0').offsetLeft;
+div_t=document.getElementById('main_item_id_0').offsetTop;
+div_w=document.getElementById('main_item_id_0').offsetWidth;
+div_h=document.getElementById('main_item_id_0').offsetHeight;
+//alert(div_ml+" | "+div_w+" | "+div_h+" | "+main_count);
+//alert(div_t+2*div_h+menu_cellspacing);
+
+img_l=document.getElementById('main_logo_fornit_id');
+logo_x0=0;
+if(img_l)
+{
+//сдвинуть лого впритык слева:
+img_l.style.left="4px";
+//уменьшить лого:
+img_l.width=Math.round(140*0.7);
+img_l.height=Math.round(53*0.7);
+
+logo_x0=img_l.offsetLeft+img_l.offsetWidth;
+}
+//alert(document.getElementById('main_item_id_0').style.fontSize);
+
+//shistT=10-parseInt(document.getElementById('main_item_id_0').style.top);
+//shistT=-40;
+//shistL=-100;
+
+//alert(isML);
+
+nrow=0;
+ncol=0;
+if(isML)
+x0=-logo_x0+30;
+else
+x0=logo_x0+30;
+
+y0=10;
+if(typeof(shift_mine_menu)=='number')
+x0+=shift_mine_menu;
+
+//alert((div_ml+x0+div_w*ncol)+"px");
+
+for(i=0;i<main_count;i++)
+{
+div=document.getElementById('main_item_id_'+i);
+
+if(i%n_column==0 && i)
+{
+//shistT+=div_t;
+nrow++;
+ncol=0;
+}
+
+div.style.top=(y0+div_h*nrow)+"px";
+if(isML)
+div.style.marginLeft=(div_ml+x0+div_w*ncol)+"px";
+else
+div.style.left=(x0+div_w*ncol)+"px";
+
+div.style.height="30px";
+div.style.fontSize="1.4rem";
+
+ncol++;
+}
+
+// убрать блок поиска справа хидера:
+if(document.getElementById('search_div_id'))
+document.getElementById('search_div_id').style.display="none";
+
+}
+
+}//if(!is_mobila_adaptive)
+

@@ -1,0 +1,10 @@
+
+function get_dictionary_num(num)
+{
+var AJAX = new ajax_support('/dictionary/dictionary_show.php?id='+num,sent_dictionary_request_result);
+AJAX.send_reqest();
+}
+////////////////
+
+
+

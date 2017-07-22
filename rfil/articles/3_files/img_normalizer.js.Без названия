@@ -1,0 +1,54 @@
+/*
+картинки показываются не более, чем ширина экрана устройства
+сразу после <BODY  включить:
+<SCRIPT language=JavaScript src="/mob/img_normalizer.js"></SCRIPT>
+
+перед </BODY> скопировать:
+<script language="JavaScript">
+if(is_mobila_adaptive)
+normaliz_imgs(); //- в /mob/img_normalizer.js нормализация картинок - чтобы были не более, чем размер экрана
+</Script>  
+*/
+
+// определяем ширину экрана чтобы учесть дя мобил:
+var global_screenX=0;
+if (self.screen) 
+{
+global_screenX = screen.width;
+}
+if (self.java) 
+{
+var jToolKit = java.awt.Toolkit.getDefaultToolkit();
+var scrsize = jToolKit.getScreenSize();
+global_screenX = scrsize.width;
+}
+var is_mobila_adaptive=0;
+if(global_screenX>0 && global_screenX<800)
+is_mobila_adaptive=1;
+
+// is_mobila_adaptive=1;// проверка на десктопе
+
+// shift - на сколько нужно еще уменьшить картинку 
+//(если есть столбец, который в экране занимает место shift)
+function normaliz_imgs(shift)
+{ 
+//alert('!!!!!!!! 222222');
+screenX=document.body.clientWidth - shift - 20;
+//screenX=300- shift;// для проверки 
+var img = document.getElementsByTagName('img');
+for(i=0;i<img.length;i++)
+{
+w=img[i].width;
+h=img[i].height;
+k=w/h;
+if(w>screenX)
+{ // alert(img[i].src);
+img[i].width=screenX; 
+img[i].height=Math.round(img[i].width/k);
+//img[i].style.width='100%';
+}// style='width:99%;'
+
+}
+
+}
+//////////////////////////////////////

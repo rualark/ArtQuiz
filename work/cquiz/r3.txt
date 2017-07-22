@@ -1,0 +1,100 @@
+﻿1. Ludwig Van Beethoven - 1770-1827
+2. Wolfgang Amadeus Mozart - 1756-1791
+3. Johann Sebastian Bach - 1685-1750
+4. Richard Wagner - 1813-1883 
+5. Joseph Haydn - 1732-1809 
+6. Johannes Brahms - 1833-1897 
+7. Franz Schubert - 1797-1828 
+8. Peter Ilyich Tchaikovsky - 1840-1893 
+9. George Frideric Handel - 1685-1759 
+10. Igor Stravinsky - 1882-1971 
+11. Robert Schumann - 1810-1856 
+12. Frederic Chopin - 1810-1849 
+13. Felix Mendelssohn - 1809-1847 
+14. Claude Debussy - 1862-1918 
+15. Franz Liszt - 1811-1886 
+16. Antonin Dvorak - 1841-1904 
+17. Giuseppe Verdi - 1813-1901 
+18. Gustav Mahler - 1860-1911 
+19. Hector Berlioz - 1803-1869 
+20. Antonio Vivaldi - 1678-1741 
+21. Richard Strauss - 1864-1949 
+22. Sergey Prokofiev - 1891-1953 
+23. Dmitri Shostakovich - 1906-1975 
+24. Bela Bartok - 1881-1945 
+25. Anton Bruckner - 1824-1896 
+26. Giovanni Pierluigi da Palestrina - 1525-1594 
+27. Claudio Monteverdi - 1567-1643 
+28. Jean Sibelius - 1865-1957 
+29. Maurice Ravel - 1875-1937 
+30. Ralph Vaughan Williams - 1872-1958 
+31. Modest Mussorgsky - 1839-1881 
+32. Giacomo Puccini - 1858-1924 
+33. Henry Purcell - 1659-1695 
+34. Gioacchino Rossini - 1792-1868 
+35. Edward Elgar - 1857-1934 
+36. Sergey Rachmaninov - 1873-1943 
+37. Camille Saint-Saens - 1835-1921 
+38. Josquin Des Prez - c.1440-1521 
+39. Nikolai Rimsky-Korsakov - 1844-1908 
+40. Carl Maria von Weber - 1786-1826 
+41. JeanPhilippe Rameau - 1683-1764 
+42. JeanBaptiste Lully - 1632-1687 
+43. Gabriel Faure - 1845-1924 
+44. Edvard Grieg - 1843-1907 
+45. Christoph Willibald Gluck - 1714-1787 
+46. Arnold Schoenberg - 1874-1951 
+47. Charles Ives - 1874-1954 
+48. Paul Hindemith - 1895-1963 
+49. Olivier Messiaen - 1908-1992 
+50. Aaron Copland - 1900-1990 
+51. Francois Couperin - 1668-1733 
+52. William Byrd - 1539-1623 
+53. Erik Satie - 1866-1925 
+54. Benjamin Britten - 1913-1976 
+55. Bedrich Smetana - 1824-1884 
+56. Cesar Franck - 1822-1890 
+57. Alexander Scriabin - 1872-1915 
+58. Georges Bizet - 1838-1875 
+59. Domenico Scarlatti - 1685-1757 
+60. Georg Philipp Telemann - 1681-1767 
+61. Anton Webern - 1883-1945 
+62. Rolande de Lassus - 1532-1594
+63. George Gershwin - 1898-1937 
+64. Gaetano Donizetti - 1797-1848 
+65. Carl Philipp Emanuel Bach - 1714-1788 
+66. Archangelo Corelli - 1653-1713 
+67. Thomas Tallis - 1505-1585 
+68. Jules Massenet - 1842-1912 
+69. Johann Strauss II - 1825-1899 
+70. Leos Janacek - 1854-1928 
+71. Guillaume de Machaut - 1300-1377
+72. Alban Berg - 1885-1935 
+73. Alexander Borodin - 1833-1887 
+74. Vincenzo Bellini - 1801-1835 
+75. Charles Gounod - 1818-1893 
+76. Francis Poulenc - 1899-1963 
+77. Giovanni Gabrieli - 1554-1612 
+78. Perotin - 1160-1225
+79. Heinrich Schutz - 1585-1672
+80. John Cage - 1912-1992 
+81. Giovanni Battista Pergolesi - 1710-1736
+82. John Dowland - 1563-1626
+83. Gustav Holst - 1874-1934 
+84. Dietrich Buxtehude - 1637-1707
+85. Ottorino Respighi - 1879-1936 
+86. Guillaume Dufay - 1400-1474
+87. Hugo Wolf - 1860-1903
+88. Carl Nielsen - 1865-1931 
+89. William Walton - 1902-1983
+90. Darius Milhaud - 1892-1974 
+91. Orlando Gibbons - 1583-1625
+92. Giacomo Meyerbeer - 1791-1864
+93. Samuel Barber - 1910-1981 
+94. Tomas Luis de Victoria - 1549-1611
+95. Leonin - 1135-1201
+96. Manuel de Falla - 1876-1946
+97. Hildegard von Bingen - 1098-1179 
+98. Mikhail Glinka - 1804-1857 
+99. Alexander Glazunov - 1865-1936
+100. Don Carlo Gesualdo - 1566-1613

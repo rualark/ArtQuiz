@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?><playlist version='1' xmlns='http://xspf.org/ns/0/'><title>British march</title><info>British march</info><trackList>
+<track>
+<location>../music/British march/British grenadiers march.mp3</location>
+<title>British grenadiers march</title>
+</track>
+<track>
+<location>../music/British march/Colonel Bogey March.mp3</location>
+<title>Colonel Bogey March</title>
+</track></trackList></playlist>

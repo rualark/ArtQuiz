@@ -1,0 +1,101 @@
+﻿Johann Sebastian Bach
+2 
+Wolfgang Amadeus Mozart
+3 
+Ludwig van Beethoven
+4 
+Richard Wagner
+5 
+Joseph Haydn
+6 
+Johannes Brahms
+7 
+Franz Schubert
+8 
+Robert Schumann
+9 
+Georg Frederick Handel
+10 
+Piotr Illitch Tchaïkovsky
+11 
+Felix Mendelssohn-Bartholdy
+12 
+Antonín Dvořák
+13 
+Franz Liszt
+14 
+Frédéric Chopin
+15 
+Igor Stravinsky
+16 
+Giuseppe Verdi
+17 
+Gustav Mahler
+18 
+Sergey Prokofiev
+19 
+Dmitri Shostakovich
+20 
+Richard Strauss
+21 
+Hector Berlioz
+22 
+Claude Debussy
+23 
+Giacomo Puccini
+24 
+Giovanni Pierluigi da Palestrina
+25 
+Anton Bruckner
+26 
+Georg Philipp Telemann
+27 
+Camille Saint-Saëns
+28 
+Jean Sibelius
+29 
+Maurice Ravel
+30 
+Gioacchino Rossini
+31 
+Edvard Grieg
+32 
+Christoph Willibald Gluck
+33 
+Paul Hindemith
+34 
+Claudio Monteverdi
+35 
+Béla Bartók
+36 
+César Franck
+37 
+Antonio Vivaldi
+38 
+Georges Bizet
+39 
+Modest Mussorgsky
+40 
+Jean-Philippe Rameau
+41 
+Gabriel Fauré
+42 
+Nikolai Rimsky-Korsakov
+43 
+Gaetano Donizetti
+44 
+Ralph Vaughan Williams
+45 
+Bedřich Smetana
+46 
+Johann Strauss II
+47 
+Carl Maria von Weber
+48 
+Leoš Janáček
+49 
+Francois Couperin
+50 
+Alexander Borodin
+51
+Rachmaninov

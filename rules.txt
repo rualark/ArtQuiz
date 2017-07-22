@@ -1,0 +1,6 @@
+These files should not be copied to hosting:
+
+mysql.php
+url_include.php
+pquiz/config.php
+pquiz-lim/config.php

@@ -1,0 +1,265 @@
+//Использование: <script type="text/javascript" src="/error_sending/send_error.js"></script>
+// или include_once($my_DOCUMENT_ROOT."error_sending/client_send_error.php");
+
+// Для статических send_error_2.js
+
+document.write("<font size=2><font size=4 color=red><b>!</font> <font color=#A300CC>Е</font><font color=#8100B1>с</font><font color=#630092>л</font><font color=#4B0066>и</font></b> Вы обнаружили на странице ошибку, выделите мышью слово или фразу и нажмите сочетание клавиш Ctrl+Enter (<a href='/error_sending/help.htm' target='_blank'>подробнее</a>).</font>\r\n");
+if(!document.getElementById("unikum_id_error_span"))
+document.write("<span id='unikum_id_error_span' ></span>\r\n");
+
+//if(typeof(sender_ip)=='undefined')
+//var sender_ip="не известен..";
+
+//var sender_cook=m_getCookie('user_ident');
+
+
+
+// для фиксации диалога внизу не зависимо от прокрутки
+// !!!!! document.body.style.background = 'url(/;-)/n.gif) no-repeat';
+document.body.style.backgroundAttachment = 'fixed';
+
+//alert(sender_cook);  onkeydown  onkeypress
+
+document.onkeydown= function selectedText(e)
+{
+with (this) 
+{
+    var pressed=0;
+    var we = null;
+    if (window.event) we = window.event;
+    else if (parent && parent.event) we = parent.event;
+
+    if (we) {
+      // IE & Opera
+      pressed = we.keyCode==10 ||  // IE
+        (we.keyCode == 13 && we.ctrlKey); // Opera 
+    } else if (e) {
+      // NN
+      pressed = 
+        (e.which==10 && e.modifiers==2) || // NN4
+        (e.keyCode==0 && e.charCode==106 && e.ctrlKey) ||
+        (e.keyCode==13 && e.ctrlKey) // Mozilla
+    }
+if(!pressed) 
+{
+//var evt = (e) ? evt : ((event) ? event : null);
+
+//alert("!!!! ");
+}
+    if(!pressed) 
+		return;
+ }
+
+
+/////////////////////
+
+var context = 0;
+var text=0;
+var selection=0;
+if(parent.getSelection)// типа оперы
+{
+	text=parent.getSelection();
+}
+else 
+if (parent.document.getSelection) 
+{
+	text = parent.document.getSelection();
+	
+} 
+else // 
+{ 
+selection = parent.document.selection;
+range = document.selection.createRange();
+range.expand("sentence");// показывать все предложение
+context=range.text;
+//alert(range.text);return;	
+}
+//alert(text);
+if(context==0)// выделение окружающего в мозиле
+{
+if (text.getRangeAt) 
+{ 
+var contlen=60;
+//var maxlen="256";
+
+var range = text.getRangeAt(0);
+textRange = range.toString();
+var newRange = window.document.createRange();
+newRange.setStartBefore(range.startContainer.ownerDocument.body);
+newRange.setEnd(range.startContainer, range.startOffset);
+pre = newRange.toString();
+newRange = range.cloneRange();
+newRange.setStart(range.endContainer, range.endOffset);
+newRange.setEndAfter(range.endContainer.ownerDocument.body);
+suf = newRange.toString();
+//alert(suf);return;
+var p;
+var s = (p=textRange.match(/^(\s*)/)) && p[0].length;
+var e = (p=textRange.match(/(\s*)$/)) && p[0].length;
+pre = pre + textRange.substring(0, s);
+suf = textRange.substring(textRange.length - e, textRange.length) + suf;
+textRange = textRange.substring(s, textRange.length - e);
+
+pre = stripSlashn(pre.substring(pre.length-contlen, pre.length).replace(/^\S{1,10}\s+/, ""));
+suf = stripSlashn(suf.substring(0, contlen).replace(/\s+\S{1,10}$/,""));
+
+context= pre+" ["+text+"] "+suf;
+
+//alert(context);return;
+
+} 
+}
+
+
+if(selection)
+{
+var oSelTxt = document.selection.createRange();
+text=oSelTxt.text;
+}
+//if(!text)
+//{
+//alert('Ваш просмотрщик не поддерживает возможноть получения выделенного текста...Используйте шаблон для вставки текста вручную, введя цитату между [quote] и [/quote]');
+//return;
+//}
+
+text=""+text;// - только для оперы и фокса: они иначе не воспринимают text как объект :))))
+
+//alert(text.length);
+
+if(text.length>200)
+{alert("Выделен слишком большой фрагмент, больше 200 символов.");return;}
+
+if(text.length==0)
+{alert("Пожалуйста, выделите фрагмент текста!.. :)\r\n\r\nЕсли он и так был выделен, значит Ваш просмотрщик не позволил его считать.\r\nВ этом случае, пожалуйста, скопируйте фрагмент с ошибкой в окошко ввода.");return;}
+
+if(text.length<3)
+{alert("Пожалуйста, выделите фрагмент побольше!.. :)");return;}
+
+//if(confirm("Выделенный текст:\n_____________________________________\n"+text+"\n_____________________________________\n\nПослать сообщение об ошибке?"))
+//send_error(text);  url_encode(context)
+
+theExp = new RegExp('"', "g");
+
+text=text.replace(theExp,"&quot;");
+//text=text.replace(/"/g,"&quot;"); - тоже можно
+
+if(context)
+{	
+context=""+context;
+context=context.replace(theExp,"&quot;");
+}
+
+
+show_error_dlg(1,context,text);
+
+}
+
+///////////////////////////////////
+function show_error_dlg(show,context,select)
+{ // alert("!!!! "+show);
+if(show)
+{
+id='unikum_id_error_span'; //unikum_id_error_span  unikum_id_error
+border="#000000";
+bgcolor="#E4E4E4";
+text="<center><b>Сообщение об ошибке:</b><center><form name=error_form action=\"/error_sending/send_error.php?publisher_owner_id="+publisher_owner_id+"\" target=\"_error_sending_\" method=post>Выделен текст с ошибкой:<br><span style=\"color: #ff0000; background-color: #febbb8;\">&quot"+select+"&quot</span><br>";
+if(context) text+="<br>в предложении:<br><span style=\"background-color: #febbb8;\">&quot;"+context+"&quot;</span><br>";
+text+="<br>Еще передать замечание:<br>\
+<textarea name=\"comment\"  maxlength=\"1012\" rows=3 cols=80 style=\"FONT-FAMILY: Verdana, Arial;FONT-SIZE: 10px;\"></textarea><br>\
+<input type=hidden name=\"error_referrer\" value=\""+top.document.location+"\">\
+<input type=hidden name=\"error_URL\" value=\""+document.location+"\">\
+<input type=hidden name=\"error_context\" value=\""+context+"\">\
+<input type=hidden name=\"error_selected\" value=\""+select+"\">\
+<input type=\"submit\" name=\"submit\" value=\"Послать сообщение об ошибке\" onclick=\"javascript:show_error_dlg(0,0,0)\" style=\"FONT-FAMILY: Verdana, Arial;FONT-SIZE: 10px;\">&nbsp;\
+<input type=\"button\" name=\"cancel\" value=\"Отмена\" onclick=\"javascript:show_error_dlg(0,0,0)\"  style=\"FONT-FAMILY: Verdana, Arial;FONT-SIZE: 10px;\">\
+</form>\r\n";
+
+//<input type=hidden name=\"sender_ip\" value=\""+sender_ip+"\">\
+//<input type=hidden name=\"sender_cook\" value=\""+sender_cook+"\">\
+
+var element = document.getElementById(id); 
+var isOther=0;
+if(window.opera || navigator.userAgent.indexOf("Firefox")>0)
+var isOther=1;
+//alert(isOther);
+/*
+if(isOther)// не поддерживают expression() в стилях
+{
+strX="0";
+strY="0";
+}
+else
+{
+strX="expression((document.body.clientWidth-document.sizeX)/2)";//+(document.documentElement.scrollLeft || document.body.scrollLeft) - document.documentElement.clientLeft))";
+strY="expression( (document.getElementsByTagName(\'body\')[0].scrollTop + document.getElementsByTagName(\'body\')[0].clientHeight) - document.sizeY)";
+}
+var content = '<div  id="error_dlg" style="position:absolute;border:solid 2px '+border+';display:none;padding:2px;Z-INDEX:1000;LEFT:'+strX+';TOP:'+strY+';font-size:16px;background-color:'+bgcolor+';">'+text+'</div>';    
+element.innerHTML = content;
+document.getElementById("error_dlg").style.display = 'block';
+document.sizeY=document.getElementById("error_dlg").offsetHeight;
+document.sizeX=document.getElementById("error_dlg").offsetWidth;
+
+if(isOther)
+{
+document.getElementById("error_dlg").style.left=(document.body.clientWidth-document.sizeX)/2;
+document.getElementById("error_dlg").style.top=(document.getElementsByTagName('body')[0].clientHeight) - document.sizeY;
+
+var FixedElement = document.getElementById("error_dlg");
+FixedElement.style.position="fixed";
+}
+*/
+var dilg_strX=600;
+var dilg_strY=200;
+// нужно выбрать наибольший размер клиента:
+var sx = (document.getElementsByTagName( 'body' )[0].scrollLeft ||
+	document.getElementsByTagName.scrollLeft ||
+	document.documentElement.scrollLeft || document.body.scrollLeft);
+var sy = (document.getElementsByTagName( 'body' )[0].scrollTop ||
+	document.getElementsByTagName.scrollTop ||
+	document.documentElement.scrollTop || document.body.scrollTop);
+
+var cx = document.getElementsByTagName( 'body' )[0].clientWidth;
+if(document.body.clientWidth&&cx>document.body.clientWidth) cx=document.body.clientWidth;
+if(document.getElementsByTagName.clientWidth&&cx>document.getElementsByTagName.clientWidth) cx=document.getElementsByTagName.clientWidth;
+if(document.documentElement.clientWidth&&cx>document.documentElement.clientWidth) cx=document.documentElement.clientWidth;
+var cy = document.getElementsByTagName( 'body' )[0].clientHeight;
+if(document.body.clientHeight&&cy>document.body.clientHeight) cy=document.body.clientHeight;
+if(document.getElementsByTagName.clientHeight&&cy>document.getElementsByTagName.clientHeight) cy=document.getElementsByTagName.clientHeight;
+if(document.documentElement.clientHeight&&cy>document.documentElement.clientHeight) cy=document.documentElement.clientHeight;
+//alert("!!!! "+sx+" | "+sy+" | "+cx+" | "+cy); 
+var strX=sx + (cx - dilg_strX)/2;
+var strY=sy + (cy - dilg_strY)/2;
+
+//var strX=document.getElementsByTagName( 'body' )[0].scrollLeft + (document.getElementsByTagName( 'body' )[0].clientWidth - dilg_strX)/2;
+//var strY=document.getElementsByTagName( 'body' )[0].scrollTop + (document.getElementsByTagName( 'body' )[0].clientHeight - dilg_strY)/2;
+
+//height:'+dilg_strY+'px;
+var content = '<div id="error_dlg" style="position:absolute;Z-INDEX:1000;LEFT:'+strX+'px;TOP:'+strY+'px;width:'+dilg_strX+'px;font-size:16px;background-color:'+bgcolor+';border:solid 2px '+border+';display:block;padding:2px;">'+text+'</div>';    
+//var content = '<div  id="error_dlg" style="position:absolute;border:solid 2px '+border+';display:none;padding:2px;Z-INDEX:1000;LEFT:0;TOP:0;font-size:16px;background-color:'+bgcolor+';">'+text+'</div>';    
+element.innerHTML = content;
+
+//alert("!!!! "+element.innerHTML);
+
+//var error_dlg = document.getElementById("error_dlg");
+//document.sizeY=document.getElementById("error_dlg").offsetHeight;
+//document.sizeX=document.getElementById("error_dlg").offsetWidth;
+//strX=(document.getElementsByTagName( 'body' )[0].scrollWidth-document.sizeX)/2;
+//strY=(document.getElementsByTagName('body')[0].clientHeight) - document.sizeY;
+//alert(strX+' | '+strY+' | '+document.sizeX+' | '+document.sizeY);
+//error_dlg.style.left=strX+'px';
+//error_dlg.style.top=strY+'px';
+
+//if(isOther)
+//error_dlg.style.position="fixed"; !!!!
+}
+else
+	document.getElementById("error_dlg").style.display = 'none'; 
+
+}
+
+
+function stripSlashn(str) 
+{
+    return ("" + str).replace(/[\r\n]+/g," ").replace(/^\s+|\s+$/g,"");
+}
+

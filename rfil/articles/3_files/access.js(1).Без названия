@@ -1,0 +1,294 @@
+// использование:
+// <script Language='JavaScript' src='/voting/access.js'></script><div  id='voting_id' ></div><script Language='JavaScript'>get_voting_content('".$GLOBALS['SERVER_NAME']."');</script>
+
+var req2;
+var cur_domain='http://www.scorcher.ru';
+var cur_voting_id=0;
+function loadVotingXMLDoc(url) {
+    // branch for native XMLHttpRequest object
+    if (window.XMLHttpRequest) { 
+        req2 = new XMLHttpRequest();
+        req2.onreadystatechange = processVotingReqChange;
+        req2.open("GET", url, true);
+        req2.send(null);
+    // branch for IE/Windows ActiveX version
+    } else if (window.ActiveXObject) { 
+        req2 = new ActiveXObject("Microsoft.XMLHTTP");
+        if (req2) {
+            req2.onreadystatechange = processVotingReqChange;
+            req2.open("GET", url, true);
+            req2.send();
+        }
+    }
+}
+///////////////////////////////////
+
+function processVotingReqChange() {   
+    ab = window.setTimeout("req2.abort();", 5000);
+    
+    if(req2.readyState == 4) {
+        clearTimeout(ab);
+        isRequest=0;
+        status = req2.status; 
+        // req2.statusText; - описание ощибки 
+//alert("Ќе удалось получить данные:\n" + req2.status);
+        // only if "OK"
+        if (req2.status == 200) 
+			{			
+			//alert("!!");
+   			sent_voting_request_result(req2.responseText);
+		} 
+		else 
+		{	//alert("!!");
+            //alert("Ќе удалось получить данные:\n" + req2.statusText);
+        }
+    } 
+}
+///////////////////////////////////////
+function get_voting_content(domain)
+{
+cur_domain=domain;
+//	alert('http://'+domain+'/voting/voting_div.php');
+//get_voting_timeout(domain);
+loadVotingXMLDoc('http://'+cur_domain+'/voting/voting_div.php');
+}
+////////////////
+function sent_voting_request_result(resOut) 
+{//alert(resOut);
+/*
+var needTimeOut=1;
+var markTimeOut=m_getCookie('voting_cook_id_i');
+alert(markTimeOut);
+if(markTimeOut==null)
+{
+//m_setCookie('voting_cook_id_i',1,10000,'/','',0);
+resOut="√олосованиен станет доступным через 5 минут."+resOut;
+}
+else
+	needTimeOut=0;
+
+var pos0= resOut.indexOf("[needTimeOut]");
+if(pos0>=0)
+	{
+	set_voting_timeout(cur_domain);
+	resOut=resOut.substr(0,pos0+13);
+	
+	}
+*/
+document.getElementById('voting_id').innerHTML=resOut;
+}
+//////////////////////////////////////
+function voting_list() 
+{ 
+//newWindow=window.open("/voting/voting_list.php?answer="+id,"reiting_win_all",'left=50,top=50,width=600,height=400,scrollbars=1');   
+newWindow=window.open("/voting/voting_list.php","reiting_win_all",'scrollbars=1');   
+newWindow.focus(); 
+} 
+///////////////////////////
+function press_btn(num)
+{
+//alert("!!! 1"); 
+document.getElementById('voting_img_'+num).src="/voting/k2_2.gif";
+//document.getElementById('voting_tbl').rows[0].cells[0].
+}
+function chose_btn(num,voting_id)
+{
+//alert("!!! 2");
+cur_voting_id=voting_id;
+document.getElementById('voting_img_'+num).src="/voting/k2.gif";
+//var newWindow=window.open("/voting/voting_show.php?answer="+num+"&voting_id="+voting_id,"reiting_win",'left=50,top=50,width=200,height=100');
+//newWindow.focus();
+get_voting3_content(cur_domain,num,voting_id);
+}
+function cancel_btn(num)
+{
+//alert("!!! 2");
+document.getElementById('voting_img_'+num).src="/voting/k2.gif";
+}
+///////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////
+var req3;
+
+function loadVoting3XMLDoc(url) {
+    // branch for native XMLHttpRequest object
+    if (window.XMLHttpRequest) { 
+        req3 = new XMLHttpRequest();
+        req3.onreadystatechange = processVoting3ReqChange;
+        req3.open("GET", url, true);
+        req3.send(null);
+    // branch for IE/Windows ActiveX version
+    } else if (window.ActiveXObject) { 
+        req2 = new ActiveXObject("Microsoft.XMLHTTP");
+        if (req3) {
+            req3.onreadystatechange = processVoting3ReqChange;
+            req3.open("GET", url, true);
+            req3.send();
+        }
+    }
+}
+///////////////////////////////////
+
+function processVoting3ReqChange() {   
+    ab = window.setTimeout("req3.abort();", 5000);
+    
+    if(req3.readyState == 4) {
+        clearTimeout(ab);
+        isRequest=0;
+        status = req3.status; 
+        // req2.statusText; - описание ощибки 
+//alert("Ќе удалось получить данные:\n" + req3.status);
+        // only if "OK"
+        if (req3.status == 200) 
+			{			
+			//alert("!!");
+   			sent_voting3_request_result(req3.responseText);
+		} 
+		else 
+		{	//alert("!!");
+            //alert("Ќе удалось получить данные:\n" + req3.statusText);
+        }
+    } 
+}
+///////////////////////////////////////
+function get_voting3_content(domain,num,voting_id)
+{
+//	alert('http://'+domain+'/voting/voting_div.php');
+cur_voting_id=voting_id;
+loadVoting3XMLDoc('http://'+domain+'/voting/voting_show.php?answer='+num+'&voting_id='+voting_id);
+}
+////////////////
+function sent_voting3_request_result(resOut) 
+{
+resOut=myDecode(resOut);
+show_detale(resOut);
+// обновить голосовалку:
+loadVotingXMLDoc('http://'+cur_domain+'/voting/voting_div.php?voting_id='+cur_voting_id);
+}
+//////////////////////////////////////
+function close_dlg()
+{
+document.getElementById("result_dlg").style.display = 'none';
+}
+/////////////////
+function show_detale(text)//просто показать результирующее сообщение
+{
+bgcolor='#EAEDFF';
+border='#B8BAFF';
+id='voting_span_id';
+//alert(text);
+text+="<input type=\"button\" name=\"cancel\" value=\"«акрыть\" onclick=\"javascript:close_dlg()\" style=\"FONT-FAMILY: Verdana, Arial;FONT-SIZE: 10px;\">\
+";
+
+if(text==0)
+{
+document.getElementById(id+"_fly").style.display = 'none'; 
+}
+else
+{
+var element = document.getElementById(id);
+
+var isOther=0;
+if(window.opera || navigator.userAgent.indexOf("Firefox")>0)
+var isOther=1;
+document.sizeX=0;// самодельное свойство, иначе expression не воспринимает переменную
+document.sizeY=0;
+// - чтобы встало поверх голосовалки:
+//document.sizeX=document.getElementById('voting_id').offsetLeft;
+//document.sizeY=document.getElementById('voting_id').offsetTop;
+if(isOther)// не поддерживают expression() в стил€х
+{
+strX="0";
+strY="0";
+}
+else
+{
+strX="expression((document.body.clientWidth-document.sizeX)/2)";//+(document.documentElement.scrollLeft || document.body.scrollLeft) - document.documentElement.clientLeft))";
+strY="expression( (document.getElementsByTagName(\'body\')[0].scrollTop + document.getElementsByTagName(\'body\')[0].clientHeight) - document.sizeY)";
+}
+var content = '<div id="result_dlg" onclick="close_dlg();" style="position:absolute;border:solid 2px '+border+';display:none;padding:2px;Z-INDEX:1000;LEFT:'+strX+';TOP:'+strY+';font-size:16px;background-color:'+bgcolor+';">'+text+'</div>';    
+element.innerHTML = content;
+
+var div_element=document.getElementById("result_dlg");
+//alert(div_element.offsetHeight);
+div_element.style.display = 'block';
+document.sizeY=div_element.offsetHeight;
+document.sizeX=div_element.offsetWidth;
+
+if(isOther)
+{
+div_element.style.left=(document.body.clientWidth-document.sizeX)/2;
+div_element.style.top=(document.getElementsByTagName('body')[0].clientHeight) - document.sizeY;
+
+div_element.style.position="fixed";
+}
+}
+
+}
+////////////////////////////////////////////////////////////////
+var req4;
+
+function loadVoting4XMLDoc(url) {
+    // branch for native XMLHttpRequest object
+    if (window.XMLHttpRequest) { 
+        req4 = new XMLHttpRequest();
+        req4.onreadystatechange = processVoting4ReqChange;
+        req4.open("GET", url, true);
+        req4.send(null);
+    // branch for IE/Windows ActiveX version
+    } else if (window.ActiveXObject) { 
+        req2 = new ActiveXObject("Microsoft.XMLHTTP");
+        if (req4) {
+            req4.onreadystatechange = processVoting4ReqChange;
+            req4.open("GET", url, true);
+            req4.send();
+        }
+    }
+}
+///////////////////////////////////
+function processVoting4ReqChange() {   
+    ab = window.setTimeout("req4.abort();", 5000);
+    
+    if(req4.readyState == 4) {
+        clearTimeout(ab);
+        isRequest=0;
+        status = req4.status; 
+        // req2.statusText; - описание ощибки 
+//alert("Ќе удалось получить данные:\n" + req4.status);
+        // only if "OK"
+        if (req4.status == 200) 
+			{			
+			//alert("!!");
+   			sent_voting_timout_result(req4.responseText);
+		} 
+		else 
+		{	//alert("!!");
+            //alert("Ќе удалось получить данные:\n" + req4.statusText);
+        }
+    } 
+}
+///////////////////////////////////
+function get_voting_timeout(domain)
+{
+cur_domain=domain;
+//alert('http://'+domain+'/voting/voting_div.php');
+loadVoting4XMLDoc('http://'+cur_domain+'/voting/voting_timeout.php');
+}
+///////////////////////
+function sent_voting_timout_result(resOut) 
+{
+alert(resOut);
+/*
+var needTimeOut=1;
+var markTimeOut=m_getCookie('voting_cook_id_i');
+alert(markTimeOut);
+if(markTimeOut==null)
+{
+//m_setCookie('voting_cook_id_i',1,10000,'/','',0);
+resOut="√олосованиен станет доступным через 5 минут."+resOut;
+}
+else
+	needTimeOut=0;
+*/
+}
+/////////////////////////////////////////////////////////////////////////////////

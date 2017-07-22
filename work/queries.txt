@@ -1,0 +1,326 @@
+DELETE FROM l_works WHERE w_id != 348;
+TRUNCATE tr_bookanno;
+DELETE FROM l_authors;
+TRUNCATE l_authors;
+DELETE FROM l_atags;
+TRUNCATE l_atags;
+SELECT c_rating, COUNT(*) FROM cc_composers WHERE t_count>0 GROUP BY c_rating;
+SELECT p_name, COUNT(*) FROM cc_composers WHERE t_count>0 GROUP BY p_name;
+UPDATE l_works SET a_id=5610 WHERE a_id=3144;
+DELETE FROM l_authors WHERE a_id=3144;
+DELETE FROM l_works WHERE w_rating=-2002 AND w_url1 != '';
+SELECT * FROM l_authors WHERE a_id=8719;
+SELECT COUNT(*) FROM l_works;
+SELECT a_name FROM l_authors WHERE a_year2-a_year1>0 AND a_year2-a_year1<20;
+SELECT w_id, a_name, w_name, w_text, w_rating, w_years FROM l_works LEFT JOIN l_authors USING (a_id) WHERE w_name LIKE '%#%';
+UPDATE l_works SET w_rating=-2002 WHERE w_rating=-2001;
+SELECT a_name, a_desc, t_name FROM l_authors LEFT JOIN l_atags ON (l_authors.a_id=l_atags.a_id AND l_atags.t_id=328) WHERE a_desc LIKE '%сатир%';
+UPDATE l_authors SET a_desc='' WHERE a_desc IS NULL;
+SELECT COUNT(*) FROM l_authors WHERE a_works>0;
+SELECT w_id FROM l_works WHERE a_maxr>='-2000' ORDER BY RAND() LIMIT 1;
+SELECT * FROM l_works WHERE w_name LIKE 'Заклятие смехом';
+SELECT * FROM l_works WHERE w_rating=-2002;
+SELECT * FROM l_authors WHERE a_id=8587;
+SELECT * FROM l_authors WHERE a_works>0 ORDER BY a_rating DESC, a_year1;
+SELECT w_name, a_name, w_text FROM l_works LEFT JOIN l_authors USING (a_id) WHERE w_text LIKE CONCAT('%', a_name, '%');
+SELECT w_name, a_name, w_text FROM l_works LEFT JOIN l_authors USING (a_id) 
+WHERE w_text NOT LIKE '%а%' AND w_text NOT LIKE '%о%' AND w_text NOT LIKE '%е%' AND w_text NOT LIKE '%и%' AND w_text NOT LIKE '%у%';
+UPDATE l_works SET w_rating=ROUND(RAND()*50) WHERE a_id=8799;
+DELETE FROM nq_pdf;
+SELECT w_header, COUNT(*) FROM nq_pdf GROUP BY w_header;
+SELECT COUNT(*) FROM nq_pdf WHERE c_id!=0 AND w_page2>0;
+SELECT * FROM nq_pdf WHERE w_header != '%PDF';
+SELECT SUM(w_rating), c_name9 FROM nq_pdf WHERE c_id!=0 GROUP BY c_name9 ORDER BY c_name9;
+SELECT * FROM cc_composers LEFT JOIN nq_pdf USING (c_id) WHERE w_id IS NULL ORDER BY c_rating;
+SELECT * FROM nq_pdf WHERE c_id!=0;
+SELECT * FROM nq_pdf WHERE w_id=20615;
+DELETE FROM nq_jpeg;
+UPDATE nq_pdf SET w_margin1=0, w_margin2=0;
+SELECT * FROM nq_pdf WHERE w_page2>0 AND c_id='287' ORDER BY w_rating DESC LIMIT 2000;
+SELECT COUNT(*) FROM amusic.nq_jpeg;
+SELECT * FROM nq_pdf LEFT JOIN cc_composers USING (c_id) WHERE w_id=811;
+SELECT * FROM nq_jpeg WHERE w_id=20201;
+SELECT * FROM l_authors WHERE a_id IN (8705,873);
+SELECT * FROM cc_ctracks WHERE t_rating>0 AND t_rating<3 ORDER BY RAND();
+SELECT t_id, SUM((CASE WHEN ca_log.t_id IS NOT NULL THEN 1 ELSE 0 END)) AS cnt FROM cc_ctracks 
+LEFT JOIN ca_log USING (t_id)
+WHERE t_rating=2
+GROUP BY cc_ctracks.t_id
+ORDER BY cnt LIMIT 1;
+SELECT cc_ctracks.t_id, w_id, w_rating, t_rating, t_name, SUM((CASE WHEN ca_log.t_id IS NOT NULL THEN 1 ELSE 0 END)) AS cnt FROM cc_ctracks 
+LEFT JOIN nq_pdf ON (cc_ctracks.t_id=nq_pdf.t_id)
+LEFT JOIN ca_log ON (cc_ctracks.t_id=ca_log.t_id)
+WHERE (t_rating>0 AND t_rating<4) OR w_rating>20000
+GROUP BY cc_ctracks.t_id
+ORDER BY cnt LIMIT 100;
+SELECT * FROM amusic.ca_log LEFT JOIN aquiz.artists USING (a_id) WHERE 
+v_up>(v_down*2.5);
+SELECT l_id, c_name FROM amusic.ca_log LEFT JOIN amusic.cc_composers USING (c_id) WHERE l_id=296;
+SELECT * FROM nq_jpeg WHERE f_name='20201_4.jpg';
+SELECT * FROM cc_ctracks WHERE t_id=10130;
+SELECT * FROM lquiz.l_works WHERE w_text LIKE 'Долгие пени%';
+SELECT * FROM nq_pdf LEFT JOIN cc_composers USING (c_id) WHERE w_id='2558';
+GRANT  SELECT ON  `aquiz`.* TO 'mon'@'%';
+INSERT INTO cc_extlog VALUES('', NOW(), 30, 1, 2, 3, 4, 5, '192.168.1.1');
+SELECT * FROM aq_artists WHERE a_name LIKE '%buehr%';
+DELETE FROM aq_paintings WHERE a_id>118;
+SELECT l_id, aq_log.p_id, ip, a_name FROM aq_log 
+LEFT JOIN aq_paintings ON (aq_paintings.p_id=aq_log.p_id AND aq_paintings.a_id=aq_log.a_id) LEFT JOIN aq_artists ON (aq_artists.a_id=aq_log.a_id) ORDER BY l_id DESC LIMIT 100;
+SELECT a_rating, COUNT(*) FROM aq_paintings LEFT JOIN aq_artists USING (a_id) GROUP BY a_rating;
+SELECT a_rating, COUNT(*) FROM aq_artists ;
+UPDATE aq_artists SET a_rating=2 WHERE a_rating=1;
+SELECT * FROM aq_artists WHERE a_name LIKE '%Bronzin%';
+SELECT * FROM aq_paintings WHERE p_desc LIKE '%biopic%';
+SELECT a_name, a_genre FROM aq_artists WHERE a_genre LIKE '%comic%';
+UPDATE aq_artists SET a_genre = REPLACE(a_genre,'Vedute','Veduta'); 
+SELECT a_name, a_genre FROM aq_artists WHERE a_nation='Greman';
+SELECT a_name2, map_pos, a_start, a_genre, map_year, map_right, a_nation, a_name FROM aq_artists WHERE a_rating>0 AND a_genre LIKE '%rococo%' ORDER BY a_start;
+UPDATE aq_artists SET map_pos=map_pos+10 WHERE map_pos>0 AND a_genre LIKE '%russi%';
+UPDATE aq_artists SET map_pos=map_pos+150 WHERE map_pos<770 AND a_start<1200;
+SELECT COUNT(*) FROM aq_artists WHERE map_pos>0 AND a_rating>0;
+SELECT * FROM aq_artists WHERE map_pos=1300;
+SELECT a_nation, COUNT(*) AS cnt FROM aq_artists WHERE map_pos>0 AND a_rating>0 GROUP BY a_nation ORDER BY cnt DESC;
+SELECT COUNT(*) FROM aq_paintings WHERE p_desc_ru!='';
+SELECT a_name, COUNT(*) FROM aq_paintings LEFT JOIN aq_artists USING (a_id) WHERE p_desc_ru!='' OR p_desc_en!='' GROUP BY a_id;
+SELECT p_num FROM aq_artists WHERE a_id=56;
+SELECT * FROM cc_users WHERE u_id=359;
+SELECT *, (a_start-'1563') AS dy, COUNT(*) AS acnt FROM aq_artists LEFT OUTER JOIN ca_log ON (aq_artists.a_id=ca_log.a_id AND ca_log.v_up>(ca_log.v_down*2.5)) WHERE ca_log.a_id IS NULL GROUP BY aq_artists.a_id ORDER BY dy DESC LIMIT 29;
+SELECT *, (a_start-'1810') AS dy, COUNT(*) AS acnt FROM aq_artists LEFT OUTER JOIN ca_log ON (aq_artists.a_id=ca_log.a_id AND ca_log.v_up>(ca_log.v_down*2.5)) WHERE ca_log.a_id IS NULL GROUP BY aq_artists.a_id ORDER BY dy DESC LIMIT 29;
+SELECT aq_artists.a_id, a_name, COUNT(p_desc_ru) AS pcnt FROM aq_artists LEFT JOIN aq_paintings ON (aq_paintings.a_id=aq_artists.a_id AND (p_desc_ru != '' OR p_desc_en != '')) GROUP BY aq_paintings.a_id HAVING pcnt>1 ORDER BY pcnt;
+SELECT p_desc_ru, p_desc_en FROM aq_paintings WHERE a_id=395;
+SELECT cc_ctracks.t_id, t_rating, t_name, SUM((CASE WHEN ca_log.t_id IS NOT NULL THEN 1 ELSE 0 END)) AS cnt FROM cc_ctracks LEFT JOIN ca_log ON (cc_ctracks.t_id=ca_log.t_id) GROUP BY cc_ctracks.t_id ORDER BY cnt LIMIT 100;
+SELECT COUNT(*) FROM aq_paintings;
+SELECT p_id FROM aq_paintings WHERE a_id=1;
+TRUNCATE TABLE ep_works;
+SELECT a_id FROM ep_authors WHERE a_allpoetry='/William-Shakespeare';
+SELECT a_name, COUNT(*) AS cnt FROM ep_authors GROUP BY a_name ORDER BY cnt DESC;
+UPDATE ep_authors SET a_rating=a_rating+50;
+SELECT cc_composers.c_id,
+      SUM((CASE WHEN ca_log.c_id IS NOT NULL THEN 1 ELSE 0 END)) AS cnt FROM cc_composers 
+      LEFT JOIN ca_log ON (cc_composers.c_id=ca_log.c_id)
+      WHERE 1=1
+      GROUP BY cc_composers.c_id
+      ORDER BY cnt,RAND();
+SELECT t_id, t_rating, t_name
+FROM cc_ctracks
+      WHERE t_bad=0 AND cc_ctracks.c_id=235;
+SELECT *, UNIX_TIMESTAMP(NOW())-UNIX_TIMESTAMP(MAX(s_ftime)) AS pass FROM state WHERE s_time='2016-08-29 15:09:03' AND s_service='mysql';
+SELECT * FROM aq_paintings WHERE a_id=18;
+UPDATE aq_paintings SET p_desc_en= REPLACE(p_desc_en, '_', ' ');
+UPDATE l_authors SET a_name=REPLACE(a_name, '\n', '');
+UPDATE l_authors SET map_pos=map_pos-20 WHERE map_pos != 0;
+UPDATE l_tdesc SET map_x2=0 WHERE map_x2<0;
+, map_x2=map_x2-20;
+SELECT * FROM ep_authors WHERE a_desc LIKE '%inacc%';
+SELECT * FROM cc_qlog WHERE u_id=;
+TRUNCATE TABLE eq_authors;
+TRUNCATE TABLE eq_quotes;
+TRUNCATE TABLE eq_alink;
+TRUNCATE TABLE eq_tags;
+TRUNCATE TABLE eq_qtags;
+UPDATE eq_authors SET a_group='Politics' WHERE a_type='President';
+SELECT a_group, a_type, COUNT(*) AS cnt FROM eq_authors GROUP BY a_group, a_type ORDER BY cnt;
+SELECT a_group, a_type, COUNT(*) AS cnt FROM eq_authors GROUP BY a_group, a_type ORDER BY a_group, cnt DESC;
+SELECT a_group, a_type, COUNT(*) AS cnt FROM eq_authors WHERE a_rating<100 GROUP BY a_group, a_type ORDER BY a_group, cnt DESC;
+SELECT a_group, COUNT(*) AS cnt FROM eq_authors GROUP BY a_group ORDER BY cnt DESC;
+SELECT a_group, COUNT(*) AS cnt FROM eq_authors WHERE a_rating<100 GROUP BY a_group ORDER BY cnt DESC;
+SELECT a_country, COUNT(*) AS cnt FROM eq_authors WHERE a_type='Poet' GROUP BY a_country ORDER BY cnt DESC;
+UPDATE eq_authors SET a_group='Politics' WHERE a_type = 'Revolutionary';
+UPDATE eq_authors SET a_group='Society' WHERE a_group = 'Celebrity';
+SELECT COUNT(*) FROM eq_authors;
+INSERT IGNORE INTO eq_atags
+SELECT a_id, t_name, COUNT(*) AS cnt FROM eq_authors INNER JOIN eq_quotes USING (a_id) INNER JOIN eq_qtags USING (q_id) GROUP BY a_id, t_name;
+UPDATE eq_authors LEFT JOIN (SELECT a_id, COUNT(*) AS cnt FROM eq_quotes GROUP BY a_id) q USING (a_id) SET a_quotes=q.cnt;
+SELECT * FROM eq_authors WHERE a_quotes=0;
+SELECT DISTINCT a_group FROM eq_authors;
+INSERT IGNORE INTO eq_type
+SELECT a_group, a_type, COUNT(*) AS cnt FROM eq_authors GROUP BY a_group, a_type;
+UPDATE eq_types LEFT JOIN (SELECT a_type, COUNT(*) AS cnt FROM eq_authors WHERE a_rating<=3 GROUP BY a_type) a USING (a_type) SET s3=a.cnt;
+UPDATE eq_tags LEFT JOIN (SELECT t_name, COUNT(*) AS cnt FROM eq_qtags GROUP BY t_name) q USING (t_name) SET q_cnt=q.cnt;
+INSERT IGNORE INTO eq_countries
+SELECT a_country, COUNT(*) AS cnt FROM eq_authors GROUP BY a_country;
+UPDATE eq_authors SET a_wiki='';
+UPDATE eq_authors SET a_gkg_id=-1 WHERE a_wiki='';
+SELECT * FROM eq_authors WHERE a_name LIKE '%Modigli%';
+UPDATE eq_authors SET a_type2='' WHERE a_type2=a_type;
+SELECT q_rating, COUNT(*) FROM eq_quotes LEFT JOIN eq_qtags USING (q_id) LEFT JOIN eq_authors ON (eq_authors.a_id=eq_quotes.a_id) WHERE a_country='American' AND a_type='Poet' AND t_name='Life' GROUP BY q_rating;
+SELECT a_rating, q_rating, COUNT(*) FROM eq_quotes LEFT JOIN eq_qtags USING (q_id) LEFT JOIN eq_authors ON (eq_authors.a_id=eq_quotes.a_id) WHERE a_country='American' AND a_type='Poet' AND t_name='Life' GROUP BY a_rating, q_rating;
+SELECT a_rating, q_rating, COUNT(DISTINCT(eq_authors.a_id)), COUNT(*) FROM eq_quotes LEFT JOIN eq_qtags USING (q_id) LEFT JOIN eq_authors ON (eq_authors.a_id=eq_quotes.a_id) WHERE a_type='Poet' GROUP BY a_rating, q_rating;
+SELECT a_rating, COUNT(DISTINCT(eq_authors.a_id)) FROM eq_authors WHERE a_type='Poet' GROUP BY a_rating;
+SELECT a_rating, COUNT(DISTINCT(eq_authors.a_id)) FROM eq_authors 
+LEFT JOIN eq_atags USING (a_id)
+WHERE a_type='Poet' AND t_name='Love' GROUP BY a_rating;
+SHOW STATUS LIKE 'Qcache%';
+SELECT q_rating, COUNT(*) AS qcnt FROM eq_quotes LEFT JOIN eq_qtags USING (q_id) LEFT JOIN eq_authors ON (eq_authors.a_id=eq_quotes.a_id) WHERE a_rating<='3' GROUP BY q_rating;
+SELECT q_rating, COUNT(*) AS qcnt FROM eq_quotes LEFT JOIN eq_authors ON (eq_authors.a_id=eq_quotes.a_id) WHERE a_rating<='3' AND a_type IN ("Poet") GROUP BY q_rating ROLL UP;
+SELECT MAX(LENGTH(q_txt)) FROM eq_quotes;
+
+SELECT * FROM eq_authors LEFT JOIN eq_atags USING (a_id) WHERE a_rating<='117' ORDER BY RAND() LIMIT 5;
+SELECT * FROM (SELECT * FROM eq_authors LEFT JOIN eq_atags USING (a_id) WHERE a_rating<='117' ORDER BY RAND() LIMIT 5) a ORDER BY a_year1;
+SELECT * FROM (SELECT * FROM eq_authors WHERE a_rating<='117' ORDER BY RAND() LIMIT 5) a ORDER BY a_year1;
+SELECT * FROM eq_quotes WHERE q_txt REGEXP "\n";
+SELECT * FROM eq_atags LEFT JOIN eq_authors USING (a_id) WHERE a_rating<='3' AND t_name IN ("Motivational","Wisdom") ORDER BY RAND() LIMIT 5;
+SELECT * FROM eq_atags LEFT JOIN eq_authors USING (a_id) WHERE a_rating<='3' AND t_name IN ("Motivational","Wisdom") GROUP BY a_id ORDER BY RAND();
+SELECT q_rating, COUNT(DISTINCT q_id) AS qcnt FROM (SELECT q_rating, q_id FROM eq_quotes LEFT JOIN eq_qtags USING (q_id) LEFT JOIN eq_authors ON (eq_authors.a_id=eq_quotes.a_id) WHERE a_rating<='3' AND t_name IN ("Change","Wisdom") GROUP BY q_id) q GROUP BY q_rating WITH ROLLUP;
+SELECT * FROM eq_qtags WHERE t_name IN ("Change","Wisdom") GROUP BY q_id;
+SELECT a_id, eq_authors.a_type, a_type2, eq_types.a_type FROM eq_authors LEFT JOIN eq_types ON (eq_authors.a_type2 = eq_types.a_type) WHERE a_type2 != '' AND eq_authors.A_type = '';
+SELECT a_quotes, COUNT(*) AS cnt FROM eq_authors WHERE a_rating<101 GROUP BY a_quotes ORDER BY a_quotes;
+SELECT * FROM eq_quotes WHERE q_txt LIKE '%been is what will%';
+DELETE FROM eq_qtags WHERE t_name='!With paintings';
+SELECT * FROM (SELECT * FROM eq_atags LEFT JOIN eq_authors USING (a_id) WHERE t_name IN ("!With music") AND a_rating<='117' GROUP BY a_id ORDER BY RAND() LIMIT 5) a ORDER BY a_year1;
+SELECT * FROM (SELECT * FROM eq_atags LEFT JOIN eq_authors USING (a_id) WHERE a_rating<='117' AND t_name IN ("!With music","!With paintings") GROUP BY eq_authors.a_id ORDER BY RAND() LIMIT 5) a ORDER BY a_year1;
+SELECT * FROM eq_quotes WHERE MATCH(q_txt) AGAINST('abortion racism evil');
+UPDATE eq_authors LEFT JOIN cc_composers ON (cc_composers.c_id=eq_authors.cc_id) SET a_type='Composer (with music)' WHERE t_count>0;
+UPDATE eq_authors SET a_type='Poet (with poems)' WHERE ep_id>0;
+UPDATE eq_authors SET a_type='Composer (with music)' WHERE cc_id>0;
+UPDATE eq_authors SET a_type='Artist (with paintings)' WHERE aq_id>0;
+SELECT LENGTH(q_txt), COUNT(*) FROM eq_quotes GROUP BY LENGTH(q_txt) ORDER BY LENGTH(q_txt);
+SELECT c_name, a_name, c_start, c_stop, a_year1, a_year2, a_type, eq_id, cc_Id FROM eq_authors LEFT JOIN cc_composers ON (eq_authors.cc_id=cc_composers.c_id) WHERE cc_id!=0 AND a_year1!=c_start;
+SELECT ep_authors.a_name, eq_authors.a_name, ep_authors.a_year1, eq_authors.a_year1, ep_authors.a_year2, eq_authors.a_year2, a_type, ep_id, eq_Id FROM eq_authors LEFT JOIN ep_authors ON (eq_authors.ep_id=ep_authors.a_id) WHERE ep_id!=0 AND ep_authors.a_year1!=eq_authors.a_year1;
+SELECT aq_artists.a_name, eq_authors.a_name, aq_artists.a_start, eq_authors.a_year1, aq_artists.a_start, eq_authors.a_year2, a_type, aq_id, eq_Id FROM eq_authors LEFT JOIN aq_artists ON (eq_authors.aq_id=aq_artists.a_id) WHERE aq_id!=0 AND aq_artists.a_start!=eq_authors.a_year1;
+SELECT a_name, a_type, a_type2 FROM eq_authors WHERE ep_id=0 AND aq_id=0 AND cc_id=0 AND a_type LIKE '%(with %';
+SELECT * FROM eq_authors WHERE aq_id!=0;
+SELECT * FROM eq_authors WHERE a_name LIKE '%hwarz%' ORDER BY a_rating LIMIT 1000;
+SELECT * FROM eq_quotes WHERE a_id=24962;
+DELETE FROM eq_quotes WHERE a_id=24962;
+SELECT a_type2, COUNT(*) AS cnt, a_type, a_name, a_desc FROM eq_authors GROUP BY a_type2 ORDER BY cnt;
+Town
+Fashion company
+Ice hockey centre;
+SELECT * FROM eq_authors WHERE a_type2 LIKE '%band%';
+SELECT * FROM eq_authors WHERE a_desc != '' AND a_desc NOT LIKE CONCAT('%', a_type, '%');
+SELECT * FROM ep_alink GROUP BY l_type;
+TRUNCATE TABLE rl_works;
+TRUNCATE TABLE rl_works;
+TRUNCATE TABLE rl_wtags;
+DELETE FROM rl_authors WHERE a_briefly='';
+SHOW PROCESSLIST;
+SELECT * FROM rl_authors WHERE a_years LIKE '%I%' OR a_years LIKE '%X%' OR a_years LIKE '%V%';
+UPDATE rl_authors SET a_prof='';
+UPDATE rl_works SET w_rank=w_rank-1 WHERE (w_rank=8 OR w_rank=9) AND w_img=1;
+
+SELECT COUNT(*) FROM rl_works WHERE br_id!='' AND bb_id!=0;
+SELECT COUNT(*) FROM rl_works WHERE br_id!='' AND bb_id=0;
+SELECT COUNT(*) FROM rl_works WHERE br_id!='';
+SELECT * FROM rl_works WHERE tr_wid!='';
+UPDATE rl_authors SET tr_id=REPLACE(tr_id, '   ', ' + ');
+SELECT * FROM rl_authors 
+    WHERE tr_id != '' AND a_years=''
+    ORDER BY a_rating;
+UPDATE rl_authors SET gs_id='', a_year1=0, a_year2=0, a_wiki='', a_prof='' WHERE a_years='' AND tr_id!='';
+SELECT * FROM rl_authors WHERE a_name LIKE '%Сабатини%';
+UPDATE rl_works SET tr_wid='' WHERE w_id<184;
+SELECT * FROM rl_works WHERE tr_wid != '';
+SELECT * FROM rl_works WHERE t_len>0 AND t_len2=0;
+SELECT a_name, tr_id, SUM(t_len) AS tl, SUM(t_len2) AS tl2, SUM(b_len) AS bl FROM rl_works LEFT JOIN rl_authors USING (a_id) GROUP BY a_id HAVING tl=0 AND tl2=0 AND bl=0;
+SELECT a_name, tr_id, SUM(t_len) AS tl, SUM(t_len2) AS tl2, SUM(b_len) AS bl FROM rl_works LEFT JOIN rl_authors USING (a_id) GROUP BY a_id HAVING tl=0 AND tl2=0 AND bl=0 AND tr_id!='';
+SELECT * FROM rl_works WHERE tr_wid!='';
+UPDATE rl_authors SET a_rating=100000 WHERE a_rating=0 AND br_rating=8;
+UPDATE rl_authors SET a_desc=REPLACE(a_desc, '<small>Материал из <a href="http://ru.wikipedia.org">Википедии</a> - свободной энциклопедии</small>', '');
+SELECT t_enc2 FROM rl_works GROUP BY t_enc2;
+UPDATE rl_works SET t_enc2='windows-1251' WHERE tr_wtype='txt';
+
+SELECT * FROM rl_works LEFT JOIN rl_authors USING (a_id) WHERE a_maxr>='-10000' AND w_rating>='-10000' AND (w_id NOT IN (443,25,62,151,350,209,60,307,11,260,12,493,266,951,167,473,18,42,72,69,147,330,504,110,41,150,71,78,61,40,113,6,447,276,75,617)) ORDER BY RAND() LIMIT 1;
+SELECT * FROM rl_authors WHERE a_maxr>='-10000' AND w_rating>='-10000' AND (w_id NOT IN (443,25,62,151,350,209,60,307,11,260,12,493,266,951,167,473,18,42,72,69,147,330,504,110,41,150,71,78,61,40,113,6,447,276,75,617)) ORDER BY RAND() LIMIT 1;
+SELECT * FROM rl_works LEFT JOIN rl_authors USING (a_id) WHERE a_maxr>='-10000' AND w_rating>='-10000' AND (w_id NOT IN (443,25,62,151,350,209,60,307,11,260,12,493,266,951,167,473,18,42,72,69,147,330,504,110,41,150,71,78,61,40,113,6,447,276,75,617)) AND (b_len>0) ORDER BY RAND() LIMIT 1;
+UPDATE rl_works SET w_rating=b_up WHERE w_rating=0;
+SELECT COUNT(*), t_id, b_id FROM ca_log GROUP BY t_id, b_id;
+SELECT COUNT(*) FROM ep_authors WHERE a_state=0;
+SELECT a_id AS source, a_id2 AS target FROM ep_alink WHERE l_type LIKE '%influenced';
+SELECT a.a_id AS source, a_id2 AS target FROM ep_alink LEFT JOIN ep_authors a USING (a_id) LEFT JOIN ep_authors a2 ON (a2.a_id=ep_alink.a_id2) WHERE a.a_rating<50 AND a2.a_rating<50 AND l_type LIKE '%influenced';
+SELECT a_id AS id, a_name AS label FROM ep_authors WHERE a_rating<50;
+SELECT a_name2, COUNT(*) AS cnt FROM ep_authors GROUP BY a_name2 ORDER BY cnt;
+UPDATE ep_authors SET map_pos=MOD(a_id*20, 1400)+1500;
+SELECT a_country, COUNT(*) AS cnt FROM ep_authors GROUP BY a_country ORDER BY cnt;
+SELECT * FROM ep_authors WHERE a_country='CHN';
+SELECT * FROM ep_authors WHERE a_country='ENG' ORDER BY a_year1;
+UPDATE ep_authors SET map_year=map_year-5 WHERE map_pos>730 AND map_pos<800;
+
+SELECT * FROM ep_authors WHERE map_pos>1460 AND a_year1>1700 AND map_pos<2900;
+SELECT * FROM rl_authors WHERE a_id=1247;
+SELECT * FROM rl_authors WHERE a_name LIKE '%Чиладзе%';
+SELECT * FROM ep_authors WHERE a_country LIKE '%AUS%';
+UPDATE rl_authors SET a_art=2;
+UPDATE ep_tdesc SET map_x1=map_x1-5, map_x2=map_x2-5;
+UPDATE ep_tdesc SET map_x1=0, map_x2=0 WHERE map_x1=-5 AND map_x2=-5;
+SELECT q_txt FROM eq_quotes ORDER BY LENGTH(q_txt),q_rating LIMIT 1000;
+SELECT * FROM rl_works WHERE w_name LIKE '% - %';
+SELECT * FROM rl_works WHERE tr_wid!='';
+SELECT COUNT(*) FROM tr_books;
+SELECT * FROM tr_books WHERE b_id=8669;
+SELECT * FROM tr_authors LEFT JOIN rl_authors USING (tr_id) WHERE 1=1 AND tr_name LIKE '%piers%' ORDER BY tr_name LIMIT 1000;
+SELECT * FROM tr_books LEFT JOIN rl_works USING (tr_wid) WHERE tr_id='6107' ORDER BY b_name;
+SELECT * FROM rl_works WHERE tr_wid>0;
+SELECT * FROM tr_authors WHERE tr_lang='EN' ORDER BY tr_nbook DESC;
+UPDATE rl_authors SET a_rating=w_size/10000*2 WHERE a_rating<200; 
+SELECT * FROM rl_authors WHERE a_year1<1894;
+SELECT * FROM rl_works WHERE w_id=1593 OR w_id=2918;
+SELECT * FROM rl_atags WHERE t_type>0;
+DELETE FROM rl_works WHERE w_id=1669;
+UPDATE rl_wtags SET t_name='Для подростков' WHERE t_name LIKE '%подростков';
+SELECT DATE(t_time), COUNT(DISTINCT a_id) FROM rl_atags GROUP BY DATE(t_time);
+SELECT t_name, COUNT(*) AS cnt FROM rl_atags GROUP BY t_name ORDER BY t_name;
+UPDATE rl_authors SET map_ayear=IF(a_year2!=0, (a_year1+a_year2)/2, a_year1+20);
+UPDATE rl_authors SET map_year=0;
+SELECT COUNT(*) FROM rl_authors WHERE map_pos!=0;
+SELECT COUNT(*) FROM l_authors WHERE map_pos!=0;
+UPDATE rl_authors SET map_pos='2470', a_rating='19958', map_right='0', a_name='Гомер', a_name='Гомер', a_country='GRC', map_comment='', map_year='0', map_img='' WHERE a_id='192';
+SELECT map_pos FROM rl_authors WHERE a_name2='Куприн';
+SELECT map_s FROM rl_authors WHERE a_name2='Куприн';
+UPDATE rl_authors SET map_shape=1 WHERE a_prof LIKE 'Поэт%';
+UPDATE rl_authors SET map_shape=2 WHERE a_prof='Комедиограф';
+SELECT a_prof,COUNT(*) AS cnt FROM rl_authors GROUP BY a_prof ORDER BY cnt DESC;
+UPDATE rl_authors SET map_pos=441 WHERE map_pos=431;
+UPDATE rl_authors SET map_pos=3850 WHERE map_pos=0 AND a_country IN ('GRC','IND','PER','JAP','CHN','ARM','GEO');
+SELECT a_name, a_id, map_pos, SUM(t_len)+SUM(b_len)+SUM(t_len2) FROM rl_authors LEFT JOIN rl_works USING (a_id) WHERE map_pos != 0 GROUP BY a_id;
+UPDATE rl_authors SET map2_name=a_ename2;
+TRUNCATE TABLE ulog;
+SELECT COUNT(*) FROM ulog;
+SELECT SUM(act) FROM ulog;
+SELECT SUM(act) FROM ulog2;
+UPDATE ulog SET SERVER='PR8';
+SELECT * FROM ulog3 WHERE act=37771;
+SELECT * FROM ulog2 WHERE ulogin='ANT03PIV';
+SELECT * FROM ulog WHERE ulogin='ANT03PIV';
+SELECT serv, comp, ym, module, module2, SUM(act)/1000 AS sact, COUNT(*) AS ucnt
+      FROM ulog2
+      WHERE serv='PR8' AND module2='Бухгалтерский и налоговый учет' AND
+      comp IN ('ПАО ОГК - 2', 'ПАО МОСЭНЕРГО')
+      GROUP BY ym, comp
+      ORDER BY ym, comp;
+SELECT prof, SUM(act)/1000 AS sact, COUNT(*) AS ucnt
+      FROM ulog3
+      WHERE serv='PR8' AND comp='ПАО ОГК - 2'
+      GROUP BY ym, prof
+      ORDER BY ym, prof;
+SELECT ym, SUM(act)/1000 AS sact, COUNT(*) AS ucnt
+      FROM ulog3
+      WHERE serv='SAP ERP' 
+      AND comp IN ('ПАО ОГК-2', 'ПАО Мосэнерго')
+      GROUP BY ym, comp
+      ORDER BY ym, comp;
+SELECT map_shape,COUNT(*) FROM rl_authors GROUP BY map_shape;
+SELECT a_name,a_country,COUNT(*) AS cnt FROM rl_authors WHERE map_pos != 0 GROUP BY a_country ORDER BY cnt DESC;
+SELECT a_id, a_name, a_ename FROM rl_authors WHERE a_wiki != '' AND a_ename = '';
+UPDATE rl_tdesc SET map2_x1=map_x1, map2_x2=map_x2, map2_y1=map_y1, map2_y2=map_y2, map2_poly=map_poly, map2_color=map_color, map2_label=map_label, map2_active=map_active, map2_img=map_img, map2_name=map_name;
+UPDATE rl_authors SET map2_name=map_name, map2_pos=map_pos, map2_year=map_year, map2_right=map_right, map2_comment=map_comment, map2_img=map_img, map2_ayear=map_ayear, map2_shape=map_shape;
+UPDATE rl_authors SET map2_pos=0 WHERE a_ename2='';
+SELECT * FROM rl_authors WHERE a_ename LIKE "%'%";
+SELECT * FROM eq_authors WHERE a_name LIKE 'Lindsay Hartley';
+SELECT tr_name, t_name, COUNT(*) FROM tr_booktags LEFT JOIN tr_books USING (tr_wid) LEFT JOIN tr_authors USING (tr_id) WHERE t_name = 'sci_philosophy' GROUP BY tr_id ORDER BY tr_name;
+SELECT * FROM eq_authors WHERE a_name LIKE 'Plato';
+SELECT a_name, t_name, COUNT(*) FROM rl_wtags LEFT JOIN rl_works USING (w_id) LEFT JOIN rl_authors USING (a_id) WHERE t_name = 'sci_philosophy' GROUP BY a_id ORDER BY a_name;
+TRUNCATE TABLE rq_quotes;
+TRUNCATE TABLE rq_qtags;
+SELECT COUNT(*) FROM rq_authors WHERE gs_id!='';
+SELECT * FROM rq_authors WHERE a_name LIKE '%Самойлов';
+SELECT * FROM rq_authors WHERE a_name LIKE '%Крестьянкин';
+SELECT a_type3, COUNT(*) AS cnt FROM rq_authors GROUP BY a_type3 ORDER BY a_type3;
+SELECT a_type3, a_type2, COUNT(*) AS cnt FROM rq_authors GROUP BY a_type3, a_type2 ORDER BY a_type3, a_type2;
+SELECT a_type, a_type3, COUNT(*) AS cnt FROM rq_authors WHERE a_type3='' GROUP BY a_type ORDER BY a_type;
+UPDATE rq_authors SET a_type2='', a_wiki='', a_desc2='';
+SELECT a_name, a_type, a_type2 FROM rq_authors WHERE a_type LIKE '%философ%' AND a_type2 != 'Философ' AND a_type2 != '';
+UPDATE rq_authors SET a_type3='Священник' WHERE a_type3='Священнослужитель';
+SELECT a_group, a_type3, COUNT(*) AS cnt FROM rq_authors GROUP BY a_type3  ORDER BY a_type3;
+UPDATE rq_authors SET a_type=a_type4;
+UPDATE rq_authors SET 

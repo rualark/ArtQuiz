@@ -1,0 +1,25 @@
+// использование: <script Language="JavaScript" src="/sys/url_encode.js"></script>
+// str = url_encode(str);
+
+// нужно заставить escape() работать как urlencode():
+var trans = [];
+for (var i = 0x410; i <= 0x44F; i++)
+  trans[i] = i - 0x350; // А-Яа-я
+trans[0x401] = 0xA8;    // Ё
+trans[0x451] = 0xB8;    // ё
+
+
+function url_encode(str)
+{
+  var ret = [];
+  // Составляем массив кодов символов, попутно переводим кириллицу
+  for (var i = 0; i < str.length; i++)
+  {
+    var n = str.charCodeAt(i);
+    if (typeof trans[n] != 'undefined')
+      n = trans[n];
+    if (n <= 0xFF)
+      ret.push(n);
+  }
+  return window.escape(String.fromCharCode.apply(null, ret));
+}

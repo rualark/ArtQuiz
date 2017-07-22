@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?><playlist version='1' xmlns='http://xspf.org/ns/0/'><title>Fugue</title><info>Fugue</info><trackList>
+<track>
+<location>../music/Fugue/Bach/02.Fugue No.1 in C-dur, BWV 846.mp3</location>
+<title>Bach - 02.Fugue No.1 in C-dur, BWV 846</title>
+</track>
+<track>
+<location>../music/Fugue/Bach/04.Fugue No.2 in c-moll, BWV 847.mp3</location>
+<title>Bach - 04.Fugue No.2 in c-moll, BWV 847</title>
+</track>
+<track>
+<location>../music/Fugue/Mozart/24. Fuge in g-moll, KV 401 375e.mp3</location>
+<title>Mozart - 24. Fuge in g-moll, KV 401 375e</title>
+</track></trackList></playlist>

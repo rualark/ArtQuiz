@@ -1,0 +1,5 @@
+Remove non-mp3
+Rename mp3
+Update tags
+Convert to 128 kbps
+Split into blocks with and without tags

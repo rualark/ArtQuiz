@@ -1,0 +1,24 @@
+<button type="button" id="btnPlay">Play</button>
+<script type=javascript>
+$("#btnPlay").click(function(){
+    var button = $(this) ;
+    if (!button.hasClass('pressed')) {
+        //button is unpressed
+        $.post("ajax.php", { userId: "5512", action: "play" },
+            function(data){
+               button.addClass('pressed');
+               button.html("Playing!") ;
+            }
+        );
+    }
+    else {
+        //button is pressed, toggle it back
+        $.post("ajax.php", { userId: "5512", action: "stopPlaying" },
+            function(data){
+               button.removeClass('pressed');
+               button.html("Play") ;
+            }
+        );
+    }
+});
+</script>

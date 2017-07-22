@@ -1,0 +1,19 @@
+Scarlatti	2
+Frescobaldi	4
+Zelenka	4
+Geminiani	4
+Boyce	4
+Nardini	4
+Soler	4
+Cimarosa
+Clementi
+Cherubini
+Boieldieu
+Hummel
+Sor
+Giuliani
+Auber
+Marinetti
+Barrett
+Bloch
+Ysai

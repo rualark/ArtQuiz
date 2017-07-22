@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?><playlist version='1' xmlns='http://xspf.org/ns/0/'><title>Verismo opera</title><info>Verismo opera</info><trackList>
+<track>
+<location>../music/Verismo opera/leoncava_pagliacc_rai_01_prolog.mp3</location>
+<title>leoncava_pagliacc_rai_01_prolog</title>
+</track>
+<track>
+<location>../music/Verismo opera/leoncava_pagliacc_rai_02_son_qu.mp3</location>
+<title>leoncava_pagliacc_rai_02_son_qu</title>
+</track>
+<track>
+<location>../music/Verismo opera/leoncava_pagliacc_rai_03_un_tal.mp3</location>
+<title>leoncava_pagliacc_rai_03_un_tal</title>
+</track>
+<track>
+<location>../music/Verismo opera/leoncava_pagliacc_rai_04_i_zamp.mp3</location>
+<title>leoncava_pagliacc_rai_04_i_zamp</title>
+</track></trackList></playlist>

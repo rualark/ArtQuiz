@@ -1,0 +1,121 @@
+﻿var obAntyDiv=0;
+var copy_minlen=100;
+// спан для ссылки - для браузеров поддерживающих if(window.getSelection)
+var htmlcopytxt='<br>Источник: <a href="' + window.location.href + '"  target="_blank">' + window.location.href + '</a>';
+// невидимый спан для ссылки - для браузеров не поддерживающих if(window.getSelection)
+var htmlcopytxt2='<span id="ctrlcopy"><br>Источник: <a href="' + window.location.href + '"  target="_blank">' + window.location.href + '</a></span>';
+//if(window.getSelection)alert("1");if(document.selection)alert("2");
+var copy_sp = 0;
+
+var warn_copypast_message='При копировании обязательна ссылка на первоисточник: <a href="' + window.location.href + '"  target="_blank">' + window.location.href + '</a>.<br><a href="/anticopypaster/copyriting_low.php" target="_blank" style="FONT-FAMILY:Arial;FONT-SIZE:18px;">условия использования >></a>';
+
+window.onload = function()// после загрузки страницы:
+{ 
+obAntyDiv=document.getElementById("mine_copypast_div_id"); //alert(obAntyDiv);
+//obAntyDiv.onclick = do_anty_MouseUp; не нужно
+if(obAntyDiv)
+{
+obAntyDiv.onmouseup = function()
+{
+do_anty_MouseUp();
+}
+}
+
+// сделать объект span с кслассом невидимости:
+copy_sp = document.createElement('span');
+copy_sp.id = 'ctrlcopy';
+//copy_sp.innerHTML = htmlcopytxt;
+}
+
+function do_anty_MouseUp()
+{
+//alert("Down");
+copy_sp.innerHTML = htmlcopytxt;
+
+if(window.getSelection) 
+{
+var slcted = window.getSelection();
+var seltxt = slcted.toString();
+if (!seltxt || seltxt.length < copy_minlen) 
+return;
+
+var nslct = slcted.getRangeAt(0);
+seltxt = nslct.cloneRange(); //alert(seltxt); return;
+seltxt.collapse(false);
+
+seltxt.insertNode(copy_sp);
+nslct.setEndAfter(copy_sp); 
+slcted.removeAllRanges();
+slcted.addRange(nslct);
+
+show_copyriting_warn_dlg();
+}
+else
+if(document.selection) 
+{ //alert("document.selection");
+var slcted = document.selection;
+var nslct = slcted.createRange();
+var seltxt = nslct.text;
+if (!seltxt || seltxt.length < copy_minlen) 
+return;
+
+seltxt = nslct.duplicate();
+seltxt.collapse(false);
+seltxt.pasteHTML(htmlcopytxt2);
+nslct.setEndPoint("EndToEnd", seltxt); nslct.select();
+
+show_copyriting_warn_dlg();
+}
+}
+//////////////////////////////////
+function show_copyriting_warn_dlg()
+{
+//alert("!!!!");
+var dilg_strX=500;
+var dilg_strY=150;
+// нужно выбрать наибольший размер клиента:
+var sx = (document.getElementsByTagName( 'body' )[0].scrollLeft ||
+	document.getElementsByTagName.scrollLeft ||
+	document.documentElement.scrollLeft || document.body.scrollLeft);
+var sy = (document.getElementsByTagName( 'body' )[0].scrollTop ||
+	document.getElementsByTagName.scrollTop ||
+	document.documentElement.scrollTop || document.body.scrollTop);
+// нужно выбрать наименьший, но не нулевой размер клиента:
+/*
+alert(document.getElementsByTagName( 'body' )[0].clientHeight+"\n | "
++document.documentElement.scrollTop+" | "+" | "+document.body.scrollTop+"\n | "
++document.documentElement.clientWidth+" | "+document.body.clientWidth+
+"\n | "+document.documentElement.clientHeight+" | "+document.body.clientHeight);
+return;
+*/
+var cx = document.getElementsByTagName( 'body' )[0].clientWidth;//самый большой бывает
+if(document.body.clientWidth&&cx>document.body.clientWidth) cx=document.body.clientWidth;
+if(document.getElementsByTagName.clientWidth&&cx>document.getElementsByTagName.clientWidth) cx=document.getElementsByTagName.clientWidth;
+if(document.documentElement.clientWidth&&cx>document.documentElement.clientWidth) cx=document.documentElement.clientWidth;
+
+var cy = document.getElementsByTagName( 'body' )[0].clientHeight;
+if(document.body.clientHeight&&cy>document.body.clientHeight) cy=document.body.clientHeight;
+if(document.getElementsByTagName.clientHeight&&cy>document.getElementsByTagName.clientHeight) cy=document.getElementsByTagName.clientHeight;
+if(document.documentElement.clientHeight&&cy>document.documentElement.clientHeight) cy=document.documentElement.clientHeight;
+
+//alert("!!!! "+sx+" | "+sy+" | "+cx+" | "+cy); 
+
+var strX=sx + (cx - dilg_strX)/2;
+var strY=sy + (cy - dilg_strY)/2;
+
+
+var show_copyriting_warn_dlg =document.getElementById("show_copyriting_warn_dlg");
+//onclick='close_copyriting_warn_dlg();'
+var content = "<div id='warn_copyriting_dlg_id' onclick='close_copyriting_warn_dlg();' style='position:absolute;Z-INDEX:1000;LEFT:"
++strX+"px;TOP:"+strY+"px;width:"+dilg_strX+"px;height:"+dilg_strY
++"px;background-color:#dddddd;border:solid 2px #666666;padding:10px;display:block;FONT-FAMILY:Arial;FONT-SIZE:14px;text-align:center;'>"
++warn_copypast_message
++"<br><br><input type=\"button\" name=\"exit\" value=\"Закрыть\" onclick=\"javascript:close_copyriting_warn_dlg()\"  style=\"padding:6px;FONT-FAMILY:Arial;FONT-SIZE:14px;\"></div>";
+show_copyriting_warn_dlg.innerHTML =content;
+}
+function close_copyriting_warn_dlg()
+{
+var show_copyriting_warn_dlg =document.getElementById("warn_copyriting_dlg_id");
+show_copyriting_warn_dlg.style.display = 'none';
+//warn_dlg_id.style.visibility = 'hidden';
+}

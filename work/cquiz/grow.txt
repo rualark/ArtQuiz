@@ -1,0 +1,33 @@
+To add composers:
+- In composers3  set: Name, p_name, folder (for those who will have tracks), Rating
+- Run build_cdesc to copy data to cc_composers
+- Run load5-1 to search for caid
+- Run load-cpic to load country, years, start, stop, pic. Set manually in cc_composers if unable to parse
+- Copy pics from classclass to cquiz
+- Run build_cdesc to copy data to composers3
+- Update if you need p_name, folder, rating in composers3
+- Run build_cdesc to copy data to cc_composers
+- Create script to parse amid (?)
+
+To add new tracks:
+- Finish all downloads! Stop torrents!
+- Delete all jpg, torrent and other (windirstat and far search *.jpg,*.dat,*.jpeg,*.pdf,*.torrent,*.log,*.db,*.m3u,*.accurip,*.mht,*.png,*.gif,*.htm,*.html,*.css,*.txt,*.nfo,*.ini,*.cue,*.sfv,*.url)
+- Delete excessive tracks
+- Trim silence from youtube (use adobe audition)
+- Remove bad characters from file names (ReName: 0. Transliterate Spanish 1. Transliterate Russian. 2. Вырезать Strip all except english, digits, ()- _., and include extension! Filters-Add folders as files. Filter by folder name desc.)
+- Check all tracks are in correct folders (manual)
+- Check all folders are linked (mk_convert_bat: Not found folder)
+- Check all new composers have folders (mk_convert_bat)
+- Auto tag (winamp?)
+- Convert to 128kbit (convert.bat - use several instances)
+- Split (split.bat)
+- Normalise converted and splitted (MP3Gain - Options - Advanced - Enable maximizing - Modify - Apply Max no-clip gain to each file) from 6476
+- Move tracks from blocks2 folder to blocks folder. Move source tracks to source folder. Move converted tracks to converted folder.
+- Add tracks to cc_ctracks and cc_blocks, starting from last free ids (mk_convert_bat)
+- Update c_len, t_count. Clean t_name and t_folder2 (load12.php)
+- Delete silent blocks, detected and exported in csv by MP3Gain (del_silent_blocks.php)
+- Delete blocks that were created by error because t_len was wrong. Fix t_len (bblocks.php)
+- Create t_meta2 (parse_meta.php)
+- Remove tracks that were replaced by new tracks
+- Group tracks (tgroups.php)
+- Remove bad tracks (mark as bad and delete files)
